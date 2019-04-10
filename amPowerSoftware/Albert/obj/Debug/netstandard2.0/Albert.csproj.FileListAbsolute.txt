@@ -1,0 +1,9 @@
+C:\AMB\Git\amPowerSoftware\amPowerSoftware\Albert\bin\Debug\netstandard2.0\Albert.deps.json
+C:\AMB\Git\amPowerSoftware\amPowerSoftware\Albert\bin\Debug\netstandard2.0\Albert.dll
+C:\AMB\Git\amPowerSoftware\amPowerSoftware\Albert\bin\Debug\netstandard2.0\Albert.pdb
+C:\AMB\Git\amPowerSoftware\amPowerSoftware\Albert\obj\Debug\netstandard2.0\Albert.csproj.CoreCompileInputs.cache
+C:\AMB\Git\amPowerSoftware\amPowerSoftware\Albert\obj\Debug\netstandard2.0\Albert.AssemblyInfoInputs.cache
+C:\AMB\Git\amPowerSoftware\amPowerSoftware\Albert\obj\Debug\netstandard2.0\Albert.AssemblyInfo.cs
+C:\AMB\Git\amPowerSoftware\amPowerSoftware\Albert\obj\Debug\netstandard2.0\Albert.dll
+C:\AMB\Git\amPowerSoftware\amPowerSoftware\Albert\obj\Debug\netstandard2.0\Albert.pdb
+C:\AMB\Git\amPowerSoftware\amPowerSoftware\Albert\obj\Debug\netstandard2.0\Albert.csprojAssemblyReference.cache

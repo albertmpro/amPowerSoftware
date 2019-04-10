@@ -1,0 +1,44 @@
+﻿<UserControl x:Class="amSparkDesk.View.LaunchPad"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:amSparkDesk.View"
+             mc:Ignorable="d" 
+             d:DesignHeight="800" d:DesignWidth="450">
+    <Grid>
+
+		
+	
+		<!--Text Editor's -->
+		<TextBlock FontSize="24pt" VerticalAlignment="Top" Style="{StaticResource tbTool}" Grid.Row="1" Grid.Column="0"> 
+			<Run FontWeight="Bold">Create New</Run>
+			<LineBreak />
+			<Line X1="0" X2="240" StrokeThickness="3.4" Stroke="White" />
+
+		
+			<LineBreak />
+			<Hyperlink Click="hyp_Click" Tag="NewCode" ToolTip="Create a Code Document"> Code Document</Hyperlink>
+			<LineBreak />
+			<Hyperlink Click="hyp_Click" Tag="NewWriter" ToolTip="Create a Writer Document"> Writer Document</Hyperlink>
+			<LineBreak />
+	
+			<Hyperlink Click="hyp_Click" Tag="NewInk" ToolTip="Create a Ink Project">Ink Project</Hyperlink>
+			<LineBreak />
+			<Hyperlink Click="hyp_Click" Tag="NewMsg" ToolTip="Create a Web MSg Project">Web Msg Document</Hyperlink>
+		
+			<LineBreak /> 
+						
+			<Hyperlink Click="hyp_Click" Tag="NewNote" ToolTip="Create a Web Note Project">Web Note Document</Hyperlink>
+		<LineBreak />
+
+					<Run FontWeight="Bold">Tools</Run>
+			<LineBreak />
+			
+			<Line X1="0" X2="240" StrokeThickness="3.4" Stroke="White" />
+				<LineBreak /> 
+			
+				<Hyperlink Click="hyp_Click" Tag="NewFontLab" ToolTip="Create a FontLab Document">FontLab</Hyperlink>
+		</TextBlock>
+	</Grid>
+</UserControl>

@@ -1,0 +1,2 @@
+C:\AMB\Git\amPowerSoftware\amPowerSoftware\amPowerSoftware\obj\Debug\amPowerSoftware.csprojAssemblyReference.cache
+C:\AMB\Git\amPowerSoftware\amPowerSoftware\amPowerSoftware\obj\Debug\amPowerSoftware.csproj.CoreCompileInputs.cache

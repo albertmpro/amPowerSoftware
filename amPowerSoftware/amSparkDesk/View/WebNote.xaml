@@ -1,0 +1,55 @@
+﻿<local:DevDoc
+	xmlns:c="clr-namespace:Albert.Standard.Win32;assembly=AlbertWPF" x:Class="amSparkDesk.View.WebNote"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:amSparkDesk.View"
+	xmlns:wb="clr-namespace:Microsoft.Toolkit.Wpf.UI.Controls;assembly=Microsoft.Toolkit.Wpf.UI.Controls.WebView"
+	xmlns:tk="http://schemas.xceed.com/wpf/xaml/toolkit"
+	mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+	<Grid>
+		<Grid.RowDefinitions>
+			<RowDefinition Height="auto" />
+		
+			<RowDefinition />
+			<RowDefinition Height="auto" />
+		</Grid.RowDefinitions>
+		<Grid.ColumnDefinitions>
+			<ColumnDefinition Width="auto" />
+			<ColumnDefinition Width="auto" />
+			<ColumnDefinition    />
+			<ColumnDefinition Width="auto"  />
+			<ColumnDefinition Width="auto"  />
+
+		</Grid.ColumnDefinitions>
+		<!-- NavBar -->
+		<c:PushButton Style="{StaticResource btnRefresh}" Tag="Refresh" Click="btn_click" Content="Rf" Grid.Column="0" ToolTip="Refresh" />
+		<c:PushButton Style="{StaticResource btnNote}" Tag="Back" Click="btn_click" Content="Back" Grid.Column="1" ToolTip="Go Back"/>
+
+
+		<!-- TextBox -->
+		<TextBox Style="{StaticResource txtWebView}" x:Name="txtUrl" GotKeyboardFocus="txtUrl_GotKeyboardFocus" GotFocus="txtUrl_GotFocus" KeyUp="txtUrl_KeyUp" Grid.Column="2" ToolTip="Address Bar"  />
+
+		<c:PushButton Tag="Go" Click="btn_click" Style="{StaticResource btnGo}" Grid.Column="3" Content="Go" ToolTip="Go Button" />
+		<!-- Go Button -->
+	
+		
+
+		<!-- Browser -->
+		<Grid x:Name="gridContent" Grid.ColumnSpan="4" Grid.Row="1" >
+			
+		</Grid>
+		<!-- <wb:WebView  NewWindowRequested="webView_NewWindowRequested" Source="https://codepen.io/albertmpro/" NavigationCompleted="webView_NavigationCompleted"  NavigationStarting="webView_NavigationStarting"  Grid.ColumnSpan="4" Grid.Row="1" x:Name="webView" />-->
+		
+		<!-- Windows -->
+		<local:QuickNote  Grid.RowSpan="3" Grid.ColumnSpan="5" x:Name="quickNote" />
+		<local:QuickInk Grid.RowSpan="3" Grid.ColumnSpan="5" x:Name="quickInk" />
+		<!-- Bottom Bar-->
+				<StackPanel Grid.ColumnSpan="4" HorizontalAlignment="Center" Orientation="Horizontal" Grid.Row="2">
+					<c:PushButton Style="{StaticResource btnNote}" Tag="Notes" Click="btn_click" Content="N" Grid.Column="3" />
+					<c:PushButton Style="{StaticResource btnNote}" Tag="Ink" Click="btn_click" Content="Ink" ToolTip="Quick Ink" Grid.Column="4" />
+				</StackPanel>
+	</Grid>
+</local:DevDoc>

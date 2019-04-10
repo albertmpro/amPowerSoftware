@@ -1,0 +1,2 @@
+C:\AMB\Git\amPowerSoftware\amPowerSoftware\AlbertUWP\AlbertUWP.csproj;neutral
+C:\AMB\Git\amPowerSoftware\amPowerSoftware\amPowerLab\amPowerLab.csproj;x86

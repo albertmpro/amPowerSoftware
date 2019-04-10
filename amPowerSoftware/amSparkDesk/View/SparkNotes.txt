@@ -1,0 +1,35 @@
+﻿amSparkDesk Notes 
+----------------------------------
+Application Overview 
+	• MVVM Frame Application 
+	• MainView is the WIndow 
+	• TabPage is the default page of the frame
+
+	SparkViewModel 
+	---------------------------
+	Main View Model of the Applcation 
+	Handles settings and other task
+
+	MainVIew 
+	----------------------------------
+	THe Main view deals with the basic functionality of the shell of the Application 
+	Menu 
+		File 
+			New, Open, Save, Save As, Exit 
+		Edit 
+			Cut,Copy, Paste, Select All 
+		Tools 
+			Options 
+		Help 
+			About amSoarkDesk 
+
+	Overview Tab 
+
+	-------------------------------
+	• OverviewTab is the default first tab
+		• Tab Task: TaskControl is basic control for preforming task 
+		• Tab Notes: Has a basic notes control for taking basik notes 
+		• Tab Ink: Basic Ink pad for 1920 x 1080 picture 
+		         
+
+                          

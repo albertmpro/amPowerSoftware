@@ -1,0 +1,414 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>LAPTOP-QL9GRQT5</Machine>
+    <WindowsUser>alxp2</WindowsUser>
+    <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
+    <TargetOsVersion>10.0</TargetOsVersion>
+    <TargetOsDescription>Windows 10.0</TargetOsDescription>
+    <SolutionConfiguration>Release|AnyCPU</SolutionConfiguration>
+    <PackageArchitecture>neutral</PackageArchitecture>
+    <PackageIdentityName>d06daaf4-ec16-4cd6-ad44-5d6363b15414</PackageIdentityName>
+    <PackageIdentityPublisher>CN=alxp2</PackageIdentityPublisher>
+    <IntermediateOutputPath>C:\AMB\Git\amPowerSoftware\amPowerSoftware\amDev\obj\Release\</IntermediateOutputPath>
+    <RemoteDeploymentType>
+    </RemoteDeploymentType>
+    <PackageRegistrationPath>
+    </PackageRegistrationPath>
+    <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
+    <DeployOptionalPackages>false</DeployOptionalPackages>
+    <WindowsSdkPath>
+    </WindowsSdkPath>
+    <LayoutDir>C:\AMB\Git\amPowerSoftware\amPowerSoftware\amDev\bin\AnyCPU\Release\AppX</LayoutDir>
+    <RegisteredManifestChecksum>DCBBB2B05221081290EC10E3A8A41E2C310A371911F10FBCC8352B6152340298</RegisteredManifestChecksum>
+    <RegisteredPackageMoniker>d06daaf4-ec16-4cd6-ad44-5d6363b15414_1.0.0.0_neutral__94jyxjaky19ar</RegisteredPackageMoniker>
+    <RegisteredUserModeAppID>d06daaf4-ec16-4cd6-ad44-5d6363b15414_94jyxjaky19ar!App</RegisteredUserModeAppID>
+    <RegisteredPackageID>d06daaf4-ec16-4cd6-ad44-5d6363b15414</RegisteredPackageID>
+    <RegisteredPackagePublisher>CN=alxp2</RegisteredPackagePublisher>
+    <RegisteredVersion>1.0.0.0</RegisteredVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\amDev\bin\AnyCPU\Release\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-04-06T00:08:01.909</Modified>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\amDev\Images\LargeTile.scale-100.png">
+      <PackagePath>Images\LargeTile.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-03-08T03:41:55.906</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\amDev\Images\LargeTile.scale-125.png">
+      <PackagePath>Images\LargeTile.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-03-08T03:41:55.952</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\amDev\Images\LargeTile.scale-150.png">
+      <PackagePath>Images\LargeTile.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-03-08T03:41:56.018</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\amDev\Images\LargeTile.scale-200.png">
+      <PackagePath>Images\LargeTile.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-03-08T03:41:56.120</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\amDev\Images\LargeTile.scale-400.png">
+      <PackagePath>Images\LargeTile.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-03-08T03:41:56.469</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\amDev\Images\LockScreenLogo.scale-200.png">
+      <PackagePath>Images\LockScreenLogo.scale-200.png</PackagePath>
+      <Modified>2018-11-05T16:33:56.335</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\amDev\Images\SmallTile.scale-100.png">
+      <PackagePath>Images\SmallTile.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-03-08T03:41:55.235</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\amDev\Images\SmallTile.scale-125.png">
+      <PackagePath>Images\SmallTile.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-03-08T03:41:55.249</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\amDev\Images\SmallTile.scale-150.png">
+      <PackagePath>Images\SmallTile.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-03-08T03:41:55.264</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\amDev\Images\SmallTile.scale-200.png">
+      <PackagePath>Images\SmallTile.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-03-08T03:41:55.288</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\amDev\Images\SmallTile.scale-400.png">
+      <PackagePath>Images\SmallTile.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-03-08T03:41:55.324</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\amDev\Images\SplashScreen.scale-100.png">
+      <PackagePath>Images\SplashScreen.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-03-08T03:41:56.797</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\amDev\Images\SplashScreen.scale-125.png">
+      <PackagePath>Images\SplashScreen.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-03-08T03:41:56.867</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\amDev\Images\SplashScreen.scale-150.png">
+      <PackagePath>Images\SplashScreen.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-03-08T03:41:56.974</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\amDev\Images\SplashScreen.scale-200.png">
+      <PackagePath>Images\SplashScreen.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-03-08T03:41:57.121</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\amDev\Images\SplashScreen.scale-400.png">
+      <PackagePath>Images\SplashScreen.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-03-08T03:41:57.599</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\amDev\Images\Square150x150Logo.scale-100.png">
+      <PackagePath>Images\Square150x150Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-03-08T03:41:55.346</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\amDev\Images\Square150x150Logo.scale-125.png">
+      <PackagePath>Images\Square150x150Logo.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-03-08T03:41:55.374</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\amDev\Images\Square150x150Logo.scale-150.png">
+      <PackagePath>Images\Square150x150Logo.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-03-08T03:41:55.402</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\amDev\Images\Square150x150Logo.scale-200.png">
+      <PackagePath>Images\Square150x150Logo.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-03-08T03:41:55.442</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\amDev\Images\Square150x150Logo.scale-400.png">
+      <PackagePath>Images\Square150x150Logo.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-03-08T03:41:55.535</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\amDev\Images\Square44x44Logo.altform-unplated_targetsize-16.png">
+      <PackagePath>Images\Square44x44Logo.altform-unplated_targetsize-16.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-03-08T03:41:56.663</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\amDev\Images\Square44x44Logo.altform-unplated_targetsize-256.png">
+      <PackagePath>Images\Square44x44Logo.altform-unplated_targetsize-256.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-03-08T03:41:56.743</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\amDev\Images\Square44x44Logo.altform-unplated_targetsize-32.png">
+      <PackagePath>Images\Square44x44Logo.altform-unplated_targetsize-32.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-03-08T03:41:56.693</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\amDev\Images\Square44x44Logo.altform-unplated_targetsize-48.png">
+      <PackagePath>Images\Square44x44Logo.altform-unplated_targetsize-48.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-03-08T03:41:56.709</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\amDev\Images\Square44x44Logo.scale-100.png">
+      <PackagePath>Images\Square44x44Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-03-08T03:41:56.484</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\amDev\Images\Square44x44Logo.scale-125.png">
+      <PackagePath>Images\Square44x44Logo.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-03-08T03:41:56.498</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\amDev\Images\Square44x44Logo.scale-150.png">
+      <PackagePath>Images\Square44x44Logo.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-03-08T03:41:56.513</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\amDev\Images\Square44x44Logo.scale-200.png">
+      <PackagePath>Images\Square44x44Logo.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-03-08T03:41:56.527</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\amDev\Images\Square44x44Logo.scale-400.png">
+      <PackagePath>Images\Square44x44Logo.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-03-08T03:41:56.556</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\amDev\Images\Square44x44Logo.targetsize-16.png">
+      <PackagePath>Images\Square44x44Logo.targetsize-16.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-03-08T03:41:56.570</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\amDev\Images\Square44x44Logo.targetsize-24.png">
+      <PackagePath>Images\Square44x44Logo.targetsize-24.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-03-08T03:41:56.583</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\amDev\Images\Square44x44Logo.targetsize-24_altform-unplated.png">
+      <PackagePath>Images\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-03-08T03:41:56.677</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\amDev\Images\Square44x44Logo.targetsize-256.png">
+      <PackagePath>Images\Square44x44Logo.targetsize-256.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-03-08T03:41:56.645</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\amDev\Images\Square44x44Logo.targetsize-32.png">
+      <PackagePath>Images\Square44x44Logo.targetsize-32.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-03-08T03:41:56.596</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\amDev\Images\Square44x44Logo.targetsize-48.png">
+      <PackagePath>Images\Square44x44Logo.targetsize-48.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-03-08T03:41:56.608</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\amDev\Images\StoreLogo.scale-100.png">
+      <PackagePath>Images\StoreLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-03-08T03:41:57.613</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\amDev\Images\StoreLogo.scale-125.png">
+      <PackagePath>Images\StoreLogo.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-03-08T03:41:57.626</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\amDev\Images\StoreLogo.scale-150.png">
+      <PackagePath>Images\StoreLogo.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-03-08T03:41:57.641</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\amDev\Images\StoreLogo.scale-200.png">
+      <PackagePath>Images\StoreLogo.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-03-08T03:41:57.657</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\amDev\Images\StoreLogo.scale-400.png">
+      <PackagePath>Images\StoreLogo.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-03-08T03:41:57.682</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\amDev\Images\Wide310x150Logo.scale-100.png">
+      <PackagePath>Images\Wide310x150Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-03-08T03:41:55.570</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\amDev\Images\Wide310x150Logo.scale-125.png">
+      <PackagePath>Images\Wide310x150Logo.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-03-08T03:41:55.604</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\amDev\Images\Wide310x150Logo.scale-150.png">
+      <PackagePath>Images\Wide310x150Logo.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-03-08T03:41:55.699</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\amDev\Images\Wide310x150Logo.scale-200.png">
+      <PackagePath>Images\Wide310x150Logo.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-03-08T03:41:55.753</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\amDev\Images\Wide310x150Logo.scale-400.png">
+      <PackagePath>Images\Wide310x150Logo.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-03-08T03:41:55.873</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\amDev\bin\AnyCPU\Release\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+      <Modified>2019-04-06T00:07:56.130</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\Microsoft.NET.Build.Extensions\net471\lib\System.Data.Common.dll">
+      <PackagePath>amSparkDesk\System.Data.Common.dll</PackagePath>
+      <Modified>2019-04-03T01:06:38.566</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\Microsoft.NET.Build.Extensions\net471\lib\System.Diagnostics.StackTrace.dll">
+      <PackagePath>amSparkDesk\System.Diagnostics.StackTrace.dll</PackagePath>
+      <Modified>2019-04-03T01:06:38.566</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\Microsoft.NET.Build.Extensions\net471\lib\System.Diagnostics.Tracing.dll">
+      <PackagePath>amSparkDesk\System.Diagnostics.Tracing.dll</PackagePath>
+      <Modified>2019-04-03T01:06:38.566</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\Microsoft.NET.Build.Extensions\net471\lib\System.Globalization.Extensions.dll">
+      <PackagePath>amSparkDesk\System.Globalization.Extensions.dll</PackagePath>
+      <Modified>2019-04-03T01:06:38.566</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\Microsoft.NET.Build.Extensions\net471\lib\System.IO.Compression.dll">
+      <PackagePath>amSparkDesk\System.IO.Compression.dll</PackagePath>
+      <Modified>2019-04-03T01:06:38.566</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\Microsoft.NET.Build.Extensions\net471\lib\System.Net.Http.dll">
+      <PackagePath>amSparkDesk\System.Net.Http.dll</PackagePath>
+      <Modified>2019-04-03T01:06:38.566</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\Microsoft.NET.Build.Extensions\net471\lib\System.Net.Sockets.dll">
+      <PackagePath>amSparkDesk\System.Net.Sockets.dll</PackagePath>
+      <Modified>2019-04-03T01:06:38.566</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\Microsoft.NET.Build.Extensions\net471\lib\System.Runtime.Serialization.Primitives.dll">
+      <PackagePath>amSparkDesk\System.Runtime.Serialization.Primitives.dll</PackagePath>
+      <Modified>2019-04-03T01:06:38.566</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\Microsoft.NET.Build.Extensions\net471\lib\System.Security.Cryptography.Algorithms.dll">
+      <PackagePath>amSparkDesk\System.Security.Cryptography.Algorithms.dll</PackagePath>
+      <Modified>2019-04-03T01:06:38.566</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\Microsoft.NET.Build.Extensions\net471\lib\System.Security.SecureString.dll">
+      <PackagePath>amSparkDesk\System.Security.SecureString.dll</PackagePath>
+      <Modified>2019-04-03T01:06:38.566</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\Microsoft.NET.Build.Extensions\net471\lib\System.Threading.Overlapped.dll">
+      <PackagePath>amSparkDesk\System.Threading.Overlapped.dll</PackagePath>
+      <Modified>2019-04-03T01:06:38.566</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\Microsoft.NET.Build.Extensions\net471\lib\System.Xml.XPath.XDocument.dll">
+      <PackagePath>amSparkDesk\System.Xml.XPath.XDocument.dll</PackagePath>
+      <Modified>2019-04-03T01:06:38.566</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\Albert\bin\Release\netstandard2.0\Albert.dll">
+      <PackagePath>amSparkDesk\Albert.dll</PackagePath>
+      <Modified>2019-04-04T21:13:02.709</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\AlbertWPF\bin\Release\AlbertWPF.dll">
+      <PackagePath>amSparkDesk\AlbertWPF.dll</PackagePath>
+      <Modified>2019-04-05T19:33:46.404</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\packages\AvalonEdit.5.0.4\lib\Net40\ICSharpCode.AvalonEdit.dll">
+      <PackagePath>amSparkDesk\ICSharpCode.AvalonEdit.dll</PackagePath>
+      <Modified>2017-10-15T01:52:30.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\packages\Microsoft.Toolkit.Wpf.UI.Controls.WebView.5.1.0\lib\net462\Microsoft.Toolkit.Wpf.UI.Controls.WebView.dll">
+      <PackagePath>amSparkDesk\Microsoft.Toolkit.Wpf.UI.Controls.WebView.dll</PackagePath>
+      <Modified>2019-02-12T04:54:08.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\packages\Microsoft.Toolkit.Wpf.UI.XamlHost.5.1.0\lib\net462\Microsoft.Toolkit.Wpf.UI.XamlHost.dll">
+      <PackagePath>amSparkDesk\Microsoft.Toolkit.Wpf.UI.XamlHost.dll</PackagePath>
+      <Modified>2019-02-12T04:54:12.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\packages\Extended.Wpf.Toolkit.3.4.0\lib\net40\Xceed.Wpf.AvalonDock.dll">
+      <PackagePath>amSparkDesk\Xceed.Wpf.AvalonDock.dll</PackagePath>
+      <Modified>2018-06-22T14:02:44.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\packages\Extended.Wpf.Toolkit.3.4.0\lib\net40\Xceed.Wpf.AvalonDock.Themes.Aero.dll">
+      <PackagePath>amSparkDesk\Xceed.Wpf.AvalonDock.Themes.Aero.dll</PackagePath>
+      <Modified>2018-06-22T14:02:44.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\packages\Extended.Wpf.Toolkit.3.4.0\lib\net40\Xceed.Wpf.AvalonDock.Themes.Metro.dll">
+      <PackagePath>amSparkDesk\Xceed.Wpf.AvalonDock.Themes.Metro.dll</PackagePath>
+      <Modified>2018-06-22T14:02:44.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\packages\Extended.Wpf.Toolkit.3.4.0\lib\net40\Xceed.Wpf.AvalonDock.Themes.VS2010.dll">
+      <PackagePath>amSparkDesk\Xceed.Wpf.AvalonDock.Themes.VS2010.dll</PackagePath>
+      <Modified>2018-06-22T14:02:44.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\packages\Extended.Wpf.Toolkit.3.4.0\lib\net40\Xceed.Wpf.DataGrid.dll">
+      <PackagePath>amSparkDesk\Xceed.Wpf.DataGrid.dll</PackagePath>
+      <Modified>2018-06-22T14:02:46.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\packages\Extended.Wpf.Toolkit.3.4.0\lib\net40\Xceed.Wpf.Toolkit.dll">
+      <PackagePath>amSparkDesk\Xceed.Wpf.Toolkit.dll</PackagePath>
+      <Modified>2018-06-22T14:02:46.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\packages\Extended.Wpf.Toolkit.3.4.0\lib\net40\de\Xceed.Wpf.AvalonDock.resources.dll">
+      <PackagePath>amSparkDesk\de\Xceed.Wpf.AvalonDock.resources.dll</PackagePath>
+      <Modified>2018-06-22T14:02:44.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\packages\Extended.Wpf.Toolkit.3.4.0\lib\net40\es\Xceed.Wpf.AvalonDock.resources.dll">
+      <PackagePath>amSparkDesk\es\Xceed.Wpf.AvalonDock.resources.dll</PackagePath>
+      <Modified>2018-06-22T14:02:44.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\packages\Extended.Wpf.Toolkit.3.4.0\lib\net40\fr\Xceed.Wpf.AvalonDock.resources.dll">
+      <PackagePath>amSparkDesk\fr\Xceed.Wpf.AvalonDock.resources.dll</PackagePath>
+      <Modified>2018-06-22T14:02:44.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\packages\Extended.Wpf.Toolkit.3.4.0\lib\net40\hu\Xceed.Wpf.AvalonDock.resources.dll">
+      <PackagePath>amSparkDesk\hu\Xceed.Wpf.AvalonDock.resources.dll</PackagePath>
+      <Modified>2018-06-22T14:02:44.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\packages\Extended.Wpf.Toolkit.3.4.0\lib\net40\it\Xceed.Wpf.AvalonDock.resources.dll">
+      <PackagePath>amSparkDesk\it\Xceed.Wpf.AvalonDock.resources.dll</PackagePath>
+      <Modified>2018-06-22T14:02:44.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\packages\Extended.Wpf.Toolkit.3.4.0\lib\net40\pt-BR\Xceed.Wpf.AvalonDock.resources.dll">
+      <PackagePath>amSparkDesk\pt-BR\Xceed.Wpf.AvalonDock.resources.dll</PackagePath>
+      <Modified>2018-06-22T14:02:44.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\packages\Extended.Wpf.Toolkit.3.4.0\lib\net40\ro\Xceed.Wpf.AvalonDock.resources.dll">
+      <PackagePath>amSparkDesk\ro\Xceed.Wpf.AvalonDock.resources.dll</PackagePath>
+      <Modified>2018-06-22T14:02:44.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\packages\Extended.Wpf.Toolkit.3.4.0\lib\net40\ru\Xceed.Wpf.AvalonDock.resources.dll">
+      <PackagePath>amSparkDesk\ru\Xceed.Wpf.AvalonDock.resources.dll</PackagePath>
+      <Modified>2018-06-22T14:02:44.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\packages\Extended.Wpf.Toolkit.3.4.0\lib\net40\sv\Xceed.Wpf.AvalonDock.resources.dll">
+      <PackagePath>amSparkDesk\sv\Xceed.Wpf.AvalonDock.resources.dll</PackagePath>
+      <Modified>2018-06-22T14:02:44.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\packages\Extended.Wpf.Toolkit.3.4.0\lib\net40\zh-Hans\Xceed.Wpf.AvalonDock.resources.dll">
+      <PackagePath>amSparkDesk\zh-Hans\Xceed.Wpf.AvalonDock.resources.dll</PackagePath>
+      <Modified>2018-06-22T14:02:44.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\amSparkDesk\bin\Release\amSparkDesk.exe">
+      <PackagePath>amSparkDesk\amSparkDesk.exe</PackagePath>
+      <Modified>2019-04-06T00:07:49.480</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\amSparkDesk\bin\Release\amSparkDesk.exe.config">
+      <PackagePath>amSparkDesk\amSparkDesk.exe.config</PackagePath>
+      <Modified>2019-03-18T00:04:46.953</Modified>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+</Project>

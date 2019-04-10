@@ -1,0 +1,137 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\AMB\\Git\\amPowerSoftware\\amPowerSoftware\\AlbertUWP\\AlbertUWP.csproj": {}
+  },
+  "projects": {
+    "C:\\AMB\\Git\\amPowerSoftware\\amPowerSoftware\\AlbertUWP\\AlbertUWP.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\AMB\\Git\\amPowerSoftware\\amPowerSoftware\\AlbertUWP\\AlbertUWP.csproj",
+        "projectName": "AlbertUWP",
+        "projectPath": "C:\\AMB\\Git\\amPowerSoftware\\amPowerSoftware\\AlbertUWP\\AlbertUWP.csproj",
+        "packagesPath": "C:\\Users\\alxp2\\.nuget\\packages\\",
+        "outputPath": "C:\\AMB\\Git\\amPowerSoftware\\amPowerSoftware\\AlbertUWP\\obj\\",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "fallbackFolders": [
+          "C:\\ProgramData\\Xamarin\\NuGet\\",
+          "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\alxp2\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "uap10.0.16299"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "uap10.0.16299": {
+            "projectReferences": {
+              "C:\\AMB\\Git\\amPowerSoftware\\amPowerSoftware\\Albert\\Albert.csproj": {
+                "projectPath": "C:\\AMB\\Git\\amPowerSoftware\\amPowerSoftware\\Albert\\Albert.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "uap10.0.16299": {
+          "dependencies": {
+            "Microsoft.NETCore.UniversalWindowsPlatform": {
+              "target": "Package",
+              "version": "[6.1.7, )"
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      },
+      "runtimes": {
+        "win10-arm": {
+          "#import": []
+        },
+        "win10-arm-aot": {
+          "#import": []
+        },
+        "win10-arm64-aot": {
+          "#import": []
+        },
+        "win10-x64": {
+          "#import": []
+        },
+        "win10-x64-aot": {
+          "#import": []
+        },
+        "win10-x86": {
+          "#import": []
+        },
+        "win10-x86-aot": {
+          "#import": []
+        }
+      }
+    },
+    "C:\\AMB\\Git\\amPowerSoftware\\amPowerSoftware\\Albert\\Albert.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\AMB\\Git\\amPowerSoftware\\amPowerSoftware\\Albert\\Albert.csproj",
+        "projectName": "Albert",
+        "projectPath": "C:\\AMB\\Git\\amPowerSoftware\\amPowerSoftware\\Albert\\Albert.csproj",
+        "packagesPath": "C:\\Users\\alxp2\\.nuget\\packages\\",
+        "outputPath": "C:\\AMB\\Git\\amPowerSoftware\\amPowerSoftware\\Albert\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\ProgramData\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\alxp2\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    }
+  }
+}

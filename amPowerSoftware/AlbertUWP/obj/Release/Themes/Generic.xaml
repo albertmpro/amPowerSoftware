@@ -1,0 +1,637 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:runtime="using:Albert.Standard.Runtime">
+
+	<Style TargetType="runtime:ADock">
+		<Setter Property="Template">
+			<Setter.Value>
+				<ControlTemplate TargetType="runtime:ADock">
+					<Border>
+						<Grid>
+							<Grid.RowDefinitions>
+								<RowDefinition Height="auto" />
+								<RowDefinition />
+								<RowDefinition Height="auto" />
+							</Grid.RowDefinitions>
+							<Grid.ColumnDefinitions>
+								<ColumnDefinition Width="auto" />
+								<ColumnDefinition  />
+								<ColumnDefinition Width="auto" />
+							</Grid.ColumnDefinitions>
+							<!-- TopBar-->
+							<ContentPresenter Content="{TemplateBinding TopBar}" Visibility="{TemplateBinding TopBarVisibility}" Grid.ColumnSpan="3" Grid.Row="0" />
+							<!-- LeftBar-->
+							<ContentPresenter Content="{TemplateBinding LeftBar}" Visibility="{TemplateBinding LeftBarVisibility}" Grid.Column="0" Grid.Row="1" />
+							<!-- Content -->
+							<Viewbox Stretch="{TemplateBinding Stretch}" Grid.Row="1" Grid.Column="1" >
+								<Grid>
+									<ContentPresenter Margin="{TemplateBinding Zoom}" Content="{TemplateBinding Content }" />
+								</Grid>
+							</Viewbox>
+
+							<!-- RightBar-->
+
+							<ContentPresenter Content="{TemplateBinding RightBar}" Visibility="{TemplateBinding RightBarVisibility}" Grid.Column="2" Grid.Row="1" />
+							<!-- BottomBar-->
+							<ContentPresenter Content="{TemplateBinding BottomBar}" Visibility="{TemplateBinding BottomBarVisibility}" Grid.ColumnSpan="3" Grid.Row="2" />
+
+
+						</Grid>
+					</Border>
+				</ControlTemplate>
+			</Setter.Value>
+		</Setter>
+	</Style>
+
+
+
+	<Style TargetType="runtime:ZoomBox">
+		<Setter Property="Template">
+			<Setter.Value>
+				<ControlTemplate TargetType="runtime:ZoomBox">
+					<Border BorderBrush="{TemplateBinding BorderBrush}" Background="{TemplateBinding Background}" BorderThickness="{TemplateBinding BorderThickness}">
+						<Viewbox Stretch="{TemplateBinding Stretch}">
+							<Grid ScrollViewer.IsHorizontalRailEnabled="True" ScrollViewer.IsVerticalScrollChainingEnabled="True">
+								<ContentPresenter Margin="{TemplateBinding Zoom}" Content="{TemplateBinding Content}" />
+
+							</Grid>
+						</Viewbox>
+					</Border>
+				</ControlTemplate>
+			</Setter.Value>
+		</Setter>
+	</Style>
+
+	<Style TargetType="runtime:ThemeControl">
+		<Setter Property="Template">
+			<Setter.Value>
+
+				<ControlTemplate TargetType="runtime:ThemeControl">
+					<Border Background="{TemplateBinding Background}" CornerRadius="{TemplateBinding CornerRadius}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}">
+						<Grid>
+
+							<!--Main Content-->
+							<ContentPresenter Content="{TemplateBinding Content}" Grid.Row="1" Grid.Column="1" />
+
+
+
+
+
+
+						</Grid>
+					</Border>
+				</ControlTemplate>
+			</Setter.Value>
+
+		</Setter>
+
+	</Style>
+
+	<Style TargetType="runtime:HubPart">
+		<Setter Target="Margin" Value="3" />
+		<Setter Target="Template">
+			<Setter.Value>
+				<ControlTemplate TargetType="runtime:HubPart">
+					<Grid>
+						<Grid.RowDefinitions>
+							<RowDefinition Height="auto" />
+							<RowDefinition />
+							<RowDefinition Height="auto" />
+						</Grid.RowDefinitions>
+						
+						<!-- Header -->
+						<ContentPresenter Grid.Row="0" Content="{TemplateBinding Header}" />
+						<!-- Main Content -->
+						<ContentPresenter Grid.Row="1" Content="{TemplateBinding Content}" />
+						<!-- Footer -->
+						<ContentPresenter Grid.Row="2" Content="{TemplateBinding Footer}" />
+
+
+
+
+
+					</Grid>
+				</ControlTemplate>
+			</Setter.Value>
+		</Setter>
+
+	</Style>
+
+
+	<Style TargetType="runtime:HamburgerButton">
+
+		<Setter Property="Background" Value="Transparent"/>
+		<Setter Property="Padding" Value="3"/>
+		<Setter Property="HorizontalAlignment" Value="Stretch"/>
+		<Setter Property="VerticalAlignment" Value="Center"/>
+		<Setter Property="HorizontalContentAlignment" Value="Left"/>
+		<Setter Property="VerticalContentAlignment" Value="Center"/>
+		<Setter Property="FontSize" Value="26" />
+		<Setter Property="Template">
+			<Setter.Value>
+				<ControlTemplate TargetType="runtime:HamburgerButton">
+					<runtime:ChromeBase x:Name="chrome" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" BackgroundA="{TemplateBinding BackgroundPointerOver}" BackgroundB="{TemplateBinding BackgroundPressed}" Background="{TemplateBinding Background}">
+						<VisualStateManager.VisualStateGroups>
+							<VisualStateGroup x:Name="CommonStates">
+								<VisualState x:Name="Normal"/>
+								<VisualState x:Name="PointerOver">
+									<Storyboard>
+										<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="Background" Storyboard.TargetName="BackgroundGrid">
+											<DiscreteObjectKeyFrame KeyTime="0" Value="{Binding ElementName=chrome, Path=BackgroundA}"/>
+										</ObjectAnimationUsingKeyFrames>
+									</Storyboard>
+								</VisualState>
+								<VisualState x:Name="Pressed">
+									<Storyboard>
+										<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="Background" Storyboard.TargetName="BackgroundGrid">
+											<DiscreteObjectKeyFrame KeyTime="0" Value="{Binding ElementName=chrome, Path=BackgroundB}"/>
+										</ObjectAnimationUsingKeyFrames>
+									</Storyboard>
+								</VisualState>
+								<VisualState x:Name="Disabled" />
+							</VisualStateGroup>
+							<VisualStateGroup x:Name="CheckStates">
+								<VisualState x:Name="Checked"/>
+								<VisualState x:Name="Unchecked"/>
+								<VisualState x:Name="Indeterminate"/>
+							</VisualStateGroup>
+							<VisualStateGroup x:Name="FocusStates">
+								<VisualState x:Name="Focused"/>
+								<VisualState x:Name="Unfocused"/>
+								<VisualState x:Name="PointerFocused"/>
+							</VisualStateGroup>
+						</VisualStateManager.VisualStateGroups>
+
+						<StackPanel  Orientation="Horizontal"  Name="BackgroundGrid" Background="Transparent" VerticalAlignment="Stretch">
+							<Image x:Name="imgIcon" Visibility="{TemplateBinding ShowImage}" Height="40" Width="40" Source="{TemplateBinding IconSource}" Stretch="{TemplateBinding IconStretch}" />
+							<TextBlock x:Name="tbSymbol" FontSize="{TemplateBinding FontSize}" Visibility="{TemplateBinding ShowSymbol}" Height="38" Foreground="{TemplateBinding Foreground}" Text="{TemplateBinding Symbol}" FontFamily="{TemplateBinding SymbolFontFamily}" 
+						 Margin="5,8,5,5" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+							<TextBlock  x:Name="ContentPresenter" FontSize="{TemplateBinding FontSize}" Text="{TemplateBinding Label}" HorizontalAlignment="Left" Margin="5,0,5,10"    VerticalAlignment="Center"/>
+						</StackPanel>
+					</runtime:ChromeBase>
+				</ControlTemplate>
+			</Setter.Value>
+		</Setter>
+
+
+	</Style>
+
+
+	<Style TargetType="runtime:ChromeBase">
+
+		<Setter Property="Template" >
+			<Setter.Value>
+				<ControlTemplate TargetType="runtime:ChromeBase">
+
+					<Border Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" CornerRadius="{TemplateBinding CornerRadius}">
+						<ContentPresenter Content="{TemplateBinding Content}" Margin="{TemplateBinding Padding}" />
+					</Border>
+				</ControlTemplate>
+			</Setter.Value>
+
+		</Setter>
+
+
+	</Style>
+
+	<!-- Style for the PushButton-->
+	<Style TargetType="runtime:PushButton">
+		<Setter Property="BackgroundPressed" Value="Black" />
+		<Setter Property="BorderBrushPressed" Value="White" />
+		<Setter Property="ForegroundPressed" Value="White" />
+		<Setter Property="BackgroundPointerOver" Value="Gray" />
+		<Setter Property="ForegroundPointerOver" Value="Black" />
+		<Setter Property="Background" Value="#333" />
+		<Setter Property="BorderBrush" Value="White" />
+		<Setter Property="Foreground" Value="White" />
+		<Setter Property="BorderThickness" Value=".65" />
+
+		<Setter Property="Margin" Value="4" />
+		<Setter Property="FontFamily" Value="Segoe WP Light" />
+		<Setter Property="FontSize" Value="24" />
+		<Setter Property="Padding" Value="10,3,10,5" />
+		<Setter Property="Height" Value="100" />
+		<Setter Property="CornerRadius" Value="9" />
+		<Setter Property="Template">
+			<Setter.Value>
+				<ControlTemplate TargetType="runtime:PushButton">
+
+
+					<Grid Background="Transparent">
+
+						<VisualStateManager.VisualStateGroups>
+							<VisualStateGroup x:Name="CommonStates">
+								<VisualState x:Name="Normal" />
+								<VisualState x:Name="PointerOver">
+									<Storyboard>
+										<ObjectAnimationUsingKeyFrames Storyboard.TargetName="ButtonBackground"
+                                                                   Storyboard.TargetProperty="Background">
+											<DiscreteObjectKeyFrame KeyTime="0" Value="{Binding ElementName=ButtonBackground,Path=BackgroundA}" />
+										</ObjectAnimationUsingKeyFrames>
+										<ObjectAnimationUsingKeyFrames Storyboard.TargetName="ContentPresenter"
+                                                                   Storyboard.TargetProperty="Foreground">
+											<DiscreteObjectKeyFrame KeyTime="0" Value="{Binding ElementName=ButtonBackground, Path=ForegroundA}" />
+										</ObjectAnimationUsingKeyFrames>
+										<ObjectAnimationUsingKeyFrames Storyboard.TargetName="ButtonBackground" Storyboard.TargetProperty="BorderBrush">
+											<DiscreteObjectKeyFrame KeyTime="0" Value="{Binding ElementName=ButtonBackground, Path=BorderBrushA}" />
+										</ObjectAnimationUsingKeyFrames>
+									</Storyboard>
+								</VisualState>
+								<VisualState x:Name="Pressed">
+									<Storyboard>
+										<ObjectAnimationUsingKeyFrames Storyboard.TargetName="ButtonBackground"
+                                                                   Storyboard.TargetProperty="Background">
+											<DiscreteObjectKeyFrame KeyTime="0" Value="{Binding ElementName=ButtonBackground,Path=BackgroundB}" />
+										</ObjectAnimationUsingKeyFrames>
+										<ObjectAnimationUsingKeyFrames Storyboard.TargetName="ContentPresenter"
+                                                                   Storyboard.TargetProperty="Foreground">
+											<DiscreteObjectKeyFrame KeyTime="0" Value="{Binding ElementName=ButtonBackground, Path=ForegroundB}" />
+										</ObjectAnimationUsingKeyFrames>
+										<ObjectAnimationUsingKeyFrames Storyboard.TargetName="ButtonBackground" Storyboard.TargetProperty="BorderBrush">
+											<DiscreteObjectKeyFrame KeyTime="0" Value="{Binding ElementName=ButtonBackground, Path=BorderBrushB}" />
+										</ObjectAnimationUsingKeyFrames>
+									</Storyboard>
+								</VisualState>
+								<!--<VisualState x:Name="Disabled">
+									<Storyboard>
+										<ObjectAnimationUsingKeyFrames Storyboard.TargetName="Border"
+                                                                   Storyboard.TargetProperty="Background">
+											<DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource ButtonDisabledBackgroundThemeBrush}" />
+										</ObjectAnimationUsingKeyFrames>
+										<ObjectAnimationUsingKeyFrames Storyboard.TargetName="Border"
+                                                                   Storyboard.TargetProperty="BorderBrush">
+											<DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource ButtonDisabledBorderThemeBrush}" />
+										</ObjectAnimationUsingKeyFrames>
+										<ObjectAnimationUsingKeyFrames Storyboard.TargetName="ContentPresenter"
+                                                                   Storyboard.TargetProperty="Foreground">
+											<DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource ButtonDisabledForegroundThemeBrush}" />
+										</ObjectAnimationUsingKeyFrames>
+									</Storyboard>
+								</VisualState>-->
+							</VisualStateGroup>
+							<VisualStateGroup x:Name="FocusStates">
+								<VisualState x:Name="Focused" />
+								<VisualState x:Name="Unfocused" />
+								<VisualState x:Name="PointerFocused" />
+							</VisualStateGroup>
+						</VisualStateManager.VisualStateGroups>
+
+						<runtime:ChromeBase x:Name="ButtonBackground" BackgroundA="{TemplateBinding BackgroundPointerOver}" BackgroundB="{TemplateBinding BackgroundPressed}" BorderBrushA="{TemplateBinding BorderBrushPointerOver}" BorderBrushB="{TemplateBinding BorderBrushPressed}" ForegroundA="{TemplateBinding ForegroundPointerOver}" ForegroundB="{TemplateBinding ForegroundPressed}"  BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" Background="{TemplateBinding Background}" CornerRadius="{TemplateBinding CornerRadius}" Margin="3">
+							<Grid>
+
+
+
+								<ContentPresenter  Foreground="{TemplateBinding Foreground}" x:Name="ContentPresenter"						
+										Content="{TemplateBinding Content}"
+                                          ContentTransitions="{TemplateBinding ContentTransitions}"
+                                          ContentTemplate="{TemplateBinding ContentTemplate}"
+                                          Margin="{TemplateBinding Padding}"
+                                          HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
+                                          VerticalAlignment="{TemplateBinding VerticalContentAlignment}" 
+                                           />
+
+
+
+							</Grid>
+						</runtime:ChromeBase>
+					</Grid>
+
+				</ControlTemplate>
+			</Setter.Value>
+		</Setter>
+
+
+
+
+	</Style>
+
+	<!-- Style for the OptionButton-->
+	<Style TargetType="runtime:OptionButton">
+		<Setter Property="BackgroundChecked" Value="Black" />
+		<Setter Property="BorderBrushChecked" Value="White" />
+		<Setter Property="ForegroundChecked" Value="White" />
+		<Setter Property="BackgroundPointerOver" Value="Gray" />
+		<Setter Property="ForegroundPointerOver" Value="Black" />
+		<Setter Property="Background" Value="#333" />
+		<Setter Property="BorderBrush" Value="White" />
+		<Setter Property="Foreground" Value="White" />
+		<Setter Property="BorderThickness" Value=".65" />
+
+		<Setter Property="Margin" Value="4" />
+		<Setter Property="FontFamily" Value="Segoe WP Light" />
+		<Setter Property="FontSize" Value="24" />
+		<Setter Property="Padding" Value="10,3,10,5" />
+		<Setter Property="Height" Value="50" />
+		<Setter Property="Width" Value="50" />
+		<Setter Property="CornerRadius" Value="9" />
+		<Setter Property="Template">
+			<Setter.Value>
+				<ControlTemplate TargetType="runtime:OptionButton">
+
+
+					<Grid Background="Transparent">
+
+						<VisualStateManager.VisualStateGroups>
+							<VisualStateGroup x:Name="CommonStates">
+								<VisualState x:Name="Normal" />
+								<VisualState x:Name="PointerOver">
+									<Storyboard>
+										<ObjectAnimationUsingKeyFrames Storyboard.TargetName="ButtonBackground"
+                                                                   Storyboard.TargetProperty="Background">
+											<DiscreteObjectKeyFrame KeyTime="0" Value="{Binding ElementName=ButtonBackground,Path=BackgroundA}" />
+										</ObjectAnimationUsingKeyFrames>
+										<ObjectAnimationUsingKeyFrames Storyboard.TargetName="ContentPresenter"
+                                                                   Storyboard.TargetProperty="Foreground">
+											<DiscreteObjectKeyFrame KeyTime="0" Value="{Binding ElementName=ButtonBackground, Path=ForegroundA}" />
+										</ObjectAnimationUsingKeyFrames>
+										<ObjectAnimationUsingKeyFrames Storyboard.TargetName="ButtonBackground" Storyboard.TargetProperty="BorderBrush">
+											<DiscreteObjectKeyFrame KeyTime="0" Value="{Binding ElementName=ButtonBackground, Path=BorderBrushA}" />
+										</ObjectAnimationUsingKeyFrames>
+									</Storyboard>
+								</VisualState>
+								<VisualState x:Name="Pressed">
+
+								</VisualState>
+								<!--<VisualState x:Name="Disabled">
+									<Storyboard>
+										<ObjectAnimationUsingKeyFrames Storyboard.TargetName="Border"
+                                                                   Storyboard.TargetProperty="Background">
+											<DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource ButtonDisabledBackgroundThemeBrush}" />
+										</ObjectAnimationUsingKeyFrames>
+										<ObjectAnimationUsingKeyFrames Storyboard.TargetName="Border"
+                                                                   Storyboard.TargetProperty="BorderBrush">
+											<DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource ButtonDisabledBorderThemeBrush}" />
+										</ObjectAnimationUsingKeyFrames>
+										<ObjectAnimationUsingKeyFrames Storyboard.TargetName="ContentPresenter"
+                                                                   Storyboard.TargetProperty="Foreground">
+											<DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource ButtonDisabledForegroundThemeBrush}" />
+										</ObjectAnimationUsingKeyFrames>
+									</Storyboard>
+								</VisualState>-->
+							</VisualStateGroup>
+							<VisualStateGroup x:Name="CheckStates">
+								<VisualState x:Name="Checked">
+									<Storyboard>
+										<ObjectAnimationUsingKeyFrames Storyboard.TargetName="ButtonBackground"
+                                                                   Storyboard.TargetProperty="Background">
+											<DiscreteObjectKeyFrame KeyTime="0" Value="{Binding ElementName=ButtonBackground,Path=BackgroundB}" />
+										</ObjectAnimationUsingKeyFrames>
+										<ObjectAnimationUsingKeyFrames Storyboard.TargetName="ContentPresenter"
+                                                                   Storyboard.TargetProperty="Foreground">
+											<DiscreteObjectKeyFrame KeyTime="0" Value="{Binding ElementName=ButtonBackground, Path=ForegroundB}" />
+										</ObjectAnimationUsingKeyFrames>
+										<ObjectAnimationUsingKeyFrames Storyboard.TargetName="ButtonBackground" Storyboard.TargetProperty="BorderBrush">
+											<DiscreteObjectKeyFrame KeyTime="0" Value="{Binding ElementName=ButtonBackground, Path=BorderBrushB}" />
+										</ObjectAnimationUsingKeyFrames>
+									</Storyboard>
+								</VisualState>
+								<VisualState x:Name="Unchecked"/>
+								<VisualState x:Name="Indeterminate"/>
+							</VisualStateGroup>
+
+							<VisualStateGroup x:Name="FocusStates">
+								<VisualState x:Name="Focused" />
+								<VisualState x:Name="Unfocused" />
+								<VisualState x:Name="PointerFocused" />
+							</VisualStateGroup>
+						</VisualStateManager.VisualStateGroups>
+
+						<runtime:ChromeBase x:Name="ButtonBackground" BackgroundA="{TemplateBinding BackgroundPointerOver}" BackgroundB="{TemplateBinding BackgroundChecked}" BorderBrushA="{TemplateBinding BorderBrushPointerOver}" BorderBrushB="{TemplateBinding BorderBrushChecked}" ForegroundA="{TemplateBinding ForegroundPointerOver}" ForegroundB="{TemplateBinding ForegroundChecked}"  BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" Background="{TemplateBinding Background}" CornerRadius="{TemplateBinding CornerRadius}" Margin="3">
+							<Grid>
+
+
+
+								<ContentPresenter  Foreground="{TemplateBinding Foreground}" x:Name="ContentPresenter"						
+										Content="{TemplateBinding Content}"
+                                          ContentTransitions="{TemplateBinding ContentTransitions}"
+                                          ContentTemplate="{TemplateBinding ContentTemplate}"
+                                          Margin="{TemplateBinding Padding}"
+                                          HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
+                                          VerticalAlignment="{TemplateBinding VerticalContentAlignment}" 
+                                           />
+
+
+
+							</Grid>
+						</runtime:ChromeBase>
+					</Grid>
+
+				</ControlTemplate>
+			</Setter.Value>
+		</Setter>
+
+
+
+
+	</Style>
+
+
+	<!-- Style for the CheckButton-->
+	<Style TargetType="runtime:CheckButton">
+		<Setter Property="BackgroundChecked" Value="Black" />
+		<Setter Property="BorderBrushChecked" Value="White" />
+		<Setter Property="ForegroundChecked" Value="White" />
+		<Setter Property="BackgroundPointerOver" Value="Gray" />
+		<Setter Property="ForegroundPointerOver" Value="Black" />
+		<Setter Property="Background" Value="#333" />
+		<Setter Property="BorderBrush" Value="White" />
+		<Setter Property="Foreground" Value="White" />
+		<Setter Property="BorderThickness" Value=".65" />
+
+		<Setter Property="Margin" Value="4" />
+		<Setter Property="FontFamily" Value="Segoe WP Light" />
+		<Setter Property="FontSize" Value="24" />
+		<Setter Property="Padding" Value="10,3,10,5" />
+		<Setter Property="Height" Value="50" />
+		<Setter Property="Width" Value="50" />
+		<Setter Property="CornerRadius" Value="9" />
+		<Setter Property="Template">
+			<Setter.Value>
+				<ControlTemplate TargetType="runtime:CheckButton">
+
+
+					<Grid Background="Transparent">
+
+						<VisualStateManager.VisualStateGroups>
+							<VisualStateGroup x:Name="CommonStates">
+								<VisualState x:Name="Normal" />
+								<VisualState x:Name="PointerOver">
+									<Storyboard>
+										<ObjectAnimationUsingKeyFrames Storyboard.TargetName="ButtonBackground"
+                                                                   Storyboard.TargetProperty="Background">
+											<DiscreteObjectKeyFrame KeyTime="0" Value="{Binding ElementName=ButtonBackground,Path=BackgroundA}" />
+										</ObjectAnimationUsingKeyFrames>
+										<ObjectAnimationUsingKeyFrames Storyboard.TargetName="ContentPresenter"
+                                                                   Storyboard.TargetProperty="Foreground">
+											<DiscreteObjectKeyFrame KeyTime="0" Value="{Binding ElementName=ButtonBackground, Path=ForegroundA}" />
+										</ObjectAnimationUsingKeyFrames>
+										<ObjectAnimationUsingKeyFrames Storyboard.TargetName="ButtonBackground" Storyboard.TargetProperty="BorderBrush">
+											<DiscreteObjectKeyFrame KeyTime="0" Value="{Binding ElementName=ButtonBackground, Path=BorderBrushA}" />
+										</ObjectAnimationUsingKeyFrames>
+									</Storyboard>
+								</VisualState>
+								<VisualState x:Name="Pressed">
+
+								</VisualState>
+								<!--<VisualState x:Name="Disabled">
+									<Storyboard>
+										<ObjectAnimationUsingKeyFrames Storyboard.TargetName="Border"
+                                                                   Storyboard.TargetProperty="Background">
+											<DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource ButtonDisabledBackgroundThemeBrush}" />
+										</ObjectAnimationUsingKeyFrames>
+										<ObjectAnimationUsingKeyFrames Storyboard.TargetName="Border"
+                                                                   Storyboard.TargetProperty="BorderBrush">
+											<DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource ButtonDisabledBorderThemeBrush}" />
+										</ObjectAnimationUsingKeyFrames>
+										<ObjectAnimationUsingKeyFrames Storyboard.TargetName="ContentPresenter"
+                                                                   Storyboard.TargetProperty="Foreground">
+											<DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource ButtonDisabledForegroundThemeBrush}" />
+										</ObjectAnimationUsingKeyFrames>
+									</Storyboard>
+								</VisualState>-->
+							</VisualStateGroup>
+							<VisualStateGroup x:Name="CheckStates">
+								<VisualState x:Name="Checked">
+									<Storyboard>
+										<ObjectAnimationUsingKeyFrames Storyboard.TargetName="ButtonBackground"
+                                                                   Storyboard.TargetProperty="Background">
+											<DiscreteObjectKeyFrame KeyTime="0" Value="{Binding ElementName=ButtonBackground,Path=BackgroundB}" />
+										</ObjectAnimationUsingKeyFrames>
+										<ObjectAnimationUsingKeyFrames Storyboard.TargetName="ContentPresenter"
+                                                                   Storyboard.TargetProperty="Foreground">
+											<DiscreteObjectKeyFrame KeyTime="0" Value="{Binding ElementName=ButtonBackground, Path=ForegroundB}" />
+										</ObjectAnimationUsingKeyFrames>
+										<ObjectAnimationUsingKeyFrames Storyboard.TargetName="ButtonBackground" Storyboard.TargetProperty="BorderBrush">
+											<DiscreteObjectKeyFrame KeyTime="0" Value="{Binding ElementName=ButtonBackground, Path=BorderBrushB}" />
+										</ObjectAnimationUsingKeyFrames>
+									</Storyboard>
+								</VisualState>
+								<VisualState x:Name="Unchecked"/>
+								<VisualState x:Name="Indeterminate"/>
+							</VisualStateGroup>
+
+							<VisualStateGroup x:Name="FocusStates">
+								<VisualState x:Name="Focused" />
+								<VisualState x:Name="Unfocused" />
+								<VisualState x:Name="PointerFocused" />
+							</VisualStateGroup>
+						</VisualStateManager.VisualStateGroups>
+
+						<runtime:ChromeBase x:Name="ButtonBackground" BackgroundA="{TemplateBinding BackgroundPointerOver}" BackgroundB="{TemplateBinding BackgroundChecked}" BorderBrushA="{TemplateBinding BorderBrushPointerOver}" BorderBrushB="{TemplateBinding BorderBrushChecked}" ForegroundA="{TemplateBinding ForegroundPointerOver}" ForegroundB="{TemplateBinding ForegroundChecked}"  BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" Background="{TemplateBinding Background}" CornerRadius="{TemplateBinding CornerRadius}" Margin="3">
+							<Grid>
+
+
+
+								<ContentPresenter  Foreground="{TemplateBinding Foreground}" x:Name="ContentPresenter"						
+										Content="{TemplateBinding Content}"
+                                          ContentTransitions="{TemplateBinding ContentTransitions}"
+                                          ContentTemplate="{TemplateBinding ContentTemplate}"
+                                          Margin="{TemplateBinding Padding}"
+                                          HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
+                                          VerticalAlignment="{TemplateBinding VerticalContentAlignment}" 
+                                           />
+
+
+
+							</Grid>
+						</runtime:ChromeBase>
+					</Grid>
+
+				</ControlTemplate>
+			</Setter.Value>
+		</Setter>
+
+
+
+
+	</Style>
+
+
+
+	<Style TargetType="runtime:SlideColorPicker">
+		<Setter Property="Width" Value="300" />
+		<Setter Property="ListWidth" Value="300" />
+		<Setter Property="ListHeight" Value="300" />
+		<Setter Property="Template">
+			<Setter.Value>
+				<ControlTemplate TargetType="runtime:SlideColorPicker">
+					<Border
+                        Background="{TemplateBinding Background}"
+                        BorderBrush="{TemplateBinding BorderBrush}"
+                        BorderThickness="{TemplateBinding BorderThickness}">
+
+						<Grid>
+							<Grid.RowDefinitions>
+								<RowDefinition Height="auto" />
+								<RowDefinition Height="auto" />
+								<RowDefinition Height="auto" />
+								<RowDefinition Height="auto" />
+							</Grid.RowDefinitions>
+							<Grid.ColumnDefinitions>
+								<ColumnDefinition Width="Auto" />
+								<ColumnDefinition />
+								<ColumnDefinition  Width="Auto" />
+							</Grid.ColumnDefinitions>
+							<TextBlock Margin="7" Foreground="{TemplateBinding Foreground}" VerticalAlignment="Center" FontSize="18" Grid.Row="0"  Text="R" />
+							<TextBlock Margin="7" Foreground="{TemplateBinding Foreground}" VerticalAlignment="Center" FontSize="18" Grid.Row="1"  Text="G" />
+							<TextBlock Margin="7" Foreground="{TemplateBinding Foreground}" VerticalAlignment="Center"  FontSize="18" Grid.Row="2" Text="B" />
+							<Slider x:Name="PART_SlideRed" Value="33" StepFrequency=".2" Minimum="0" Maximum="255" Grid.Row="0" Grid.Column="1"  />
+							<Slider x:Name="PART_SlideGreen"  Value="33" StepFrequency=".2"  Minimum="0" Maximum="255" Grid.Row="1" Grid.Column="1"  />
+							<Slider x:Name="PART_SlideBlue"  Value="33" StepFrequency=".2"  Minimum="0" Maximum="255" Grid.Row="2" Grid.Column="1"  />
+
+							<Rectangle x:Name="PART_RectangleColor" Grid.Column="2" Stroke="White" StrokeThickness="1.5"  Grid.RowSpan="3" Height="80" Margin="10" Width="80" />
+
+							<GridView Width="{TemplateBinding ListWidth}" Height="{TemplateBinding ListHeight}" ScrollViewer.VerticalScrollMode="Enabled" ScrollViewer.HorizontalScrollMode="Disabled"  ScrollViewer.VerticalScrollBarVisibility="Visible" ScrollViewer.HorizontalScrollBarVisibility="Disabled"  Grid.Row="3" Grid.ColumnSpan="3" x:Name="PART_List">
+								<GridView.ItemsPanel>
+									<ItemsPanelTemplate>
+										<runtime:WrapPanel Orientation="Horizontal" />
+									</ItemsPanelTemplate>
+								</GridView.ItemsPanel>
+								<GridView.ItemTemplate>
+									<DataTemplate>
+
+										<Grid>
+											<Button Width="45" BorderBrush="White" BorderThickness=".7" Height="45" Background="Transparent" Margin="4" >
+
+												<Button.Flyout>
+													<Flyout>
+														<Grid>
+															<TextBox x:Name="PART_Copy" IsReadOnly="True" Text="{Binding HtmlString}" />
+														</Grid>
+													</Flyout>
+												</Button.Flyout>
+											</Button>
+											<Rectangle ToolTipService.ToolTip="{Binding HtmlString}" Stroke="White" StrokeThickness="1.3" Width="20" Height="20">
+												<Rectangle.Fill>
+													<SolidColorBrush Color="{Binding Color}" />
+												</Rectangle.Fill>
+
+											</Rectangle>
+										</Grid>
+									</DataTemplate>
+								</GridView.ItemTemplate>
+
+							</GridView>
+
+						</Grid>
+
+
+					</Border>
+
+
+
+				</ControlTemplate>
+			</Setter.Value>
+		</Setter>
+	</Style>
+
+
+
+
+
+
+
+
+</ResourceDictionary>
+

@@ -1,0 +1,3 @@
+﻿amPowerLab Notes 
+-----------------------------
+Description: An UWP application designed to create artwork exp

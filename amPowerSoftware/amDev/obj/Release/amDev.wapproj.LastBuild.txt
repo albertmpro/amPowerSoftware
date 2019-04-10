@@ -1,0 +1,87 @@
+C:\AMB\Git\amPowerSoftware\amPowerSoftware\amDev\Images\LargeTile.scale-100.png
+C:\AMB\Git\amPowerSoftware\amPowerSoftware\amDev\Images\LargeTile.scale-125.png
+C:\AMB\Git\amPowerSoftware\amPowerSoftware\amDev\Images\LargeTile.scale-150.png
+C:\AMB\Git\amPowerSoftware\amPowerSoftware\amDev\Images\LargeTile.scale-200.png
+C:\AMB\Git\amPowerSoftware\amPowerSoftware\amDev\Images\LargeTile.scale-400.png
+C:\AMB\Git\amPowerSoftware\amPowerSoftware\amDev\Images\LockScreenLogo.scale-200.png
+C:\AMB\Git\amPowerSoftware\amPowerSoftware\amDev\Images\SmallTile.scale-100.png
+C:\AMB\Git\amPowerSoftware\amPowerSoftware\amDev\Images\SmallTile.scale-125.png
+C:\AMB\Git\amPowerSoftware\amPowerSoftware\amDev\Images\SmallTile.scale-150.png
+C:\AMB\Git\amPowerSoftware\amPowerSoftware\amDev\Images\SmallTile.scale-200.png
+C:\AMB\Git\amPowerSoftware\amPowerSoftware\amDev\Images\SmallTile.scale-400.png
+C:\AMB\Git\amPowerSoftware\amPowerSoftware\amDev\Images\SplashScreen.scale-100.png
+C:\AMB\Git\amPowerSoftware\amPowerSoftware\amDev\Images\SplashScreen.scale-125.png
+C:\AMB\Git\amPowerSoftware\amPowerSoftware\amDev\Images\SplashScreen.scale-150.png
+C:\AMB\Git\amPowerSoftware\amPowerSoftware\amDev\Images\SplashScreen.scale-200.png
+C:\AMB\Git\amPowerSoftware\amPowerSoftware\amDev\Images\SplashScreen.scale-400.png
+C:\AMB\Git\amPowerSoftware\amPowerSoftware\amDev\Images\Square150x150Logo.scale-100.png
+C:\AMB\Git\amPowerSoftware\amPowerSoftware\amDev\Images\Square150x150Logo.scale-125.png
+C:\AMB\Git\amPowerSoftware\amPowerSoftware\amDev\Images\Square150x150Logo.scale-150.png
+C:\AMB\Git\amPowerSoftware\amPowerSoftware\amDev\Images\Square150x150Logo.scale-200.png
+C:\AMB\Git\amPowerSoftware\amPowerSoftware\amDev\Images\Square150x150Logo.scale-400.png
+C:\AMB\Git\amPowerSoftware\amPowerSoftware\amDev\Images\Square44x44Logo.altform-unplated_targetsize-16.png
+C:\AMB\Git\amPowerSoftware\amPowerSoftware\amDev\Images\Square44x44Logo.altform-unplated_targetsize-256.png
+C:\AMB\Git\amPowerSoftware\amPowerSoftware\amDev\Images\Square44x44Logo.altform-unplated_targetsize-32.png
+C:\AMB\Git\amPowerSoftware\amPowerSoftware\amDev\Images\Square44x44Logo.altform-unplated_targetsize-48.png
+C:\AMB\Git\amPowerSoftware\amPowerSoftware\amDev\Images\Square44x44Logo.scale-100.png
+C:\AMB\Git\amPowerSoftware\amPowerSoftware\amDev\Images\Square44x44Logo.scale-125.png
+C:\AMB\Git\amPowerSoftware\amPowerSoftware\amDev\Images\Square44x44Logo.scale-150.png
+C:\AMB\Git\amPowerSoftware\amPowerSoftware\amDev\Images\Square44x44Logo.scale-200.png
+C:\AMB\Git\amPowerSoftware\amPowerSoftware\amDev\Images\Square44x44Logo.scale-400.png
+C:\AMB\Git\amPowerSoftware\amPowerSoftware\amDev\Images\Square44x44Logo.targetsize-16.png
+C:\AMB\Git\amPowerSoftware\amPowerSoftware\amDev\Images\Square44x44Logo.targetsize-24.png
+C:\AMB\Git\amPowerSoftware\amPowerSoftware\amDev\Images\Square44x44Logo.targetsize-24_altform-unplated.png
+C:\AMB\Git\amPowerSoftware\amPowerSoftware\amDev\Images\Square44x44Logo.targetsize-256.png
+C:\AMB\Git\amPowerSoftware\amPowerSoftware\amDev\Images\Square44x44Logo.targetsize-32.png
+C:\AMB\Git\amPowerSoftware\amPowerSoftware\amDev\Images\Square44x44Logo.targetsize-48.png
+C:\AMB\Git\amPowerSoftware\amPowerSoftware\amDev\Images\StoreLogo.scale-100.png
+C:\AMB\Git\amPowerSoftware\amPowerSoftware\amDev\Images\StoreLogo.scale-125.png
+C:\AMB\Git\amPowerSoftware\amPowerSoftware\amDev\Images\StoreLogo.scale-150.png
+C:\AMB\Git\amPowerSoftware\amPowerSoftware\amDev\Images\StoreLogo.scale-200.png
+C:\AMB\Git\amPowerSoftware\amPowerSoftware\amDev\Images\StoreLogo.scale-400.png
+C:\AMB\Git\amPowerSoftware\amPowerSoftware\amDev\Images\Wide310x150Logo.scale-100.png
+C:\AMB\Git\amPowerSoftware\amPowerSoftware\amDev\Images\Wide310x150Logo.scale-125.png
+C:\AMB\Git\amPowerSoftware\amPowerSoftware\amDev\Images\Wide310x150Logo.scale-150.png
+C:\AMB\Git\amPowerSoftware\amPowerSoftware\amDev\Images\Wide310x150Logo.scale-200.png
+C:\AMB\Git\amPowerSoftware\amPowerSoftware\amDev\Images\Wide310x150Logo.scale-400.png
+C:\AMB\Git\amPowerSoftware\amPowerSoftware\amDev\bin\AnyCPU\Release\resources.pri
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\Microsoft.NET.Build.Extensions\net471\lib\System.Data.Common.dll
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\Microsoft.NET.Build.Extensions\net471\lib\System.Diagnostics.StackTrace.dll
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\Microsoft.NET.Build.Extensions\net471\lib\System.Diagnostics.Tracing.dll
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\Microsoft.NET.Build.Extensions\net471\lib\System.Globalization.Extensions.dll
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\Microsoft.NET.Build.Extensions\net471\lib\System.IO.Compression.dll
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\Microsoft.NET.Build.Extensions\net471\lib\System.Net.Http.dll
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\Microsoft.NET.Build.Extensions\net471\lib\System.Net.Sockets.dll
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\Microsoft.NET.Build.Extensions\net471\lib\System.Runtime.Serialization.Primitives.dll
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\Microsoft.NET.Build.Extensions\net471\lib\System.Security.Cryptography.Algorithms.dll
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\Microsoft.NET.Build.Extensions\net471\lib\System.Security.SecureString.dll
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\Microsoft.NET.Build.Extensions\net471\lib\System.Threading.Overlapped.dll
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\Microsoft.NET.Build.Extensions\net471\lib\System.Xml.XPath.XDocument.dll
+C:\AMB\Git\amPowerSoftware\amPowerSoftware\Albert\bin\Release\netstandard2.0\Albert.dll
+C:\AMB\Git\amPowerSoftware\amPowerSoftware\AlbertWPF\bin\Release\AlbertWPF.dll
+C:\AMB\Git\amPowerSoftware\amPowerSoftware\packages\AvalonEdit.5.0.4\lib\Net40\ICSharpCode.AvalonEdit.dll
+C:\AMB\Git\amPowerSoftware\amPowerSoftware\packages\Microsoft.Toolkit.Wpf.UI.Controls.WebView.5.1.0\lib\net462\Microsoft.Toolkit.Wpf.UI.Controls.WebView.dll
+C:\AMB\Git\amPowerSoftware\amPowerSoftware\packages\Microsoft.Toolkit.Wpf.UI.XamlHost.5.1.0\lib\net462\Microsoft.Toolkit.Wpf.UI.XamlHost.dll
+C:\AMB\Git\amPowerSoftware\amPowerSoftware\packages\Extended.Wpf.Toolkit.3.4.0\lib\net40\Xceed.Wpf.AvalonDock.dll
+C:\AMB\Git\amPowerSoftware\amPowerSoftware\packages\Extended.Wpf.Toolkit.3.4.0\lib\net40\Xceed.Wpf.AvalonDock.Themes.Aero.dll
+C:\AMB\Git\amPowerSoftware\amPowerSoftware\packages\Extended.Wpf.Toolkit.3.4.0\lib\net40\Xceed.Wpf.AvalonDock.Themes.Metro.dll
+C:\AMB\Git\amPowerSoftware\amPowerSoftware\packages\Extended.Wpf.Toolkit.3.4.0\lib\net40\Xceed.Wpf.AvalonDock.Themes.VS2010.dll
+C:\AMB\Git\amPowerSoftware\amPowerSoftware\packages\Extended.Wpf.Toolkit.3.4.0\lib\net40\Xceed.Wpf.DataGrid.dll
+C:\AMB\Git\amPowerSoftware\amPowerSoftware\packages\Extended.Wpf.Toolkit.3.4.0\lib\net40\Xceed.Wpf.Toolkit.dll
+C:\AMB\Git\amPowerSoftware\amPowerSoftware\AlbertWPF\bin\Release\AlbertWPF.pdb
+C:\AMB\Git\amPowerSoftware\amPowerSoftware\Albert\bin\Release\netstandard2.0\Albert.pdb
+C:\AMB\Git\amPowerSoftware\amPowerSoftware\packages\Microsoft.Toolkit.Wpf.UI.Controls.WebView.5.1.0\lib\net462\Microsoft.Toolkit.Wpf.UI.Controls.WebView.pdb
+C:\AMB\Git\amPowerSoftware\amPowerSoftware\packages\Microsoft.Toolkit.Wpf.UI.XamlHost.5.1.0\lib\net462\Microsoft.Toolkit.Wpf.UI.XamlHost.pdb
+C:\AMB\Git\amPowerSoftware\amPowerSoftware\packages\Extended.Wpf.Toolkit.3.4.0\lib\net40\de\Xceed.Wpf.AvalonDock.resources.dll
+C:\AMB\Git\amPowerSoftware\amPowerSoftware\packages\Extended.Wpf.Toolkit.3.4.0\lib\net40\es\Xceed.Wpf.AvalonDock.resources.dll
+C:\AMB\Git\amPowerSoftware\amPowerSoftware\packages\Extended.Wpf.Toolkit.3.4.0\lib\net40\fr\Xceed.Wpf.AvalonDock.resources.dll
+C:\AMB\Git\amPowerSoftware\amPowerSoftware\packages\Extended.Wpf.Toolkit.3.4.0\lib\net40\hu\Xceed.Wpf.AvalonDock.resources.dll
+C:\AMB\Git\amPowerSoftware\amPowerSoftware\packages\Extended.Wpf.Toolkit.3.4.0\lib\net40\it\Xceed.Wpf.AvalonDock.resources.dll
+C:\AMB\Git\amPowerSoftware\amPowerSoftware\packages\Extended.Wpf.Toolkit.3.4.0\lib\net40\pt-BR\Xceed.Wpf.AvalonDock.resources.dll
+C:\AMB\Git\amPowerSoftware\amPowerSoftware\packages\Extended.Wpf.Toolkit.3.4.0\lib\net40\ro\Xceed.Wpf.AvalonDock.resources.dll
+C:\AMB\Git\amPowerSoftware\amPowerSoftware\packages\Extended.Wpf.Toolkit.3.4.0\lib\net40\ru\Xceed.Wpf.AvalonDock.resources.dll
+C:\AMB\Git\amPowerSoftware\amPowerSoftware\packages\Extended.Wpf.Toolkit.3.4.0\lib\net40\sv\Xceed.Wpf.AvalonDock.resources.dll
+C:\AMB\Git\amPowerSoftware\amPowerSoftware\packages\Extended.Wpf.Toolkit.3.4.0\lib\net40\zh-Hans\Xceed.Wpf.AvalonDock.resources.dll
+C:\AMB\Git\amPowerSoftware\amPowerSoftware\amSparkDesk\bin\Release\amSparkDesk.exe
+C:\AMB\Git\amPowerSoftware\amPowerSoftware\amSparkDesk\bin\Release\amSparkDesk.exe.config
+C:\AMB\Git\amPowerSoftware\amPowerSoftware\amSparkDesk\bin\Release\amSparkDesk.pdb

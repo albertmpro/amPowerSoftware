@@ -1,0 +1,153 @@
+﻿<local:DevDoc x:Class="amSparkDesk.View.InkProject"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:st="clr-namespace:Albert.Standard;assembly=Albert"
+				   xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:c="clr-namespace:Albert.Standard.Win32;assembly=AlbertWPF"
+			 xmlns:local="clr-namespace:amSparkDesk.View"
+            xmlns:tk="http://schemas.xceed.com/wpf/xaml/toolkit" DataContext="{StaticResource inkViewModel}"
+				   mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800" >
+	<Grid>
+		
+		<!--#region Content Area -->
+	<c:ADock Stretch="Uniform">
+
+		<!--#region TopBar-->
+		<c:ADock.TopBar>
+			<StackPanel Orientation="Horizontal">
+				<TextBlock Style="{StaticResource tbTool}" Text="DrawSize:" />
+				<Slider x:Name="slideSize" Maximum="90" ValueChanged="slideSize_ValueChanged" Value="15" />
+				<TextBlock Text="Presets:" />
+				<c:OptionButton Click="optPenSize_Click" Tag="Thin" Content="Thin" />
+				<c:OptionButton Click="optPenSize_Click" Tag="Pen" Content="Pen" />
+
+				<c:OptionButton Click="optPenSize_Click" Tag="Marker" Content="Marker" />
+
+
+				<c:OptionButton Click="optPenSize_Click" Tag="Paint" Content="Paint" />
+			</StackPanel>
+		</c:ADock.TopBar>
+		<!--#endregion -->
+
+		<!--#region LeftBar-->
+		<c:ADock.LeftBar>
+			<StackPanel >
+				<c:OptionButton Margin="0,4" Click="opt_Click" Tag="Ink" ToolTip="Draw Ink">
+					<Image Source="/Assets/appbar/paint.png" />
+				</c:OptionButton>
+				<c:OptionButton Margin="0,4"   Click="opt_Click" Tag="Erase" ToolTip="Erase">
+					<Image Source="/Assets/appbar/erase.png" />
+				</c:OptionButton>
+				<c:OptionButton Margin="0,4"   Click="opt_Click" Tag="EraseS"  ToolTip="Erase by Stroke ">
+					<Image Source="/Assets/appbar/clear.png" />
+				</c:OptionButton>
+				<c:OptionButton Margin="0,4"   Click="opt_Click" Tag="Select" ToolTip="Selection Tool ">
+					<Image Source="/Assets/appbar/status.png" />
+				</c:OptionButton>
+			</StackPanel>
+		</c:ADock.LeftBar>
+		<!--#endregion -->
+
+
+		<!--#region Main Content-->
+		<Grid x:Name="gridContent">
+			<InkCanvas x:Name="inkCanvas" Background="#000000" Width="1920" Height="1080" >
+				<InkCanvas.DefaultDrawingAttributes>
+					<DrawingAttributes Color="#ffffff" x:Name="drawAtt"  Height="10" Width="10" />
+				</InkCanvas.DefaultDrawingAttributes>
+			</InkCanvas>
+
+		
+		</Grid>
+
+		<!--#endregion -->
+
+		<!--#region RightBar -->
+		<c:ADock.RightBar>
+
+			<Viewbox Stretch="Uniform" VerticalAlignment="Top"  HorizontalAlignment="Left">
+				<StackPanel  >
+
+					<tk:ColorCanvas Foreground="White"  Background="{StaticResource AMBackground}" x:Name="colorPicker" SelectedColorChanged="colorPicker_SelectedColorChanged" />
+
+					<c:OptionButton Style="{StaticResource optColorPick}" Content="Background" BorderBrush="{Binding ElementName=inkCanvas,Path=Background}" x:Name="optBack" Click="optCP_Click" />
+					<c:OptionButton Style="{StaticResource optColorPick}" Content="Paint Brush"  x:Name="optBrush" Click="optCP_Click" >
+								
+									</c:OptionButton>
+					
+				</StackPanel>
+			</Viewbox >
+
+		</c:ADock.RightBar>
+		<!--#endregion -->
+		
+		
+		<!--#region BottomBar-->
+		<c:ADock.BottomBar>
+			<StackPanel Orientation="Horizontal">
+
+			</StackPanel>
+		</c:ADock.BottomBar>
+<!--#endregion -->
+		
+		
+	</c:ADock>
+		<!--#endregion -->
+		
+		
+		<!--#region Windows  -->
+		<tk:ChildWindow Caption="New Item" x:Name="winNewItem">
+			<Grid>
+				<Grid.RowDefinitions>
+					<RowDefinition />
+					<RowDefinition Height="auto" />
+				</Grid.RowDefinitions>
+				<Grid.ColumnDefinitions>
+					<ColumnDefinition />
+					<ColumnDefinition />
+				</Grid.ColumnDefinitions>
+					<TextBlock Text="Prests" />
+				<ListBox ItemsSource="{Binding Papers}" x:Name="cmbPresets" ItemTemplate="{StaticResource InkPaper}"  />
+
+
+				<TextBlock Grid.Column="1" x:Name="tbNewInk" FontSize="21pt">
+					<Run>Width: </Run>
+
+					
+					<LineBreak /> <Run x:Name="runWidth" />
+					<LineBreak /> 
+					<Run>Height: </Run>
+					<Run x:Name="runHeight" />
+					</TextBlock>
+					<StackPanel Grid.Row="1" Grid.ColumnSpan="2" Orientation="Horizontal">
+						<c:PushButton x:Name="btnOk"  Content="Ok" Click="newitem_Click" Tag="Ok" />
+						<c:PushButton x:Name="btnCancel"  Content="Cancel" Click="newitem_Click" Tag="Cancel" />
+					</StackPanel>
+
+			</Grid>
+
+
+		</tk:ChildWindow>
+		<tk:ChildWindow x:Name="winExport" Caption="Export">
+			<Grid>
+				<StackPanel>
+					<CheckBox x:Name="chkTransparent" Content="Background is Transparnet" />
+
+					<StackPanel Orientation="Horizontal">
+						<c:PushButton Tag="Export" Content="Export" Click="export_Click"	/>
+						<c:PushButton Tag="Cancel" Content="Cancel" Click="export_Click"	/>
+
+				</StackPanel>
+				</StackPanel>
+			</Grid>
+		</tk:ChildWindow>
+
+		
+		<!--#endregion -->
+		
+		
+		
+	</Grid>
+</local:DevDoc>

@@ -1,0 +1,301 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{332C7071-FF43-49E4-BDB0-DEA79A5B88F5}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>amSparkDesk</RootNamespace>
+    <AssemblyName>amSparkDesk</AssemblyName>
+    <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Assets\aPowerDesk.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>amSparkDesk.App</StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ICSharpCode.AvalonEdit, Version=5.0.3.0, Culture=neutral, PublicKeyToken=9cc39be672370310, processorArchitecture=MSIL">
+      <HintPath>..\packages\AvalonEdit.5.0.4\lib\Net40\ICSharpCode.AvalonEdit.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Toolkit.Wpf.UI.Controls.WebView, Version=5.1.0.0, Culture=neutral, PublicKeyToken=4aff67a105548ee2, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Toolkit.Wpf.UI.Controls.WebView.5.1.0\lib\net462\Microsoft.Toolkit.Wpf.UI.Controls.WebView.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Toolkit.Wpf.UI.XamlHost, Version=5.1.0.0, Culture=neutral, PublicKeyToken=4aff67a105548ee2, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Toolkit.Wpf.UI.XamlHost.5.1.0\lib\net462\Microsoft.Toolkit.Wpf.UI.XamlHost.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="Xceed.Wpf.AvalonDock, Version=3.4.0.0, Culture=neutral, PublicKeyToken=3e4669d2f30244f4, processorArchitecture=MSIL">
+      <HintPath>..\packages\Extended.Wpf.Toolkit.3.4.0\lib\net40\Xceed.Wpf.AvalonDock.dll</HintPath>
+    </Reference>
+    <Reference Include="Xceed.Wpf.AvalonDock.Themes.Aero, Version=3.4.0.0, Culture=neutral, PublicKeyToken=3e4669d2f30244f4, processorArchitecture=MSIL">
+      <HintPath>..\packages\Extended.Wpf.Toolkit.3.4.0\lib\net40\Xceed.Wpf.AvalonDock.Themes.Aero.dll</HintPath>
+    </Reference>
+    <Reference Include="Xceed.Wpf.AvalonDock.Themes.Metro, Version=3.4.0.0, Culture=neutral, PublicKeyToken=3e4669d2f30244f4, processorArchitecture=MSIL">
+      <HintPath>..\packages\Extended.Wpf.Toolkit.3.4.0\lib\net40\Xceed.Wpf.AvalonDock.Themes.Metro.dll</HintPath>
+    </Reference>
+    <Reference Include="Xceed.Wpf.AvalonDock.Themes.VS2010, Version=3.4.0.0, Culture=neutral, PublicKeyToken=3e4669d2f30244f4, processorArchitecture=MSIL">
+      <HintPath>..\packages\Extended.Wpf.Toolkit.3.4.0\lib\net40\Xceed.Wpf.AvalonDock.Themes.VS2010.dll</HintPath>
+    </Reference>
+    <Reference Include="Xceed.Wpf.DataGrid, Version=3.4.0.0, Culture=neutral, PublicKeyToken=3e4669d2f30244f4, processorArchitecture=MSIL">
+      <HintPath>..\packages\Extended.Wpf.Toolkit.3.4.0\lib\net40\Xceed.Wpf.DataGrid.dll</HintPath>
+    </Reference>
+    <Reference Include="Xceed.Wpf.Toolkit, Version=3.4.0.0, Culture=neutral, PublicKeyToken=3e4669d2f30244f4, processorArchitecture=MSIL">
+      <HintPath>..\packages\Extended.Wpf.Toolkit.3.4.0\lib\net40\Xceed.Wpf.Toolkit.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="CodeEdutor.cs" />
+    <Compile Include="CssViewModel.cs" />
+    <Compile Include="InkViewModel.cs" />
+    <Compile Include="SparkViewModel.cs" />
+    <Compile Include="StaticWebViewModel.cs" />
+    <Compile Include="View\AboutWindow.xaml.cs">
+      <DependentUpon>AboutWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Browser.xaml.cs">
+      <DependentUpon>Browser.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\CodeView.xaml.cs">
+      <DependentUpon>CodeView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\DevDoc.cs" />
+    <Compile Include="View\FontExplore.xaml.cs">
+      <DependentUpon>FontExplore.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\InkProject.xaml.cs">
+      <DependentUpon>InkProject.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\LaunchPad.xaml.cs">
+      <DependentUpon>LaunchPad.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\MainView.xaml.cs">
+      <DependentUpon>MainView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="View\PDFViewer.xaml.cs">
+      <DependentUpon>PDFViewer.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\QuickInk.xaml.cs">
+      <DependentUpon>QuickInk.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\QuickNote.xaml.cs">
+      <DependentUpon>QuickNote.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\StaticWebStarter.xaml.cs">
+      <DependentUpon>StaticWebStarter.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\TabView.xaml.cs">
+      <DependentUpon>TabView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\WebMsg.xaml.cs">
+      <DependentUpon>WebMsg.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\WebNote.xaml.cs">
+      <DependentUpon>WebNote.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\WriterView.xaml.cs">
+      <DependentUpon>WriterView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WebMsgViewModel.cs" />
+    <Compile Include="Writer.cs" />
+    <Page Include="View\AboutWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Browser.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\CodeView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\FontExplore.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\InkProject.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\LaunchPad.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\MainView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\PDFViewer.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\QuickInk.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\QuickNote.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\StaticWebStarter.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\TabView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\WebMsg.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\WebNote.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\WriterView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AlbertWPF\AlbertWPF.csproj">
+      <Project>{92f6b2e6-dee2-469b-93a9-82f25f029ceb}</Project>
+      <Name>AlbertWPF</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Albert\Albert.csproj">
+      <Project>{ff4096cb-846e-41f9-b90d-8c3baa1bb9d4}</Project>
+      <Name>Albert</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\aPowerDesk.ico" />
+    <Resource Include="Assets\aPowerDesk.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="View\SparkNotes.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\appbar\about.png" />
+    <Resource Include="Assets\appbar\add.png" />
+    <Resource Include="Assets\appbar\aHubWide.png" />
+    <Resource Include="Assets\appbar\Area.png" />
+    <Resource Include="Assets\appbar\areaRoad.png" />
+    <Resource Include="Assets\appbar\back.png" />
+    <Resource Include="Assets\appbar\Browser.png" />
+    <Resource Include="Assets\appbar\camera.png" />
+    <Resource Include="Assets\appbar\cancel.png" />
+    <Resource Include="Assets\appbar\circle.png" />
+    <Resource Include="Assets\appbar\clear.png" />
+    <Resource Include="Assets\appbar\clock.png" />
+    <Resource Include="Assets\appbar\colorLabIcon.png" />
+    <Resource Include="Assets\appbar\edit.png" />
+    <Resource Include="Assets\appbar\erase.png" />
+    <Resource Include="Assets\appbar\file.png" />
+    <Resource Include="Assets\appbar\forward.png" />
+    <Resource Include="Assets\appbar\icons.png" />
+    <Resource Include="Assets\appbar\line.png" />
+    <Resource Include="Assets\appbar\ok.png" />
+    <Resource Include="Assets\appbar\paint.png" />
+    <Resource Include="Assets\appbar\rectangle.png" />
+    <Resource Include="Assets\appbar\refresh.png" />
+    <Resource Include="Assets\appbar\remove.png" />
+    <Resource Include="Assets\appbar\road.png" />
+    <Resource Include="Assets\appbar\save.png" />
+    <Resource Include="Assets\appbar\search.png" />
+    <Resource Include="Assets\appbar\settings.png" />
+    <Resource Include="Assets\appbar\share.png" />
+    <Resource Include="Assets\appbar\showNavBar.png" />
+    <Resource Include="Assets\appbar\star.png" />
+    <Resource Include="Assets\appbar\start.png" />
+    <Resource Include="Assets\appbar\status.png" />
+    <Resource Include="Assets\appbar\trace.png" />
+    <Resource Include="Assets\appbar\triangle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\amdesk.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\amdev2.png" />
+  </ItemGroup>
+  <Import Project="..\amUWP\amUWP.projitems" Label="Shared" />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

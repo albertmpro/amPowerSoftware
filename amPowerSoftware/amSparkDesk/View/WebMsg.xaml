@@ -1,0 +1,59 @@
+﻿<local:DevDoc x:Class="amSparkDesk.View.WebMsg"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:c="clr-namespace:Albert.Standard.Win32;assembly=AlbertWPF"
+			 xmlns:tk="http://schemas.xceed.com/wpf/xaml/toolkit"
+				   xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:amSparkDesk.View"
+            mc:Ignorable="d" 
+			DataContext="{StaticResource wmViewModel}"
+             d:DesignHeight="450" d:DesignWidth="800">
+	<c:ADock Stretch="Uniform" x:Name="dock">
+		<!-- TopBar -->
+		
+		<c:ADock.TopBar>
+			<StackPanel Height="45" Orientation="Horizontal">
+				<TextBlock Text="Font Family:" />
+				<ComboBox x:Name="cmbFont" ItemsSource="{x:Static Fonts.SystemFontFamilies}" />
+				<TextBlock Text="Size:" />
+				<Slider x:Name="slideFontSize" ValueChanged="slideFontSize_ValueChanged" Value="20" Minimum="15"  Maximum="80" Width="120" />
+				<TextBlock Text="Align:" />
+				<c:OptionButton Click="opt_Click" Tag="Left" Content="L" />
+				<c:OptionButton Click="opt_Click" Tag="Center" Content="C" />
+				<c:OptionButton Click="opt_Click" Tag="Right" Content="R" />
+					<TextBlock Text="Border:" />
+					<Slider  Width="120" x:Name="slideBorder"  Maximum="14" ValueChanged="slideBorder_ValueChanged" />
+			</StackPanel>
+		</c:ADock.TopBar>
+		
+		<!-- Main Content -->
+		
+	
+			<c:ATextField AcceptsTab="True"  AcceptsReturn="True" TextMargin="14" CornerRadius="12" FontSize="45" SpellCheck.IsEnabled="True"    x:Name="txt" Height="504" Width="504"  TextWrapping="Wrap"
+  BorderThickness="3.5" BorderBrush="White" FontFamily="{Binding ElementName=cmbFont,Path=SelectedItem}" >
+
+
+			</c:ATextField>
+			
+		
+		<!-- Right Bar -->
+
+		<c:ADock.RightBar>
+			
+
+				<Viewbox Stretch="Uniform" VerticalAlignment="Top"  HorizontalAlignment="Left">
+				<StackPanel  >	
+					
+					<tk:ColorCanvas Foreground="White"  Background="{StaticResource AMBackground}" x:Name="colorPicker" SelectedColorChanged="colorPicker_SelectedColorChanged" />
+
+					<c:OptionButton Style="{StaticResource optColorPick}" Content="Background" BorderBrush="{Binding ElementName=txt,Path=Background}" x:Name="optBack" Click="optCP_Click" />
+					<c:OptionButton Style="{StaticResource optColorPick}" Content="Text" BorderBrush="{Binding ElementName=txt,Path=Foreground}" x:Name="optText" Click="optCP_Click"  />
+					<c:OptionButton Style="{StaticResource optColorPick}"  Content="Border" BorderBrush="{Binding ElementName=txt,Path=BorderBrush}" x:Name="optBorder"  />
+			</StackPanel>
+			</Viewbox >
+		</c:ADock.RightBar>
+				
+	</c:ADock>
+
+</local:DevDoc>

@@ -1,0 +1,373 @@
+﻿<Application x:Class="amSparkDesk.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+			 xmlns:c="clr-namespace:Albert.Standard.Win32;assembly=AlbertWPF"
+             xmlns:v="clr-namespace:amSparkDesk.View"
+			 xmlns:tk="http://schemas.xceed.com/wpf/xaml/toolkit"
+			 xmlns:local="clr-namespace:amSparkDesk"
+			 
+             StartupUri="/View/MainView.xaml" >
+	
+	<Application.Resources>
+
+		<!--#region VeiwModels -->
+		<local:InkViewModel x:Key="inkViewModel" />
+		<local:SparkViewModel x:Key="viewModel"/>
+		<local:WebMsgViewModel x:Key="wmViewModel" />
+	
+		<!--#endregion -->
+		
+		
+		<!--#region Colors and Brushes  -->
+		<Color x:Key="AMBackColor">#333333</Color>
+		<Color x:Key="AMForeColor">#ffffff</Color>
+		<SolidColorBrush x:Key="AMForeground" Color="WHite" />
+		<SolidColorBrush x:Key="AMBackground" Color="#333333" />
+		<SolidColorBrush x:Key="AMAccent" Color="DarkBlue" />
+		<!--#endregion -->
+
+		<!--#region Data Templates -->
+
+		<DataTemplate x:Key="InkPaper">
+			<Grid>
+	
+			
+			
+				<Viewbox Stretch="Fill">
+				<TextBlock>
+				
+					<Run Text="{Binding Name}" />
+					<LineBreak />
+					<Run>Width: </Run>
+					<Run Text="{Binding Width}" />
+					<LineBreak />
+					<Run>Height: </Run>
+					<Run Text="{Binding Height}" />
+					<LineBreak />
+				</TextBlock>
+				</Viewbox>	
+					
+				
+				
+				
+				
+			</Grid>
+		</DataTemplate>
+		
+		
+		<!--endregion -->
+
+		
+		<!--#region Default UI-->
+		<Style TargetType="GridSplitter">
+			<Setter  Property="Background" Value="{StaticResource AMForeground}" />
+			<Setter Property="Width" Value="5" />
+
+		</Style>
+
+		<Style TargetType="v:QuickInk" >
+			<Setter Property="Background" Value="{StaticResource AMBackground}" />
+			<Setter Property="Foreground" Value="{StaticResource AMForeground}" />
+			<Setter Property="CaptionForeground" Value="{StaticResource AMForeground}" />
+			<Setter Property="CaptionFontSize" Value="25" />
+			<Setter Property="Width" Value="500" />
+			<Setter Property="Height" Value="400" />
+		</Style>
+
+
+		<Style TargetType="v:QuickNote" >
+			<Setter Property="Background" Value="{StaticResource AMBackground}" />
+			<Setter Property="Foreground" Value="{StaticResource AMForeground}" />
+			<Setter Property="CaptionForeground" Value="{StaticResource AMForeground}" />
+			<Setter Property="CaptionFontSize" Value="25" />
+			<Setter Property="Width" Value="500" />
+			<Setter Property="Height" Value="400" />
+		</Style>
+
+		<Style TargetType="tk:MessageBox">
+			<Setter Property="Background" Value="{StaticResource AMBackground}" />
+			<Setter Property="Foreground" Value="{StaticResource AMForeground}" />
+			<Setter Property="CaptionForeground" Value="{StaticResource AMForeground}" />
+			<Setter Property="CaptionFontSize" Value="25" />
+			<Setter Property="ButtonRegionBackground" Value="{StaticResource AMBackground}" />
+			<Setter Property="YesButtonStyle">
+				<Setter.Value>
+					<Style TargetType="Button" >
+						<Setter Property="Background" Value="{StaticResource AMBackground}" />
+						<Setter Property="Foreground" Value="{StaticResource AMForeground}" />
+
+					</Style>
+				</Setter.Value>
+			</Setter>
+			<Setter Property="YesButtonStyle">
+				<Setter.Value>
+					<Style TargetType="Button" >
+						<Setter Property="Background" Value="{StaticResource AMBackground}" />
+						<Setter Property="Foreground" Value="{StaticResource AMForeground}" />
+
+					</Style>
+				</Setter.Value>
+			</Setter>
+			<Setter Property="NoButtonStyle">
+				<Setter.Value>
+					<Style TargetType="Button" >
+						<Setter Property="Background" Value="{StaticResource AMBackground}" />
+						<Setter Property="Foreground" Value="{StaticResource AMForeground}" />
+
+					</Style>
+				</Setter.Value>
+			</Setter>
+			<Setter Property="OkButtonStyle">
+				<Setter.Value>
+					<Style TargetType="Button" >
+						<Setter Property="Background" Value="{StaticResource AMBackground}" />
+						<Setter Property="Foreground" Value="{StaticResource AMForeground}" />
+
+					</Style>
+				</Setter.Value>
+			</Setter>
+			<Setter Property="CancelButtonStyle">
+				<Setter.Value>
+					<Style TargetType="Button" >
+						<Setter Property="Background" Value="{StaticResource AMBackground}" />
+						<Setter Property="Foreground" Value="{StaticResource AMForeground}" />
+
+					</Style>
+				</Setter.Value>
+			</Setter>
+		</Style>
+		<!-- Button -->
+		<Style TargetType="Button" x:Key="btnMsg">
+			<Setter Property="Background" Value="{StaticResource AMBackground}" />
+			<Setter Property="Foreground" Value="{StaticResource AMForeground}" />
+		
+		</Style>
+		<Style TargetType="c:PushButton" x:Key="btnNote">
+			<Setter Property="Width" Value="50" />
+			<Setter Property="Height" Value="50" />
+			<Setter Property="Margin" Value="5" />
+			<Setter Property="FontWeight" Value="Black" />
+			<Setter Property="VerticalAlignment" Value="Center" />
+			<Setter Property="Background" Value="{StaticResource AMAccent}"/>
+			<Setter Property="BorderBrush" Value="{StaticResource AMForeground}" />
+			<Setter Property="Foreground" Value="{StaticResource AMForeground }"/>
+			<Setter Property="BackgroundPressed" Value="DarkRed"/>
+			<Setter Property="BackgroundMouseOver" Value="#0000ff"/>
+			<Setter Property="ForegroundPressed" Value="White"/>
+		</Style>
+
+
+
+		<Style TargetType="c:PushButton" x:Key="btnRefresh">
+			<Setter Property="Width" Value="50" />
+			<Setter Property="Height" Value="50" />
+			<Setter Property="Margin" Value="5" />
+			<Setter Property="FontWeight" Value="Black" />
+			<Setter Property="VerticalAlignment" Value="Center" />
+			<Setter Property="Background" Value="Red"/>
+			<Setter Property="BorderBrush" Value="{StaticResource AMForeground}" />
+			<Setter Property="Foreground" Value="{StaticResource AMForeground }"/>
+			<Setter Property="BackgroundPressed" Value="DarkRed"/>
+			<Setter Property="BackgroundMouseOver" Value="#0000ff"/>
+			<Setter Property="ForegroundPressed" Value="White"/>
+		</Style>
+
+		<!-- WebView GoButton -->
+		<Style TargetType="c:PushButton" x:Key="btnGo">
+			<Setter Property="Width" Value="50" />
+			<Setter Property="Height" Value="50" />
+			<Setter Property="Margin" Value="5" />
+			<Setter Property="FontWeight" Value="Black" />
+			<Setter Property="VerticalAlignment" Value="Center" />
+			<Setter Property="Background" Value="Green"/>
+			<Setter Property="BorderBrush" Value="{StaticResource AMForeground}" />
+			<Setter Property="Foreground" Value="{StaticResource AMForeground }"/>
+			<Setter Property="BackgroundPressed" Value="LightGreen"/>
+			<Setter Property="BackgroundMouseOver" Value="#0000ff"/>
+			<Setter Property="ForegroundPressed" Value="White"/>
+		</Style>
+		<!-- WebView TextBox -->
+		<Style TargetType="TextBox" x:Key="txtWebView">
+			<Setter Property="Width" Value="auto" />
+			<Setter Property="Height" Value="35" />
+			<Setter Property="Margin" Value="4,7" />
+			<Setter Property="BorderBrush" Value="#ffffff" />
+			<Setter Property="BorderThickness" Value="2.2" />
+
+			<Setter Property="Background" Value="#000000" />
+			<Setter Property="Foreground" Value="#ffffff" />
+		</Style>
+		
+		<!-- Child Window -->
+		<Style TargetType="tk:ChildWindow">
+			<Setter Property="Background" Value="{StaticResource AMBackground}" />
+			<Setter Property="Foreground" Value="{StaticResource AMForeground}" />
+			<Setter Property="CaptionForeground" Value="{StaticResource AMForeground}" />
+			<Setter Property="CaptionFontSize" Value="25" />
+			<Setter Property="Width" Value="500" />
+			<Setter Property="Height" Value="400" />
+		</Style>
+
+		<Style x:Key="optColorPick"  TargetType="c:OptionButton">
+			<Setter Property="Width" Value="120" />
+			<Setter Property="Margin" Value="5" />
+			<Setter Property="Height" Value="50" />
+			<Setter Property="BorderThickness" Value="4.9" />
+			<Setter Property="VerticalAlignment" Value="Center" />
+			<Setter Property="Background" Value="{StaticResource AMBackground }" />
+			<Setter Property="Foreground" Value="{StaticResource AMForeground }"/>
+			<Setter Property="BackgroundChecked" Value="#0000ff"/>
+			<Setter Property="BackgroundMouseOver" Value="#0000ff"/>
+			<Setter Property="ForegroundChecked" Value="White"/>
+		</Style>
+		
+		
+		
+			<Style TargetType="ComboBoxItem">
+			<Setter Property="Foreground" Value="{StaticResource AMForeground}" />
+			<Setter Property="Background" Value="{StaticResource AMBackground}" />
+		</Style>
+		
+		<Style TargetType="TextBlock">
+			<Setter Property="FontSize" Value="12pt" />
+			<Setter Property="Margin" Value="5" />
+			<Setter Property="Foreground" Value="White" />
+			<Setter Property="FontWeight" Value="Black" />
+			<Setter Property="VerticalAlignment" Value="Center" />
+		</Style>
+		
+		<Style TargetType="TextBlock" x:Key="h2">
+			<Setter Property="Foreground" Value="{StaticResource AMForeground}" />
+			<Setter Property="TextAlignment" Value="Center" />
+			<Setter Property="FontWeight" Value="Bold" />
+			<Setter Property="FontSize" Value="24pt" />
+		</Style>
+		
+		<Style TargetType="TextBlock" x:Key="tbHeader">
+			<Setter Property="Foreground" Value="{StaticResource AMForeground}" />
+			<Setter Property="TextAlignment" Value="Center" />
+			<Setter Property="FontWeight" Value="Bold" />
+			<Setter Property="FontSize" Value="30pt" />
+		</Style>
+		
+		<Style TargetType="ComboBox">
+			<Setter Property="Width" Value="120" />
+	
+			<Setter Property="Height" Value="30" />
+		
+			<Setter Property="FontSize" Value="18pt" />
+	
+		</Style>
+		<Style TargetType="Slider">
+	
+			<Setter Property="Width" Value="120" />
+			<Setter Property="VerticalAlignment" Value="Center" />
+		</Style>
+		<Style x:Key="tbTool" TargetType="TextBlock">
+			<Setter Property="FontSize" Value="12pt" />
+			<Setter Property="Margin" Value="7" />
+			<Setter Property="Foreground" Value="{StaticResource AMForeground}" />
+			<Setter Property="VerticalAlignment" Value="Center" />
+		</Style>
+		<Style  TargetType="TextBox" >
+			<Setter Property="Width" Value="210" />
+			<Setter Property="Height" Value="35" />
+
+
+			<Setter Property="Background" Value="#000000" />
+			<Setter Property="Foreground" Value="#ffffff" />
+
+		</Style>
+
+		<Style TargetType="c:PushButton">
+			<Setter Property="Width" Value="150" />
+		<Setter Property="Height" Value="50" />
+			<Setter Property="Margin" Value="5" />
+			<Setter Property="VerticalAlignment" Value="Center" />
+		<Setter Property="Background" Value="{StaticResource AMBackground }"/>
+			<Setter Property="BorderBrush" Value="{StaticResource AMForeground}" />
+			<Setter Property="Foreground" Value="{StaticResource AMForeground }"/>
+		<Setter Property="BackgroundPressed" Value="{StaticResource AMAccent }"/>
+		<Setter Property="BackgroundMouseOver" Value="#0000ff"/>
+		<Setter Property="ForegroundPressed" Value="White"/>
+		</Style>
+		
+		
+		<Style TargetType="c:OptionButton">
+			<Setter Property="Width" Value="Auto" />
+			<Setter Property="Margin" Value="5,0" />
+			<Setter Property="Height" Value="50" />
+			<Setter Property="VerticalAlignment" Value="Center" />
+			<Setter Property="Background" Value="{StaticResource AMBackground }"/>
+			<Setter Property="Foreground" Value="{StaticResource AMForeground }"/>
+			<Setter Property="BackgroundChecked" Value="#0000ff"/>
+			<Setter Property="BackgroundMouseOver" Value="#0000ff"/>
+			<Setter Property="ForegroundChecked" Value="White"/>
+			<Setter  Property="BorderBrush" Value="{StaticResource AMForeground}" />
+
+		</Style>
+
+		<Style TargetType="MenuItem">
+			<Setter Property="FontSize" Value="12pt" />
+
+			<Setter Property="Background" Value="{StaticResource AMBackground}" />
+			<Setter Property="BorderBrush" Value="{StaticResource AMBackground}" />
+			<Setter Property="Foreground" Value="White" />
+
+		</Style>
+		
+		<Style TargetType="local:CodeEditor">
+			<Setter Property="FontFamily" Value="Courier New" />
+			<Setter Property="WordWrap" Value="True" />
+			<Setter Property="FontSize" Value="24pt" />
+			<Setter Property="ShowLineNumbers" Value="True" />
+			<Setter Property="Foreground" Value="White" />
+			<Setter Property="Background" Value="{StaticResource AMBackground}" />
+		</Style>
+		<Style TargetType="local:Writer">
+			<Setter Property="AcceptsTab" Value="True" />
+			<Setter Property="AcceptsReturn" Value="True" />
+			<Setter Property="FontSize" Value="24pt" />
+			<Setter Property="Foreground" Value="White" />
+
+			<Setter Property="Background" Value="{StaticResource AMBackground}" />
+		</Style>
+
+		<Style TargetType="Grid" x:Key="BackGrid">
+			<Setter Property="Background" Value="{StaticResource AMBackground}" />
+		</Style>
+		<Style TargetType="TabControl" >
+			<Setter Property="Background" Value="{StaticResource AMBackground}" />
+		</Style>
+		<Style TargetType="c:DocumentTabItem">
+			<Setter Property="FontSize" Value="18pt" />
+		</Style>
+		<Style TargetType="StatusBar">
+			<Setter Property="Background" Value="{StaticResource AMBackground}" />
+			<Setter Property="Foreground" Value="{StaticResource AMForeground}" />
+		</Style>
+		
+		<Style TargetType="ListBox">
+			<Setter Property="Background" Value="{StaticResource AMBackground}" />
+			<Setter Property="FontSize" Value="14pt" />
+			<Setter Property="Foreground" Value="{StaticResource AMForeground}" />
+		</Style>
+		
+		<Style TargetType="Menu">
+			<Setter Property="BorderBrush" Value="{StaticResource AMBackground}" />		<Setter Property="BorderBrush" Value="{StaticResource AMBackground}" />
+			<Setter Property="Background" Value="{StaticResource AMBackground}" />
+			<Setter Property="Foreground" Value="{StaticResource AMForeground}" />
+		</Style>
+		
+		<Style TargetType="Hyperlink">
+			
+			<Setter Property="TextDecorations" Value="None" />
+			<Setter Property="Foreground" Value="LightBlue" />
+		</Style>
+
+
+        <!--#endregion -->
+		
+	</Application.Resources>
+	
+</Application>

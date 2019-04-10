@@ -1,0 +1,74 @@
+﻿<local:DevDoc x:Class="amSparkDesk.View.FontExplore"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+			 xmlns:c="clr-namespace:Albert.Standard.Win32;assembly=AlbertWPF"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:amSparkDesk.View"
+			 
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+	<Grid Style="{StaticResource BackGrid}">
+		<Grid.ColumnDefinitions>
+			<ColumnDefinition Width="auto" />
+			<ColumnDefinition />
+		</Grid.ColumnDefinitions>
+
+		<ListBox  x:Name="lst" ItemsSource="{x:Static Fonts.SystemFontFamilies}" Width="160" />
+		<TabControl Background="{StaticResource AMBackground}" Grid.Column="1" x:Name="tab">
+			<c:DocumentTabItem IsClosedEnabled="false" Header="Font Sizes">
+				<Grid>
+					<ScrollViewer Grid.Column="1" >
+						
+				
+					<StackPanel Grid.Column="1">
+						<TextBlock Margin="7,7,0,0" Grid.Column="1" FontSize="12pt" x:Name="tb12pt" Text="Sample 12pt" 
+FontFamily="{Binding ElementName=lst,Path=SelectedItem}" />
+						<TextBlock Margin="7,7,0,0" Grid.Column="1" FontSize="14pt" x:Name="tb14pt" Text="Sample 14pt" 
+FontFamily="{Binding ElementName=lst,Path=SelectedItem}" />
+						<TextBlock Margin="7,7,0,0" Grid.Column="1" FontSize="16pt" x:Name="tb16pt" Text="Sample 16pt" 
+FontFamily="{Binding ElementName=lst,Path=SelectedItem}" />
+						<TextBlock Margin="7,7,0,0" Grid.Column="1" FontSize="18pt" x:Name="tb18pt" Text="Sample 18pt" 
+FontFamily="{Binding ElementName=lst,Path=SelectedItem}" />
+						<TextBlock Margin="7,7,0,0"  FontSize="20pt" x:Name="tb20pt" Text="Sample 20pt" 
+FontFamily="{Binding ElementName=lst,Path=SelectedItem}" />
+						<TextBlock Margin="7,7,0,0"  FontSize="24pt" x:Name="tb24pt" Text="Sample 24pt" 
+FontFamily="{Binding ElementName=lst,Path=SelectedItem}" />
+
+						<TextBlock Margin="7,7,0,0"  FontSize="28pt" x:Name="tb28pt" Text="Sample 28pt" 
+FontFamily="{Binding ElementName=lst,Path=SelectedItem}" />
+						<TextBlock Margin="7,7,0,0"  FontSize="32pt" x:Name="tb32pt" Text="Sample 32pt" 
+FontFamily="{Binding ElementName=lst,Path=SelectedItem}" />
+
+						<TextBlock Margin="7,7,0,0"  FontSize="36pt" x:Name="tb36pt" Text="Sample 36pt" 
+FontFamily="{Binding ElementName=lst,Path=SelectedItem}" />
+
+
+						<TextBlock Margin="7,7,0,0"  FontSize="40pt" x:Name="tb40pt" Text="Sample 40pt" 
+FontFamily="{Binding ElementName=lst,Path=SelectedItem}" />
+
+
+						<TextBlock Margin="7,7,0,0"  FontSize="42pt" x:Name="tb42pt" Text="Sample 42pt" 
+FontFamily="{Binding ElementName=lst,Path=SelectedItem}" />
+
+
+						<TextBlock Margin="7,7,0,0"  FontSize="48pt" x:Name="tb48pt" Text="Sample 48pt"
+FontFamily="{Binding ElementName=lst,Path=SelectedItem}" />
+
+
+
+
+					</StackPanel>
+
+					</ScrollViewer>
+				</Grid>
+			</c:DocumentTabItem>
+			<c:DocumentTabItem IsClosedEnabled="false" Header="Sample Text">
+				<Grid>
+					
+			</Grid>
+				</c:DocumentTabItem>
+		</TabControl>
+	</Grid>
+
+</local:DevDoc>
