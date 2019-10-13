@@ -31,7 +31,7 @@
     <AppXManifest Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\amDev\bin\AnyCPU\Release\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2019-04-06T00:08:01.909</Modified>
+      <Modified>2019-06-24T15:56:30.755</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
@@ -266,7 +266,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\amDev\bin\AnyCPU\Release\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2019-04-06T00:07:56.130</Modified>
+      <Modified>2019-06-24T15:56:30.174</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\Microsoft.NET.Build.Extensions\net471\lib\System.Data.Common.dll">
       <PackagePath>amSparkDesk\System.Data.Common.dll</PackagePath>
@@ -318,11 +318,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\Albert\bin\Release\netstandard2.0\Albert.dll">
       <PackagePath>amSparkDesk\Albert.dll</PackagePath>
-      <Modified>2019-04-04T21:13:02.709</Modified>
+      <Modified>2019-06-24T15:56:21.774</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\AlbertWPF\bin\Release\AlbertWPF.dll">
       <PackagePath>amSparkDesk\AlbertWPF.dll</PackagePath>
-      <Modified>2019-04-05T19:33:46.404</Modified>
+      <Modified>2019-06-24T15:56:23.855</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\packages\AvalonEdit.5.0.4\lib\Net40\ICSharpCode.AvalonEdit.dll">
       <PackagePath>amSparkDesk\ICSharpCode.AvalonEdit.dll</PackagePath>
@@ -402,11 +402,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\amSparkDesk\bin\Release\amSparkDesk.exe">
       <PackagePath>amSparkDesk\amSparkDesk.exe</PackagePath>
-      <Modified>2019-04-06T00:07:49.480</Modified>
+      <Modified>2019-06-24T15:56:28.795</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\amSparkDesk\bin\Release\amSparkDesk.exe.config">
       <PackagePath>amSparkDesk\amSparkDesk.exe.config</PackagePath>
-      <Modified>2019-03-18T00:04:46.953</Modified>
+      <Modified>2019-06-24T15:56:25.925</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

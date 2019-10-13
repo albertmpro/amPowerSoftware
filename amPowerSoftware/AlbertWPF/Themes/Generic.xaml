@@ -4,6 +4,25 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="clr-namespace:AlbertWPF">
 
+	
+	<!--#region Rich Text Block  -->
+
+	<Style TargetType="desktop:RichTextBlock">
+
+	
+		<Setter Property="Template">
+			<Setter.Value>
+				<ControlTemplate TargetType="desktop:RichTextBlock">
+					<Border x:Name="border" CornerRadius="{TemplateBinding CornerRadius}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" Background="{TemplateBinding Background}" SnapsToDevicePixels="True">
+						<ScrollViewer Margin="7" x:Name="PART_ContentHost" Focusable="false" HorizontalScrollBarVisibility="Hidden" VerticalScrollBarVisibility="Hidden"/>
+					</Border>
+			
+				</ControlTemplate>
+			</Setter.Value>
+		</Setter>
+	</Style>
+
+	<!--#endregion  -->
 
 	<Style TargetType="desktop:ATextField">
 		<Setter Property="TextMargin" Value="14" />
@@ -72,48 +91,7 @@
 		</Setter>
 	</Style>
 
-	<Style TargetType="desktop:DialogControl">
-		<Setter Property="Stretch" Value="Normal" /> 
-		
-		<Setter Property="Template">
-			<Setter.Value>
-				<ControlTemplate TargetType="desktop:ADock">
-					<Border>
-						<Grid>
-							<Grid.RowDefinitions>
-								<RowDefinition Height="auto" />
-								<RowDefinition />
-								<RowDefinition Height="auto" />
-							</Grid.RowDefinitions>
-							<Grid.ColumnDefinitions>
-								<ColumnDefinition Width="auto" />
-								<ColumnDefinition  />
-								<ColumnDefinition Width="auto" />
-							</Grid.ColumnDefinitions>
-							<!-- TopBar-->
-							<ContentPresenter Content="{TemplateBinding TopBar}" Visibility="{TemplateBinding TopBarVisibility}" Grid.ColumnSpan="3" Grid.Row="0" />
-							<!-- LeftBar-->
-							<ContentPresenter Content="{TemplateBinding LeftBar}" Visibility="{TemplateBinding LeftBarVisibility}" Grid.Column="0" Grid.Row="1" />
-							<!-- Content -->
-							<Viewbox Stretch="{TemplateBinding Stretch}" Grid.Row="1" Grid.Column="1" >
-								<Grid>
-									<ContentPresenter Margin="{TemplateBinding Zoom}" Content="{TemplateBinding Content }" />
-								</Grid>
-							</Viewbox>
 
-							<!-- RightBar-->
-
-							<ContentPresenter Content="{TemplateBinding RightBar}" Visibility="{TemplateBinding RightBarVisibility}" Grid.Column="2" Grid.Row="1" />
-							<!-- BottomBar-->
-							<ContentPresenter Content="{TemplateBinding BottomBar}" Visibility="{TemplateBinding BottomBarVisibility}" Grid.ColumnSpan="3" Grid.Row="2" />
-
-
-						</Grid>
-					</Border>
-				</ControlTemplate>
-			</Setter.Value>
-		</Setter>
-	</Style>
 	<Style TargetType="desktop:ZoomBox">
 		<Setter Property="Template">
 			<Setter.Value>
@@ -178,34 +156,110 @@
 
 
 
-	<!-- DocumentTabItem -->
-	<Style TargetType="desktop:DocumentTabItem" >
+	<!--#region Document Controls  -->
+    <Style TargetType="desktop:DocumentDialog">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="desktop:DocumentDialog">
+                    <Border Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}">
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="auto" />
+                                <RowDefinition />
+                                <RowDefinition Height="auto" />
+                            </Grid.RowDefinitions>
+
+
+                            <!-- Top Dialog Bar-->
+                            <TextBlock x:Name="PART_tbMessage" Grid.Row="0">
+                                <Run FontWeight="Bold" Text="{TemplateBinding Title}" />
+                                <LineBreak />
+                                <Run Text="{TemplateBinding Message}" />
+                            </TextBlock>
+
+                            <!-- Main Content-->
+                            <ContentPresenter Grid.Row="1" Margin="{TemplateBinding Padding}" Content="{TemplateBinding Content}" />
+
+                            <!-- Bottom Bar-->
+                            <StackPanel HorizontalAlignment="Left" Grid.Row="2" Orientation="Horizontal" >
+                                <desktop:PushButton x:Name="PART_btnOne" Width="120" Height="55" Content="{TemplateBinding ButtonTextOne}" />
+                                <desktop:PushButton x:Name="PART_btnTwo" Width="120" Height="55" Content="{TemplateBinding ButtonTextTwo}"  />
+                         
+                            </StackPanel>
+                        </Grid>
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+        
+        
+    </Style>
+    
+	<Style TargetType="desktop:DocumentControl">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="desktop:DocumentControl">
+                    <Border Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}">
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="auto" />
+                                <RowDefinition />
+                                <RowDefinition Height="auto" />
+                            </Grid.RowDefinitions>
+                            
+                            
+                            <!-- Top Dialog Bar-->
+                            <ContentPresenter Grid.Row="0" Visibility="{TemplateBinding TopDialogVisibility}" Margin="{TemplateBinding Padding}" Content="{TemplateBinding TopDialogBar}" />
+
+                            <!-- Main Content-->
+                            <ContentPresenter Grid.Row="1" Margin="{TemplateBinding Padding}" Content="{TemplateBinding Content}" />
+
+                            <!-- Bottom Dialog Bar-->
+                            <ContentPresenter Grid.Row="2" Visibility="{TemplateBinding BottomDialogVisibility}" Margin="{TemplateBinding Padding}" Content="{TemplateBinding BottomDialogBar}" />
+                        </Grid>
+                    </Border>
+                    
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+        
+    </Style>
+    
+    
+    
+    <Style TargetType="desktop:DocumentTabItem" >
 		<Setter Property="BorderBrush" Value="Black" />
 		<Setter Property="BorderThickness" Value=".5" />
 		<Setter Property="CornerRadius" Value="2,2,0,0" />
 		<Setter Property="Background" Value="#222222" />
-		<Setter Property="Foreground" Value="White" />
-
-		<Setter Property="Margin" Value="0"/>
+        <Setter Property="BorderBrushSelected" Value="#ffffff" />
+        <Setter Property="ForegroundSelected" Value="White" />
+        <Setter Property="BackgroundSelected" Value="#FF1D76C5" />
+        <Setter Property="Foreground" Value="White" />
+        <Setter Property="Margin" Value="0"/>
 		<Setter Property="Padding" Value="6,2,6,2"/>
 		<Setter Property="HorizontalContentAlignment" Value="Stretch"/>
 		<Setter Property="VerticalContentAlignment" Value="Stretch"/>
 		<Setter Property="Template">
 			<Setter.Value>
 				<ControlTemplate TargetType="desktop:DocumentTabItem">
-					<Border CornerRadius="{TemplateBinding CornerRadius}" Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" Margin="2,0,0,0" BorderThickness="{TemplateBinding BorderThickness}">
-						<Grid x:Name="panel">
-							<Grid.ColumnDefinitions>
-								<ColumnDefinition />
-								<ColumnDefinition Width="Auto" />
-							</Grid.ColumnDefinitions>
-							<!-- Header -->
-							<Label Foreground="{TemplateBinding Foreground}" Margin="7,0,7,0" VerticalAlignment="Center" HorizontalAlignment="Center"  Content="{TemplateBinding Header}"  />
-							<!-- Closed Button-->
-							<desktop:PushButton Grid.Column="1" Margin="3" FontSize="8pt" x:Name="PART_CloseButton" Width="30" Height="30" Foreground="White" BorderBrushMouseOver="Black"  ForegroundMouseOver="White" ForegroundPressed="White" Content="r" FontFamily="Webdings" Background="Red" BackgroundMouseOver="#FFB62929" BackgroundPressed="DarkRed" />
-						</Grid>
-					</Border>
-					<ControlTemplate.Triggers>
+
+                    <Grid>
+                        <desktop:ChromeBase x:Name="chrome" CornerRadius="{TemplateBinding CornerRadius}" Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BackgroundA="{TemplateBinding  BackgroundSelected}" ForegroundA="{TemplateBinding ForegroundSelected}" BorderBrushA="{TemplateBinding BorderBrushSelected}" Margin="2,0,0,0" BorderThickness="{TemplateBinding BorderThickness}">
+                            <Grid x:Name="panel">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition />
+                                    <ColumnDefinition Width="Auto" />
+                                </Grid.ColumnDefinitions>
+                                <!-- Header -->
+                        
+                                <Label x:Name="label" Foreground="{TemplateBinding Foreground}" Margin="7,0,7,0" VerticalAlignment="Center" HorizontalAlignment="Center"  Content="{TemplateBinding Header}"  />
+                                <!-- Closed Button-->
+                                <desktop:PushButton Grid.Column="1" Margin="3" FontSize="8pt" x:Name="PART_CloseButton" Width="30" Height="30" Foreground="White" BorderBrushMouseOver="Black"  ForegroundMouseOver="White" ForegroundPressed="White" Content="r" FontFamily="Webdings" Background="Red" BackgroundMouseOver="#FFB62929" BackgroundPressed="DarkRed" />
+                            </Grid>
+                        </desktop:ChromeBase>
+                    </Grid>
+                    <ControlTemplate.Triggers>
 						<Trigger Property="IsClosedEnabled" Value="True">
 							<Setter TargetName="PART_CloseButton" Property="Visibility" Value="Visible" />
 						</Trigger>
@@ -213,19 +267,20 @@
 							<Setter TargetName="PART_CloseButton" Property="Visibility" Value="Collapsed" />
 						</Trigger>
 						<Trigger Property="IsSelected"  Value="True">
-							<Setter Property="Background" Value="#FF1D76C5" />
-							<Setter Property="Foreground" Value="White" />
-						</Trigger>
-						<Trigger Property="IsSelected"  Value="False">
-							<Setter Property="Background" Value="#222222" />
-						</Trigger>
+                            <Setter TargetName="chrome" Property="Background" Value="{Binding ElementName=chrome,Path=BackgroundA}" />
+                            <Setter TargetName="label" Property="Foreground" Value="{Binding ElementName=chrome, Path=ForegroundA}" />
+
+                            <Setter TargetName="chrome" Property="BorderBrush" Value="{Binding ElementName=chrome, Path=BorderBrushA}" />
+                        </Trigger>
+						
 					</ControlTemplate.Triggers>
 				</ControlTemplate>
 			</Setter.Value>
 		</Setter>
 	</Style>
+    <!--#endregion  -->
 
-
+    <!--#region Button Controls-->
 
 	<!--PushButton-->
 	<Style TargetType="desktop:PushButton">
@@ -266,7 +321,7 @@
 		<Setter Property="VerticalAlignment" Value="Center" />
 		<Setter Property="VerticalContentAlignment" Value="Center" />
 		<Setter Property="HorizontalContentAlignment" Value="Center" />
-		<Setter Property="Width" Value="80" />
+		<Setter Property="Width" Value="auto" />
 		<Setter Property="Height" Value="40" />
 		<Setter Property="Stretch" Value="Fill" />
 		<Setter Property="CornerRadius" Value="2" />
@@ -360,8 +415,8 @@
 		<Setter Property="VerticalAlignment" Value="Center" />
 		<Setter Property="VerticalContentAlignment" Value="Center" />
 		<Setter Property="HorizontalContentAlignment" Value="Center" />
-		<Setter Property="Width" Value="80" />
-		<Setter Property="Height" Value="55" />
+		<Setter Property="Width" Value="auto" />
+		<Setter Property="Height" Value="80" />
 		<Setter Property="CornerRadius" Value="2" />
 		<Setter Property="Template">
 			<Setter.Value>
@@ -382,7 +437,9 @@
 							<!--Content-->
 							<ContentPresenter x:Name="content" ContentTemplate="{TemplateBinding ContentTemplate}"  ContentStringFormat="{TemplateBinding ContentStringFormat}"   Content="{TemplateBinding Content}" VerticalAlignment="Center"  HorizontalAlignment="Center" Margin="{TemplateBinding Padding}" />
 						</desktop:ChromeBase>
-					</Grid>
+                        <!-- Image-->
+                        <Image Source="{TemplateBinding Source}" Stretch="{TemplateBinding Stretch}" />
+                    </Grid>
 					<ControlTemplate.Triggers>
 						<Trigger Property="IsMouseOver" Value="True">
 							<Setter  TargetName="chorme" Property="Background" Value="{Binding ElementName=chorme, Path=BackgroundB}"/>
@@ -451,7 +508,7 @@
 		<Setter Property="VerticalAlignment" Value="Center" />
 		<Setter Property="VerticalContentAlignment" Value="Center" />
 		<Setter Property="HorizontalContentAlignment" Value="Center" />
-		<Setter Property="Width" Value="80" />
+		<Setter Property="Width" Value="auto" />
 		<Setter Property="Height" Value="55" />
 		<Setter Property="CornerRadius" Value="2" />
 		<Setter Property="Template">
@@ -473,7 +530,9 @@
 							<!--Content-->
 							<ContentPresenter x:Name="content" ContentTemplate="{TemplateBinding ContentTemplate}"  ContentStringFormat="{TemplateBinding ContentStringFormat}"   Content="{TemplateBinding Content}" VerticalAlignment="Center"  HorizontalAlignment="Center" Margin="{TemplateBinding Padding}" />
 						</desktop:ChromeBase>
-					</Grid>
+                        <!-- Image-->
+                        <Image Source="{TemplateBinding Source}" Stretch="{TemplateBinding Stretch}" />
+                    </Grid>
 					<ControlTemplate.Triggers>
 						<Trigger Property="IsMouseOver" Value="True">
 							<Setter  TargetName="chorme" Property="Background" Value="{Binding ElementName=chorme, Path=BackgroundB}"/>
@@ -502,7 +561,7 @@
 
 
 	</Style>
-
+    <!--#endregion -->
 
 
 

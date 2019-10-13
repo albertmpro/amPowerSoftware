@@ -27,6 +27,8 @@
 
 
 				<c:OptionButton Click="optPenSize_Click" Tag="Paint" Content="Paint" />
+					<TextBlock Style="{StaticResource tbTool}" Text="DrawSize:" />
+			
 			</StackPanel>
 		</c:ADock.TopBar>
 		<!--#endregion -->

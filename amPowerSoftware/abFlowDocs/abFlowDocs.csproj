@@ -1,0 +1,84 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Assets\marker.png" />
+    <None Remove="Assets\pen.png" />
+    <None Remove="Assets\pencil.png" />
+  </ItemGroup>
+
+
+  <ItemGroup>
+    <Content Include="Assets\abFlowDoc.png" />
+    <Content Include="Assets\appbar\about.png" />
+    <Content Include="Assets\appbar\add.png" />
+    <Content Include="Assets\appbar\aHubWide.png" />
+    <Content Include="Assets\appbar\Area.png" />
+    <Content Include="Assets\appbar\areaRoad.png" />
+    <Content Include="Assets\appbar\back.png" />
+    <Content Include="Assets\appbar\Bold.png" />
+    <Content Include="Assets\appbar\Browser.png" />
+    <Content Include="Assets\appbar\bullets.png" />
+    <Content Include="Assets\appbar\camera.png" />
+    <Content Include="Assets\appbar\cancel.png" />
+    <Content Include="Assets\appbar\centeralign.png" />
+    <Content Include="Assets\appbar\circle.png" />
+    <Content Include="Assets\appbar\clear.png" />
+    <Content Include="Assets\appbar\clock.png" />
+    <Content Include="Assets\appbar\colorLabIcon.png" />
+    <Content Include="Assets\appbar\edit.png" />
+    <Content Include="Assets\appbar\erase.png" />
+    <Content Include="Assets\appbar\exporticon.png" />
+    <Content Include="Assets\appbar\file.png" />
+    <Content Include="Assets\appbar\forward.png" />
+    <Content Include="Assets\appbar\icons.png" />
+    <Content Include="Assets\appbar\Italic.png" />
+    <Content Include="Assets\appbar\leftalign.png" />
+    <Content Include="Assets\appbar\line.png" />
+    <Content Include="Assets\appbar\numberlist.png" />
+    <Content Include="Assets\appbar\ok.png" />
+    <Content Include="Assets\appbar\paint.png" />
+    <Content Include="Assets\appbar\rectangle.png" />
+    <Content Include="Assets\appbar\refresh.png" />
+    <Content Include="Assets\appbar\remove.png" />
+    <Content Include="Assets\appbar\rightalign.png" />
+    <Content Include="Assets\appbar\road.png" />
+    <Content Include="Assets\appbar\save.png" />
+    <Content Include="Assets\appbar\saveas.png" />
+    <Content Include="Assets\appbar\search.png" />
+    <Content Include="Assets\appbar\settings.png" />
+    <Content Include="Assets\appbar\share.png" />
+    <Content Include="Assets\appbar\showNavBar.png" />
+    <Content Include="Assets\appbar\star.png" />
+    <Content Include="Assets\appbar\start.png" />
+    <Content Include="Assets\appbar\status.png" />
+    <Content Include="Assets\appbar\trace.png" />
+    <Content Include="Assets\appbar\triangle.png" />
+    <Content Include="Assets\appbar\underline.png" />
+    <Content Include="Assets\marker.png" />
+    <Content Include="Assets\pen.png" />
+    <Content Include="Assets\pencil.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AvalonEdit" Version="5.0.4" />
+    <PackageReference Include="Extended.Wpf.Toolkit" Version="3.5.0" />
+    <PackageReference Include="System.ValueTuple" Version="4.5.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\abCommand\abCommand.csproj" />
+    <ProjectReference Include="..\AlbertWPFCore\AlbertWPFCore.csproj" />
+    <ProjectReference Include="..\Albert\Albert.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Assets\abmediaLogo.png" />
+  </ItemGroup>
+
+</Project>

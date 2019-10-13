@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Source>C:\Users\alxp2\Pictures\abFlowDoc.png</Source>
+    <SmallTileSource>C:\Users\alxp2\Pictures\abFlowDoc.png</SmallTileSource>
+    <MediumTileSource>C:\Users\alxp2\Pictures\abFlowDoc.png</MediumTileSource>
+    <WideTileSource>C:\Users\alxp2\Pictures\abFlowDoc.png</WideTileSource>
+    <LargeTileSource>C:\Users\alxp2\Pictures\abFlowDoc.png</LargeTileSource>
+    <AppIconSource>C:\Users\alxp2\Pictures\abFlowDoc.png</AppIconSource>
+    <SplashScreenSource>C:\Users\alxp2\Pictures\abFlowDoc.png</SplashScreenSource>
+    <PackageLogoSource>C:\Users\alxp2\Pictures\abFlowDoc.png</PackageLogoSource>
+  </PropertyGroup>
+</Project>

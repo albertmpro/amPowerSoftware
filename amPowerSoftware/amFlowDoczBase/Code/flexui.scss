@@ -1,0 +1,111 @@
+﻿//flexui.scss
+// Designed to help create complex css layouts
+// Created by Albert M. Byrd
+// Copyright 2015
+
+
+
+// Content Setup Method's
+@mixin contentSetup($width, $padding) 
+{
+	width: $width;
+	padding: $padding;
+	margin-left: auto;
+	margin-right: auto; 
+}
+
+//Setup for large display 
+@mixin screenSetup($back,$fore)
+{
+	width: 100%; 
+	color: $fore;
+	background: $back;
+}
+//Setup a center block of Content 
+@mixin centerBlock()
+{
+	margin-left: auto;
+	margin-right: auto;
+	display: block;  
+}
+// Create a Logo Icon 
+@mixin logoSetup($url,$width,$height)
+{
+	width: $width;
+	height: $height;
+	background: $url;
+	background-size: 100% 100%;
+	display: block;
+	float: left;
+}
+//Setup's the basic's for a Navigation Br
+@mixin navSetup($width,$heihgt,$back)
+{
+	width: $width;
+	height: $heihgt;
+	background: $back;
+
+}
+//Setup Font of links 
+@mixin navLinksFont($case,$font,$fontSize,$fontweight)
+{
+	a:link,a:hover,a:active 
+	{
+		text-transform: $case;
+		font-family: $font;
+		font-weight: $fontweight;
+		font-size: $fontSize;
+		text-decoration: none;
+	}
+}
+
+// Setup Font color for links 
+@mixin navLinksColors($default,$hover,$active)
+{
+	a:link 
+	{
+		color: $default;
+	}
+	a:hover 
+	{
+		color: $hover;
+	}
+	a:active 
+	{
+		color: $active;
+	}
+}
+
+//Create's a Column
+@mixin column($width)
+{
+	width: $width;
+	float: left;
+	box-sizing:border-box;
+	display: block;
+	//display: inline-block;
+}
+
+//MenuButton for Mobile
+@mixin mobileMenu($width,$height,$color)
+{
+
+	float: right;
+	//margin-top: 10px;
+	width: $width;
+	height: $height;
+	display: block;
+
+	cursor: pointer;
+
+	div
+	{
+		width: 20px;
+		height: 4px;
+		background: $color;
+		margin: 3px 0px;
+		border-radius: 4px;
+		display:block;
+	}
+}
+

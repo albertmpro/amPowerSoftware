@@ -1,0 +1,16 @@
+C:\AMB\Git\amPowerSoftware\amPowerSoftware\AlbertWPFCore\bin\Release\netcoreapp3.0\AlbertWPFCore.deps.json
+C:\AMB\Git\amPowerSoftware\amPowerSoftware\AlbertWPFCore\bin\Release\netcoreapp3.0\AlbertWPFCore.dll
+C:\AMB\Git\amPowerSoftware\amPowerSoftware\AlbertWPFCore\bin\Release\netcoreapp3.0\AlbertWPFCore.pdb
+C:\AMB\Git\amPowerSoftware\amPowerSoftware\AlbertWPFCore\bin\Release\netcoreapp3.0\Albert.dll
+C:\AMB\Git\amPowerSoftware\amPowerSoftware\AlbertWPFCore\bin\Release\netcoreapp3.0\Albert.pdb
+C:\AMB\Git\amPowerSoftware\amPowerSoftware\AlbertWPFCore\obj\Release\netcoreapp3.0\AlbertWPFCore.csprojAssemblyReference.cache
+C:\AMB\Git\amPowerSoftware\amPowerSoftware\AlbertWPFCore\obj\Release\netcoreapp3.0\GeneratedInternalTypeHelper.g.cs
+C:\AMB\Git\amPowerSoftware\amPowerSoftware\AlbertWPFCore\obj\Release\netcoreapp3.0\AlbertWPFCore_MarkupCompile.cache
+C:\AMB\Git\amPowerSoftware\amPowerSoftware\AlbertWPFCore\obj\Release\netcoreapp3.0\AlbertWPFCore_MarkupCompile.lref
+C:\AMB\Git\amPowerSoftware\amPowerSoftware\AlbertWPFCore\obj\Release\netcoreapp3.0\Themes\Generic.baml
+C:\AMB\Git\amPowerSoftware\amPowerSoftware\AlbertWPFCore\obj\Release\netcoreapp3.0\AlbertWPFCore.g.resources
+C:\AMB\Git\amPowerSoftware\amPowerSoftware\AlbertWPFCore\obj\Release\netcoreapp3.0\AlbertWPFCore.AssemblyInfoInputs.cache
+C:\AMB\Git\amPowerSoftware\amPowerSoftware\AlbertWPFCore\obj\Release\netcoreapp3.0\AlbertWPFCore.AssemblyInfo.cs
+C:\AMB\Git\amPowerSoftware\amPowerSoftware\AlbertWPFCore\obj\Release\netcoreapp3.0\AlbertWPFCore.csproj.CopyComplete
+C:\AMB\Git\amPowerSoftware\amPowerSoftware\AlbertWPFCore\obj\Release\netcoreapp3.0\AlbertWPFCore.dll
+C:\AMB\Git\amPowerSoftware\amPowerSoftware\AlbertWPFCore\obj\Release\netcoreapp3.0\AlbertWPFCore.pdb

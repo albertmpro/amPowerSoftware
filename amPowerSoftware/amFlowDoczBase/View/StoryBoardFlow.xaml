@@ -1,0 +1,55 @@
+﻿<local:ThemeScreen x:Class="amFlowDoczBase.View.StoryBoardFlow"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:amFlowDoczBase.Controls"
+             xmlns:c="clr-namespace:Albert.Standard.Win32;assembly=AlbertWPF"
+             mc:Ignorable="d" 
+             d:DesignHeight="600" d:DesignWidth="960">
+    <local:ThemeScreen.TopDialogBar>
+        <Grid></Grid>
+    </local:ThemeScreen.TopDialogBar>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto" />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <!-- Top Panel-->
+        <ToolBar Grid.Row="0" >
+            <c:PushButton ToolTip="StartView" Command="c:DesktopCommands.StartView" Source="/Assets/appbar/start.png" />
+            <c:PushButton ToolTip="New" Command="New" Source="/Assets/appbar/add.png" />
+            <c:PushButton ToolTip="Open" Command="Open" Source="/Assets/appbar/file.png" />
+            <c:PushButton ToolTip="Save" Command="Save" Source="/Assets/appbar/save.png" />
+
+            <c:PushButton ToolTip="SaveAs" Command="c:DesktopCommands.SaveAs" Source="/Assets/appbar/saveas.png" />
+            <Separator />
+            <c:PushButton ToolTip="Expor to Image" Command="c:DesktopCommands.Export" Source="/Assets/appbar/exporticon.png" />
+            <Separator />
+       \
+        </ToolBar>
+
+        <Grid x:Name="gridStoryBoard" Grid.Row="1">
+            <Grid.RowDefinitions>
+                <RowDefinition />
+                <RowDefinition Height="20" />
+                <RowDefinition />
+            </Grid.RowDefinitions>
+           <!-- InkCanvas -->
+            <c:ZoomBox Margin="8" >
+                <InkCanvas Grid.Row="0" x:Name="ink" Width="auto" Height="auto" >
+                <InkCanvas.DefaultDrawingAttributes>
+                    <DrawingAttributes x:Name="drawAtt" Color="White"/>
+                </InkCanvas.DefaultDrawingAttributes>
+            </InkCanvas>
+            </c:ZoomBox>
+
+
+            <!-- GridSPliter -->
+            <GridSplitter x:Name="gridSplit" Grid.Row="1"  Style="{StaticResource splitHroz}" />
+            <!-- CodeBox-->
+            <local:CodeBox x:Name="txtNotes" FontSize="32" Grid.Row="2" WordWrap="True" />
+        </Grid>
+    </Grid>
+    
+</local:ThemeScreen>

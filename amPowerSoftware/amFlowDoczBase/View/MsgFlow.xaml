@@ -1,0 +1,164 @@
+﻿<local:ThemeScreen x:Class="amFlowDoczBase.View.MsgFlow"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:c="clr-namespace:Albert.Standard.Win32;assembly=AlbertWPF"
+			 xmlns:tk="http://schemas.xceed.com/wpf/xaml/toolkit"
+				  xmlns:local="clr-namespace:amFlowDoczBase.Controls"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="960">
+
+    <local:ThemeScreen.TopDialogBar>
+        <c:DocumentDialog x:Name="dialog"  Visibility="Collapsed">
+
+            <Grid>
+                <c:ZoomBox x:Name="gridNew" Visibility="Collapsed" >
+                    <Grid   DataContext="{StaticResource drawViewModel}" >
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="auto" />
+                            <RowDefinition />
+                            <RowDefinition Height="auto" />
+                            <RowDefinition />
+                            <RowDefinition Height="auto"  />
+
+                        </Grid.RowDefinitions>
+                        <TextBlock FontSize="23pt" Grid.Row="0" Text="Sizes:" />
+                        <ListBox x:Name="lstSizes" Tag="Sizes" SelectionChanged="lst_SelectionChanged" Grid.Row="1" ItemTemplate="{StaticResource docSize}" ItemsPanel="{StaticResource horz}"  ItemsSource="{Binding Sizes }"  />
+                        <TextBlock FontSize="23pt" Grid.Row="2"  Text="Themes:" />
+                        <ListBox x:Name="lstTheme" Tag="Theme" SelectionChanged="lst_SelectionChanged" Grid.Row="3" ItemTemplate="{StaticResource theme}" ItemsPanel="{StaticResource horz}"  ItemsSource="{Binding Themes }"  />
+                        <StackPanel Margin="0,20" Grid.Row="4" Orientation="Horizontal">
+                            <TextBlock VerticalAlignment="Center" FontSize="35pt">
+                                <Run>Width: </Run>
+                                <Run x:Name="runWidth"/>
+                                 <Run>Height: </Run>
+                                <Run x:Name="runHeight"/>
+                            </TextBlock>
+                            <Rectangle x:Name="rectSelefct" StrokeThickness="4.3" Margin="14,0" Width="150" Height="150" />
+                        </StackPanel>
+
+                    </Grid>
+                </c:ZoomBox>
+                <Grid  x:Name="gridExport" Width="400" Visibility="Collapsed">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="auto" />
+                        <RowDefinition />
+                    </Grid.RowDefinitions>
+                    <StackPanel HorizontalAlignment="Left">
+                        <c:CheckButton x:Name="chkBack" Width="250" Height="55"  Content="Transparent Background" />
+                        <c:CheckButton x:Name="chkBorder" Width="250" Height="55"  Content="Transparent Border" />
+
+                    </StackPanel>
+                </Grid>
+            </Grid>
+
+        </c:DocumentDialog>
+    </local:ThemeScreen.TopDialogBar>
+
+    <Grid>
+      
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+            <RowDefinition />
+
+        </Grid.RowDefinitions>
+
+
+        <!-- Top Panel-->
+        <ToolBarTray Background="#333333">
+            <ToolBar Grid.Row="0" >
+                <c:PushButton ToolTip="StartView" Command="c:DesktopCommands.StartView" Source="/Assets/appbar/start.png" />
+                <c:PushButton ToolTip="New" Command="New" Source="/Assets/appbar/add.png" />
+                <c:PushButton ToolTip="Open" Command="Open" Source="/Assets/appbar/file.png" />
+                <c:PushButton ToolTip="Save" Command="Save" Source="/Assets/appbar/save.png" />
+
+                <c:PushButton ToolTip="SaveAs" Command="c:DesktopCommands.SaveAs" Source="/Assets/appbar/saveas.png" />
+                <Separator />
+                <c:PushButton ToolTip="Expor to Image" Command="c:DesktopCommands.Export" Source="/Assets/appbar/exporticon.png" />
+                <Separator />
+                <ComboBox ToolTip="InkFlowState" x:Name="cmbMode" Width="120" SelectionChanged="CmbMode_SelectionChanged">
+                    <ComboBoxItem Content="Ink" />
+                    <ComboBoxItem Content="Ref" />
+                    <ComboBoxItem Content="Theme" />
+                </ComboBox>
+            </ToolBar>
+
+            <ToolBar Height="40" >
+                <ComboBox x:Name="cmbFont"  Width="150" ItemsSource="{x:Static Fonts.SystemFontFamilies}" />
+
+                <Separator /> >
+                <c:PushButton  ToolTip="Bold"  Source="/Assets/appbar/Bold.png" Command="ToggleBold" Style="{StaticResource toolPush}">
+                    =
+                </c:PushButton>
+                <c:PushButton Source="/Assets/appbar/Italic.png"  ToolTip="Italic" Command="ToggleItalic" Style="{StaticResource toolPush}" />
+
+                <c:PushButton  Source="/Assets/appbar/underline.png"  ToolTip="Underline" Command="ToggleUnderline" Style="{StaticResource toolPush}" />
+                <Separator />
+
+
+                <c:PushButton Source="/Assets/appbar/leftalign.png"  ToolTip="Left Align" Command="AlignLeft" Style="{StaticResource toolPush}" />
+
+
+                <c:PushButton Source="/Assets/appbar/centeralign.png" ToolTip="Center Align" Command="AlignCenter" Style="{StaticResource toolPush}" />
+
+
+                <c:PushButton  Source="/Assets/appbar/rightalign.png" ToolTip="Right Align"  Command="AlignRight" Style="{StaticResource toolPush}" />
+                <Separator />
+            </ToolBar>
+
+
+        </ToolBarTray  >
+        <!-- Button Menu's -->
+        <StackPanel Grid.Row="1" Orientation="Horizontal">
+            <tk:DropDownButton ToolTip="Color Properties" Content="Colors" >
+                <tk:DropDownButton.DropDownContent>
+                    <Grid Background="{StaticResource amBackBrush}">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition />
+                            <ColumnDefinition Width="auto" />
+                        </Grid.ColumnDefinitions>
+                        
+                        <!-- ColorPicker-->
+                        <tk:ColorCanvas x:Name="colorPicker" SelectedColorChanged="ColorPicker_SelectedColorChanged" />
+                        
+                        <!-- Stack Color Properties-->
+                        <StackPanel Grid.Column="1" >
+                            <c:OptionButton x:Name="optText" Click="colors_Click"  Background="White" ToolTip="Text Color" Style="{StaticResource optTheme}" />
+                            <c:OptionButton x:Name="optBack" Click="colors_Click"  ToolTip="Background Color" Style="{StaticResource optTheme}" />
+                            <c:OptionButton x:Name="optBorder" Click="colors_Click"  Background="White" ToolTip="Border Color" Style="{StaticResource optTheme}" />
+                        </StackPanel>
+
+                    </Grid>
+                </tk:DropDownButton.DropDownContent>
+            </tk:DropDownButton>
+            <tk:DropDownButton ToolTip="Text Box Properties" Width="auto" Content="Box" >
+                <tk:DropDownButton.DropDownContent>
+                    <Grid Background="{StaticResource amBackBrush}">
+                        <StackPanel>
+                            <TextBlock Style="{StaticResource tbNormal}" Text="Font Size: " FontSize="16pt" />
+                            <Slider x:Name="slFontSize" ValueChanged="Sl_ValueChanged" Maximum="180" Tag="Font" />
+
+                            <TextBlock Style="{StaticResource tbNormal}" Text="Border Size: " FontSize="16pt" />
+                            <Slider  x:Name="slBorder" ValueChanged="Sl_ValueChanged" Maximum="180" Tag="Border" />
+
+                            <TextBlock Style="{StaticResource tbNormal}" Text="Corner Radius: " FontSize="16pt" />
+                            <Slider x:Name="slCorner" ValueChanged="Sl_ValueChanged" Maximum="45" Tag="Corner" />
+
+                        </StackPanel>
+
+                    </Grid>
+                </tk:DropDownButton.DropDownContent>
+            </tk:DropDownButton>
+        </StackPanel>
+
+        <!-- Main Content -->
+        <c:ZoomBox x:Name="zoom" Grid.Row="2" Grid.Column="1"   >
+            <c:RichTextBlock  x:Name="rtb" FontFamily="{Binding ElementName=cmbFont,Path=SelectedItem}" >
+
+
+            </c:RichTextBlock>
+        </c:ZoomBox>
+
+    </Grid>
+</local:ThemeScreen>

@@ -1,0 +1,468 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>LAPTOP-QL9GRQT5</Machine>
+    <WindowsUser>alxp2</WindowsUser>
+    <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
+    <TargetOsVersion>10.0</TargetOsVersion>
+    <TargetOsDescription>Windows 10.0</TargetOsDescription>
+    <SolutionConfiguration>Release|x64</SolutionConfiguration>
+    <PackageArchitecture>x64</PackageArchitecture>
+    <PackageIdentityName>994f5c1c-e696-4159-85ec-632dc430fda4</PackageIdentityName>
+    <PackageIdentityPublisher>CN=alxp2</PackageIdentityPublisher>
+    <IntermediateOutputPath>C:\AMB\Git\amPowerSoftware\amPowerSoftware\abFlowDoc\obj\x64\Release\</IntermediateOutputPath>
+    <RemoteDeploymentType></RemoteDeploymentType>
+    <PackageRegistrationPath></PackageRegistrationPath>
+    <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
+    <DeployOptionalPackages>false</DeployOptionalPackages>
+    <WindowsSdkPath></WindowsSdkPath>
+    <LayoutDir>C:\AMB\Git\amPowerSoftware\amPowerSoftware\abFlowDoc\bin\x64\Release\AppX</LayoutDir>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\abFlowDoc\bin\x64\Release\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\abFlowDoc\Images\LargeTile.scale-100.png">
+      <PackagePath>Images\LargeTile.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\abFlowDoc\Images\LargeTile.scale-125.png">
+      <PackagePath>Images\LargeTile.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\abFlowDoc\Images\LargeTile.scale-150.png">
+      <PackagePath>Images\LargeTile.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\abFlowDoc\Images\LargeTile.scale-200.png">
+      <PackagePath>Images\LargeTile.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\abFlowDoc\Images\LargeTile.scale-400.png">
+      <PackagePath>Images\LargeTile.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\abFlowDoc\Images\SmallTile.scale-100.png">
+      <PackagePath>Images\SmallTile.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\abFlowDoc\Images\SmallTile.scale-125.png">
+      <PackagePath>Images\SmallTile.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\abFlowDoc\Images\SmallTile.scale-150.png">
+      <PackagePath>Images\SmallTile.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\abFlowDoc\Images\SmallTile.scale-200.png">
+      <PackagePath>Images\SmallTile.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\abFlowDoc\Images\SmallTile.scale-400.png">
+      <PackagePath>Images\SmallTile.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\abFlowDoc\Images\SplashScreen.scale-100.png">
+      <PackagePath>Images\SplashScreen.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\abFlowDoc\Images\SplashScreen.scale-125.png">
+      <PackagePath>Images\SplashScreen.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\abFlowDoc\Images\SplashScreen.scale-150.png">
+      <PackagePath>Images\SplashScreen.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\abFlowDoc\Images\SplashScreen.scale-200.png">
+      <PackagePath>Images\SplashScreen.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\abFlowDoc\Images\LockScreenLogo.scale-200.png">
+      <PackagePath>Images\LockScreenLogo.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\abFlowDoc\Images\SplashScreen.scale-400.png">
+      <PackagePath>Images\SplashScreen.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\abFlowDoc\Images\Square150x150Logo.scale-100.png">
+      <PackagePath>Images\Square150x150Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\abFlowDoc\Images\Square150x150Logo.scale-125.png">
+      <PackagePath>Images\Square150x150Logo.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\abFlowDoc\Images\Square150x150Logo.scale-150.png">
+      <PackagePath>Images\Square150x150Logo.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\abFlowDoc\Images\Square150x150Logo.scale-200.png">
+      <PackagePath>Images\Square150x150Logo.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\abFlowDoc\Images\Square150x150Logo.scale-400.png">
+      <PackagePath>Images\Square150x150Logo.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\abFlowDoc\Images\Square44x44Logo.altform-lightunplated_targetsize-16.png">
+      <PackagePath>Images\Square44x44Logo.altform-lightunplated_targetsize-16.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\abFlowDoc\Images\Square44x44Logo.altform-lightunplated_targetsize-24.png">
+      <PackagePath>Images\Square44x44Logo.altform-lightunplated_targetsize-24.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\abFlowDoc\Images\Square44x44Logo.altform-lightunplated_targetsize-256.png">
+      <PackagePath>Images\Square44x44Logo.altform-lightunplated_targetsize-256.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\abFlowDoc\Images\Square44x44Logo.altform-lightunplated_targetsize-32.png">
+      <PackagePath>Images\Square44x44Logo.altform-lightunplated_targetsize-32.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\abFlowDoc\Images\Square44x44Logo.altform-lightunplated_targetsize-48.png">
+      <PackagePath>Images\Square44x44Logo.altform-lightunplated_targetsize-48.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\abFlowDoc\Images\Square44x44Logo.altform-unplated_targetsize-16.png">
+      <PackagePath>Images\Square44x44Logo.altform-unplated_targetsize-16.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\abFlowDoc\Images\Square44x44Logo.altform-unplated_targetsize-256.png">
+      <PackagePath>Images\Square44x44Logo.altform-unplated_targetsize-256.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\abFlowDoc\Images\Square44x44Logo.altform-unplated_targetsize-32.png">
+      <PackagePath>Images\Square44x44Logo.altform-unplated_targetsize-32.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\abFlowDoc\Images\Square44x44Logo.altform-unplated_targetsize-48.png">
+      <PackagePath>Images\Square44x44Logo.altform-unplated_targetsize-48.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\abFlowDoc\Images\Square44x44Logo.scale-100.png">
+      <PackagePath>Images\Square44x44Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\abFlowDoc\Images\Square44x44Logo.scale-125.png">
+      <PackagePath>Images\Square44x44Logo.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\abFlowDoc\Images\Square44x44Logo.scale-150.png">
+      <PackagePath>Images\Square44x44Logo.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\abFlowDoc\Images\Square44x44Logo.scale-200.png">
+      <PackagePath>Images\Square44x44Logo.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\abFlowDoc\Images\Square44x44Logo.scale-400.png">
+      <PackagePath>Images\Square44x44Logo.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\abFlowDoc\Images\Square44x44Logo.targetsize-16.png">
+      <PackagePath>Images\Square44x44Logo.targetsize-16.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\abFlowDoc\Images\Square44x44Logo.targetsize-24.png">
+      <PackagePath>Images\Square44x44Logo.targetsize-24.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\abFlowDoc\Images\Square44x44Logo.targetsize-24_altform-unplated.png">
+      <PackagePath>Images\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\abFlowDoc\Images\Square44x44Logo.targetsize-256.png">
+      <PackagePath>Images\Square44x44Logo.targetsize-256.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\abFlowDoc\Images\Square44x44Logo.targetsize-32.png">
+      <PackagePath>Images\Square44x44Logo.targetsize-32.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\abFlowDoc\Images\Square44x44Logo.targetsize-48.png">
+      <PackagePath>Images\Square44x44Logo.targetsize-48.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\abFlowDoc\Images\StoreLogo.scale-100.png">
+      <PackagePath>Images\StoreLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\abFlowDoc\Images\StoreLogo.scale-125.png">
+      <PackagePath>Images\StoreLogo.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\abFlowDoc\Images\StoreLogo.scale-150.png">
+      <PackagePath>Images\StoreLogo.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\abFlowDoc\Images\StoreLogo.scale-200.png">
+      <PackagePath>Images\StoreLogo.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\abFlowDoc\Images\StoreLogo.scale-400.png">
+      <PackagePath>Images\StoreLogo.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\abFlowDoc\Images\Wide310x150Logo.scale-100.png">
+      <PackagePath>Images\Wide310x150Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\abFlowDoc\Images\Wide310x150Logo.scale-125.png">
+      <PackagePath>Images\Wide310x150Logo.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\abFlowDoc\Images\Wide310x150Logo.scale-150.png">
+      <PackagePath>Images\Wide310x150Logo.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\abFlowDoc\Images\Wide310x150Logo.scale-200.png">
+      <PackagePath>Images\Wide310x150Logo.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\abFlowDoc\Images\Wide310x150Logo.scale-400.png">
+      <PackagePath>Images\Wide310x150Logo.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\abFlowDoc\bin\x64\Release\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\abCommand\obj\Release\netcoreapp3.0\Msix\abCommand.deps.json">
+      <PackagePath>abCommand\abCommand.deps.json</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\abCommand\obj\Release\netcoreapp3.0\abCommand.exe">
+      <PackagePath>abCommand\abCommand.exe</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\abCommand\bin\Release\netcoreapp3.0\abCommand.runtimeconfig.json">
+      <PackagePath>abCommand\abCommand.runtimeconfig.json</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\abCommand\bin\Release\netcoreapp3.0\abCommand.dll">
+      <PackagePath>abCommand\abCommand.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\alxp2\.nuget\packages\avalonedit\5.0.4\lib\Net40\ICSharpCode.AvalonEdit.dll">
+      <PackagePath>abFlowDocs\ICSharpCode.AvalonEdit.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\alxp2\.nuget\packages\extended.wpf.toolkit\3.5.0\lib\net40\Xceed.Wpf.AvalonDock.Themes.Aero.dll">
+      <PackagePath>abFlowDocs\Xceed.Wpf.AvalonDock.Themes.Aero.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\alxp2\.nuget\packages\extended.wpf.toolkit\3.5.0\lib\net40\Xceed.Wpf.AvalonDock.Themes.Metro.dll">
+      <PackagePath>abFlowDocs\Xceed.Wpf.AvalonDock.Themes.Metro.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\alxp2\.nuget\packages\extended.wpf.toolkit\3.5.0\lib\net40\Xceed.Wpf.AvalonDock.Themes.VS2010.dll">
+      <PackagePath>abFlowDocs\Xceed.Wpf.AvalonDock.Themes.VS2010.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\alxp2\.nuget\packages\extended.wpf.toolkit\3.5.0\lib\net40\Xceed.Wpf.AvalonDock.dll">
+      <PackagePath>abFlowDocs\Xceed.Wpf.AvalonDock.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\alxp2\.nuget\packages\extended.wpf.toolkit\3.5.0\lib\net40\Xceed.Wpf.Toolkit.dll">
+      <PackagePath>abFlowDocs\Xceed.Wpf.Toolkit.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\alxp2\.nuget\packages\extended.wpf.toolkit\3.5.0\lib\net40\de\Xceed.Wpf.AvalonDock.resources.dll">
+      <PackagePath>abFlowDocs\de\Xceed.Wpf.AvalonDock.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\alxp2\.nuget\packages\extended.wpf.toolkit\3.5.0\lib\net40\es\Xceed.Wpf.AvalonDock.resources.dll">
+      <PackagePath>abFlowDocs\es\Xceed.Wpf.AvalonDock.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\alxp2\.nuget\packages\extended.wpf.toolkit\3.5.0\lib\net40\fr\Xceed.Wpf.AvalonDock.resources.dll">
+      <PackagePath>abFlowDocs\fr\Xceed.Wpf.AvalonDock.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\alxp2\.nuget\packages\extended.wpf.toolkit\3.5.0\lib\net40\hu\Xceed.Wpf.AvalonDock.resources.dll">
+      <PackagePath>abFlowDocs\hu\Xceed.Wpf.AvalonDock.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\alxp2\.nuget\packages\extended.wpf.toolkit\3.5.0\lib\net40\it\Xceed.Wpf.AvalonDock.resources.dll">
+      <PackagePath>abFlowDocs\it\Xceed.Wpf.AvalonDock.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\alxp2\.nuget\packages\extended.wpf.toolkit\3.5.0\lib\net40\pt-BR\Xceed.Wpf.AvalonDock.resources.dll">
+      <PackagePath>abFlowDocs\pt-BR\Xceed.Wpf.AvalonDock.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\alxp2\.nuget\packages\extended.wpf.toolkit\3.5.0\lib\net40\ro\Xceed.Wpf.AvalonDock.resources.dll">
+      <PackagePath>abFlowDocs\ro\Xceed.Wpf.AvalonDock.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\alxp2\.nuget\packages\extended.wpf.toolkit\3.5.0\lib\net40\ru\Xceed.Wpf.AvalonDock.resources.dll">
+      <PackagePath>abFlowDocs\ru\Xceed.Wpf.AvalonDock.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\alxp2\.nuget\packages\extended.wpf.toolkit\3.5.0\lib\net40\sv\Xceed.Wpf.AvalonDock.resources.dll">
+      <PackagePath>abFlowDocs\sv\Xceed.Wpf.AvalonDock.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\alxp2\.nuget\packages\extended.wpf.toolkit\3.5.0\lib\net40\zh-Hans\Xceed.Wpf.AvalonDock.resources.dll">
+      <PackagePath>abFlowDocs\zh-Hans\Xceed.Wpf.AvalonDock.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\abCommand\bin\Release\netcoreapp3.0\abCommand.dll">
+      <PackagePath>abFlowDocs\abCommand.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\Albert\bin\Release\netstandard2.0\Albert.dll">
+      <PackagePath>abFlowDocs\Albert.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\AlbertWPFCore\bin\Release\netcoreapp3.0\AlbertWPFCore.dll">
+      <PackagePath>abFlowDocs\AlbertWPFCore.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\abFlowDocs\obj\Release\netcoreapp3.0\Msix\abFlowDocs.deps.json">
+      <PackagePath>abFlowDocs\abFlowDocs.deps.json</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\abCommand\obj\Release\netcoreapp3.0\abCommand.exe">
+      <PackagePath>abFlowDocs\abCommand.exe</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\abFlowDocs\obj\Release\netcoreapp3.0\abFlowDocs.exe">
+      <PackagePath>abFlowDocs\abFlowDocs.exe</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\abFlowDocs\Assets\abFlowDoc.png">
+      <PackagePath>abFlowDocs\Assets\abFlowDoc.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\abFlowDocs\Assets\appbar\about.png">
+      <PackagePath>abFlowDocs\Assets\appbar\about.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\abFlowDocs\Assets\appbar\add.png">
+      <PackagePath>abFlowDocs\Assets\appbar\add.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\abFlowDocs\Assets\appbar\aHubWide.png">
+      <PackagePath>abFlowDocs\Assets\appbar\aHubWide.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\abFlowDocs\Assets\appbar\Area.png">
+      <PackagePath>abFlowDocs\Assets\appbar\Area.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\abFlowDocs\Assets\appbar\areaRoad.png">
+      <PackagePath>abFlowDocs\Assets\appbar\areaRoad.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\abFlowDocs\Assets\appbar\back.png">
+      <PackagePath>abFlowDocs\Assets\appbar\back.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\abFlowDocs\Assets\appbar\Bold.png">
+      <PackagePath>abFlowDocs\Assets\appbar\Bold.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\abFlowDocs\Assets\appbar\Browser.png">
+      <PackagePath>abFlowDocs\Assets\appbar\Browser.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\abFlowDocs\Assets\appbar\bullets.png">
+      <PackagePath>abFlowDocs\Assets\appbar\bullets.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\abFlowDocs\Assets\appbar\camera.png">
+      <PackagePath>abFlowDocs\Assets\appbar\camera.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\abFlowDocs\Assets\appbar\cancel.png">
+      <PackagePath>abFlowDocs\Assets\appbar\cancel.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\abFlowDocs\Assets\appbar\centeralign.png">
+      <PackagePath>abFlowDocs\Assets\appbar\centeralign.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\abFlowDocs\Assets\appbar\circle.png">
+      <PackagePath>abFlowDocs\Assets\appbar\circle.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\abFlowDocs\Assets\appbar\clear.png">
+      <PackagePath>abFlowDocs\Assets\appbar\clear.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\abFlowDocs\Assets\appbar\clock.png">
+      <PackagePath>abFlowDocs\Assets\appbar\clock.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\abFlowDocs\Assets\appbar\colorLabIcon.png">
+      <PackagePath>abFlowDocs\Assets\appbar\colorLabIcon.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\abFlowDocs\Assets\appbar\edit.png">
+      <PackagePath>abFlowDocs\Assets\appbar\edit.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\abFlowDocs\Assets\appbar\erase.png">
+      <PackagePath>abFlowDocs\Assets\appbar\erase.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\abFlowDocs\Assets\appbar\exporticon.png">
+      <PackagePath>abFlowDocs\Assets\appbar\exporticon.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\abFlowDocs\Assets\appbar\file.png">
+      <PackagePath>abFlowDocs\Assets\appbar\file.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\abFlowDocs\Assets\appbar\forward.png">
+      <PackagePath>abFlowDocs\Assets\appbar\forward.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\abFlowDocs\Assets\appbar\icons.png">
+      <PackagePath>abFlowDocs\Assets\appbar\icons.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\abFlowDocs\Assets\appbar\Italic.png">
+      <PackagePath>abFlowDocs\Assets\appbar\Italic.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\abFlowDocs\Assets\appbar\leftalign.png">
+      <PackagePath>abFlowDocs\Assets\appbar\leftalign.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\abFlowDocs\Assets\appbar\line.png">
+      <PackagePath>abFlowDocs\Assets\appbar\line.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\abFlowDocs\Assets\appbar\numberlist.png">
+      <PackagePath>abFlowDocs\Assets\appbar\numberlist.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\abFlowDocs\Assets\appbar\ok.png">
+      <PackagePath>abFlowDocs\Assets\appbar\ok.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\abFlowDocs\Assets\appbar\paint.png">
+      <PackagePath>abFlowDocs\Assets\appbar\paint.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\abFlowDocs\Assets\appbar\rectangle.png">
+      <PackagePath>abFlowDocs\Assets\appbar\rectangle.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\abFlowDocs\Assets\appbar\refresh.png">
+      <PackagePath>abFlowDocs\Assets\appbar\refresh.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\abFlowDocs\Assets\appbar\remove.png">
+      <PackagePath>abFlowDocs\Assets\appbar\remove.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\abFlowDocs\Assets\appbar\rightalign.png">
+      <PackagePath>abFlowDocs\Assets\appbar\rightalign.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\abFlowDocs\Assets\appbar\road.png">
+      <PackagePath>abFlowDocs\Assets\appbar\road.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\abFlowDocs\Assets\appbar\save.png">
+      <PackagePath>abFlowDocs\Assets\appbar\save.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\abFlowDocs\Assets\appbar\saveas.png">
+      <PackagePath>abFlowDocs\Assets\appbar\saveas.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\abFlowDocs\Assets\appbar\search.png">
+      <PackagePath>abFlowDocs\Assets\appbar\search.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\abFlowDocs\Assets\appbar\settings.png">
+      <PackagePath>abFlowDocs\Assets\appbar\settings.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\abFlowDocs\Assets\appbar\share.png">
+      <PackagePath>abFlowDocs\Assets\appbar\share.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\abFlowDocs\Assets\appbar\showNavBar.png">
+      <PackagePath>abFlowDocs\Assets\appbar\showNavBar.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\abFlowDocs\Assets\appbar\star.png">
+      <PackagePath>abFlowDocs\Assets\appbar\star.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\abFlowDocs\Assets\appbar\start.png">
+      <PackagePath>abFlowDocs\Assets\appbar\start.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\abFlowDocs\Assets\appbar\status.png">
+      <PackagePath>abFlowDocs\Assets\appbar\status.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\abFlowDocs\Assets\appbar\trace.png">
+      <PackagePath>abFlowDocs\Assets\appbar\trace.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\abFlowDocs\Assets\appbar\triangle.png">
+      <PackagePath>abFlowDocs\Assets\appbar\triangle.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\abFlowDocs\Assets\appbar\underline.png">
+      <PackagePath>abFlowDocs\Assets\appbar\underline.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\abFlowDocs\Assets\marker.png">
+      <PackagePath>abFlowDocs\Assets\marker.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\abFlowDocs\Assets\pen.png">
+      <PackagePath>abFlowDocs\Assets\pen.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\abFlowDocs\Assets\pencil.png">
+      <PackagePath>abFlowDocs\Assets\pencil.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\abFlowDocs\bin\Release\netcoreapp3.0\abFlowDocs.runtimeconfig.json">
+      <PackagePath>abFlowDocs\abFlowDocs.runtimeconfig.json</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\abFlowDocs\bin\Release\netcoreapp3.0\abFlowDocs.dll">
+      <PackagePath>abFlowDocs\abFlowDocs.dll</PackagePath>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+</Project>

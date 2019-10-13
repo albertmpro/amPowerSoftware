@@ -1,0 +1,26 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:local="clr-namespace:amFlowDoczBase">
+
+
+
+
+
+
+	<!--#region ViewModels -->
+
+	<local:FlowViewModel x:Key="viewModel" />
+    <local:CodeViewModel x:Key="codeViewModel" />
+    <local:DrawViewModel x:Key="drawViewModel" />
+
+
+    <!--#endregion-->
+
+	<!--#region Colors and Brushes -->
+	<SolidColorBrush x:Key="amBackBrush" Color="#222222" />
+	<SolidColorBrush x:Key="amForeBrush" Color="#ffffff" />
+	<SolidColorBrush x:Key="amAccent1" Color="#FF330EA9" />
+	<SolidColorBrush x:Key="amAccent2" Color="#FF3700E3" />
+	<SolidColorBrush x:Key="amAccent3" Color="#FFA60A0A" />
+	<!--#endregion-->
+</ResourceDictionary>

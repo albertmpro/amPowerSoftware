@@ -1,0 +1,11 @@
+C:\AMB\Git\amPowerSoftware\amPowerSoftware\abCommand\bin\Release\netcoreapp3.0\abCommand.exe
+C:\AMB\Git\amPowerSoftware\amPowerSoftware\abCommand\bin\Release\netcoreapp3.0\abCommand.deps.json
+C:\AMB\Git\amPowerSoftware\amPowerSoftware\abCommand\bin\Release\netcoreapp3.0\abCommand.runtimeconfig.json
+C:\AMB\Git\amPowerSoftware\amPowerSoftware\abCommand\bin\Release\netcoreapp3.0\abCommand.runtimeconfig.dev.json
+C:\AMB\Git\amPowerSoftware\amPowerSoftware\abCommand\bin\Release\netcoreapp3.0\abCommand.dll
+C:\AMB\Git\amPowerSoftware\amPowerSoftware\abCommand\bin\Release\netcoreapp3.0\abCommand.pdb
+C:\AMB\Git\amPowerSoftware\amPowerSoftware\abCommand\obj\Release\netcoreapp3.0\abCommand.csprojAssemblyReference.cache
+C:\AMB\Git\amPowerSoftware\amPowerSoftware\abCommand\obj\Release\netcoreapp3.0\abCommand.AssemblyInfoInputs.cache
+C:\AMB\Git\amPowerSoftware\amPowerSoftware\abCommand\obj\Release\netcoreapp3.0\abCommand.AssemblyInfo.cs
+C:\AMB\Git\amPowerSoftware\amPowerSoftware\abCommand\obj\Release\netcoreapp3.0\abCommand.dll
+C:\AMB\Git\amPowerSoftware\amPowerSoftware\abCommand\obj\Release\netcoreapp3.0\abCommand.pdb

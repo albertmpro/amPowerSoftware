@@ -1,0 +1,367 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4CB213B8-80DD-4765-BC8B-D439B6C1EE93}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>amFlowDoczBase</RootNamespace>
+    <AssemblyName>amFlowDoczBase</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ICSharpCode.AvalonEdit, Version=5.0.3.0, Culture=neutral, PublicKeyToken=9cc39be672370310, processorArchitecture=MSIL">
+      <HintPath>..\packages\AvalonEdit.5.0.4\lib\Net40\ICSharpCode.AvalonEdit.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Toolkit.Wpf.UI.Controls, Version=5.1.0.0, Culture=neutral, PublicKeyToken=4aff67a105548ee2, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Toolkit.Wpf.UI.Controls.5.1.1\lib\net462\Microsoft.Toolkit.Wpf.UI.Controls.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Toolkit.Wpf.UI.Controls.WebView, Version=5.1.0.0, Culture=neutral, PublicKeyToken=4aff67a105548ee2, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Toolkit.Wpf.UI.Controls.WebView.5.1.1\lib\net462\Microsoft.Toolkit.Wpf.UI.Controls.WebView.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Toolkit.Wpf.UI.XamlHost, Version=5.1.0.0, Culture=neutral, PublicKeyToken=4aff67a105548ee2, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Toolkit.Wpf.UI.XamlHost.5.1.1\lib\net462\Microsoft.Toolkit.Wpf.UI.XamlHost.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationFramework.Aero2" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net" />
+    <Reference Include="System.ValueTuple, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.ValueTuple.4.5.0\lib\net47\System.ValueTuple.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="Xceed.Wpf.AvalonDock, Version=3.5.0.0, Culture=neutral, PublicKeyToken=3e4669d2f30244f4, processorArchitecture=MSIL">
+      <HintPath>..\packages\Extended.Wpf.Toolkit.3.5.0\lib\net40\Xceed.Wpf.AvalonDock.dll</HintPath>
+    </Reference>
+    <Reference Include="Xceed.Wpf.AvalonDock.Themes.Aero, Version=3.5.0.0, Culture=neutral, PublicKeyToken=3e4669d2f30244f4, processorArchitecture=MSIL">
+      <HintPath>..\packages\Extended.Wpf.Toolkit.3.5.0\lib\net40\Xceed.Wpf.AvalonDock.Themes.Aero.dll</HintPath>
+    </Reference>
+    <Reference Include="Xceed.Wpf.AvalonDock.Themes.Metro, Version=3.5.0.0, Culture=neutral, PublicKeyToken=3e4669d2f30244f4, processorArchitecture=MSIL">
+      <HintPath>..\packages\Extended.Wpf.Toolkit.3.5.0\lib\net40\Xceed.Wpf.AvalonDock.Themes.Metro.dll</HintPath>
+    </Reference>
+    <Reference Include="Xceed.Wpf.AvalonDock.Themes.VS2010, Version=3.5.0.0, Culture=neutral, PublicKeyToken=3e4669d2f30244f4, processorArchitecture=MSIL">
+      <HintPath>..\packages\Extended.Wpf.Toolkit.3.5.0\lib\net40\Xceed.Wpf.AvalonDock.Themes.VS2010.dll</HintPath>
+    </Reference>
+    <Reference Include="Xceed.Wpf.Toolkit, Version=3.5.0.0, Culture=neutral, PublicKeyToken=3e4669d2f30244f4, processorArchitecture=MSIL">
+      <HintPath>..\packages\Extended.Wpf.Toolkit.3.5.0\lib\net40\Xceed.Wpf.Toolkit.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="BrowserViewModel.cs" />
+    <Compile Include="Controls\FlowPage.cs" />
+    <Compile Include="Controls\FlowShell.cs" />
+    <Compile Include="Controls\FlyerOne.xaml.cs">
+      <DependentUpon>FlyerOne.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\FlyerTwo.xaml.cs">
+      <DependentUpon>FlyerTwo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\NewInk.xaml.cs">
+      <DependentUpon>NewInk.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\StandardToolBar.xaml.cs">
+      <DependentUpon>StandardToolBar.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\TemplatePage.xaml.cs">
+      <DependentUpon>TemplatePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\TextDialog.xaml.cs">
+      <DependentUpon>TextDialog.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ThemeScreen.cs" />
+    <Compile Include="DrawViewModel.cs" />
+    <Compile Include="EventArgs.cs" />
+    <Compile Include="CodeViewModel.cs" />
+    <Compile Include="Controls\CodeBox.cs" />
+    <Compile Include="Controls\LaunchPad.xaml.cs">
+      <DependentUpon>LaunchPad.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\CodeFlow.xaml.cs">
+      <DependentUpon>CodeFlow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\InkFlow.xaml.cs">
+      <DependentUpon>InkFlow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\MainView.xaml.cs">
+      <DependentUpon>MainView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Controls\FlowScreen.cs" />
+    <Compile Include="FlowViewModel.cs" />
+    <Compile Include="View\MsgFlow.xaml.cs">
+      <DependentUpon>MsgFlow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\ProjectFlow.xaml.cs">
+      <DependentUpon>ProjectFlow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\StoryBoardFlow.xaml.cs">
+      <DependentUpon>StoryBoardFlow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\TabPage.xaml.cs">
+      <DependentUpon>TabPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\TextFlow.xaml.cs">
+      <DependentUpon>TextFlow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\ThemeFlow.xaml.cs">
+      <DependentUpon>ThemeFlow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\WebNoteFlow.xaml.cs">
+      <DependentUpon>WebNoteFlow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WebNote.cs" />
+    <Page Include="Controls\FlyerOne.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\FlyerTwo.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\LaunchPad.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\NewInk.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\StandardToolBar.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\TemplatePage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\TextDialog.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Resources\BasicDictionary.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Resources\DataTempDictionary.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Resources\UIDictionary.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\CodeFlow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\InkFlow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\MainView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\MsgFlow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\ProjectFlow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\StoryBoardFlow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\TabPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\TextFlow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\ThemeFlow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\WebNoteFlow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Code\flex.scss" />
+    <None Include="Code\flexui.scss" />
+    <None Include="Code\sample.rb" />
+    <None Include="Code\style.scss" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\appbar\about.png" />
+    <Resource Include="Assets\appbar\add.png" />
+    <Resource Include="Assets\appbar\aHubWide.png" />
+    <Resource Include="Assets\appbar\Area.png" />
+    <Resource Include="Assets\appbar\areaRoad.png" />
+    <Resource Include="Assets\appbar\back.png" />
+    <Resource Include="Assets\appbar\Browser.png" />
+    <Resource Include="Assets\appbar\camera.png" />
+    <Resource Include="Assets\appbar\cancel.png" />
+    <Resource Include="Assets\appbar\circle.png" />
+    <Resource Include="Assets\appbar\clear.png" />
+    <Resource Include="Assets\appbar\clock.png" />
+    <Resource Include="Assets\appbar\colorLabIcon.png" />
+    <Resource Include="Assets\appbar\edit.png" />
+    <Resource Include="Assets\appbar\erase.png" />
+    <Resource Include="Assets\appbar\file.png" />
+    <Resource Include="Assets\appbar\forward.png" />
+    <Resource Include="Assets\appbar\icons.png" />
+    <Resource Include="Assets\appbar\line.png" />
+    <Resource Include="Assets\appbar\ok.png" />
+    <Resource Include="Assets\appbar\paint.png" />
+    <Resource Include="Assets\appbar\rectangle.png" />
+    <Resource Include="Assets\appbar\refresh.png" />
+    <Resource Include="Assets\appbar\remove.png" />
+    <Resource Include="Assets\appbar\road.png" />
+    <Resource Include="Assets\appbar\save.png" />
+    <Resource Include="Assets\appbar\search.png" />
+    <Resource Include="Assets\appbar\settings.png" />
+    <Resource Include="Assets\appbar\share.png" />
+    <Resource Include="Assets\appbar\showNavBar.png" />
+    <Resource Include="Assets\appbar\star.png" />
+    <Resource Include="Assets\appbar\start.png" />
+    <Resource Include="Assets\appbar\status.png" />
+    <Resource Include="Assets\appbar\trace.png" />
+    <Resource Include="Assets\appbar\triangle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AlbertWPF\AlbertWPF.csproj">
+      <Project>{92f6b2e6-dee2-469b-93a9-82f25f029ceb}</Project>
+      <Name>AlbertWPF</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Albert\Albert.csproj">
+      <Project>{ff4096cb-846e-41f9-b90d-8c3baa1bb9d4}</Project>
+      <Name>Albert</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\amflowdocz.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\appbar\Bold.png" />
+    <Resource Include="Assets\appbar\bullets.png" />
+    <Resource Include="Assets\appbar\Italic.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\appbar\numberlist.png" />
+    <Resource Include="Assets\appbar\underline.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\appbar\centeralign.png" />
+    <Resource Include="Assets\appbar\leftalign.png" />
+    <Resource Include="Assets\appbar\rightalign.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\amflowdocz2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\appbar\saveas.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\appbar\exporticon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Code\albert.js" />
+    <Content Include="Code\apage.js" />
+    <Content Include="Code\Basic.html" />
+    <Content Include="Code\carousel.js" />
+    <Content Include="Code\jalbert.js" />
+    <Content Include="Code\jquery.js" />
+    <Content Include="Code\jquery2.js" />
+    <Content Include="Code\phpconfig.php" />
+    <Content Include="Code\phppage.php" />
+    <Content Include="Code\sample.py" />
+    <Content Include="Code\webpage.html" />
+    <Content Include="Code\wpcontent.php" />
+    <Content Include="Code\wpfooter.php" />
+    <Content Include="Code\wpfunctions.php" />
+    <Content Include="Code\wpheader.php" />
+    <Content Include="Code\wpindex.php" />
+    <Content Include="Code\wppage.php" />
+  </ItemGroup>
+  <ItemGroup>
+    <TypeScriptCompile Include="Code\typescript.ts" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

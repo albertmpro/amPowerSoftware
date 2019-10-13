@@ -20,9 +20,8 @@ C:\AMB\Git\amPowerSoftware\amPowerSoftware\AlbertWPF\obj\Release\AlbertWPF_Marku
 C:\AMB\Git\amPowerSoftware\amPowerSoftware\AlbertWPF\obj\Release\AlbertWPF_MarkupCompile.lref
 C:\AMB\Git\amPowerSoftware\amPowerSoftware\AlbertWPF\obj\Release\Themes\Generic.baml
 C:\AMB\Git\amPowerSoftware\amPowerSoftware\AlbertWPF\obj\Release\AlbertWPF.g.resources
+C:\AMB\Git\amPowerSoftware\amPowerSoftware\AlbertWPF\obj\Release\Albert.Standard.Win32.Properties.Resources.resources
 C:\AMB\Git\amPowerSoftware\amPowerSoftware\AlbertWPF\obj\Release\AlbertWPF.csproj.GenerateResource.cache
-C:\AMB\Git\amPowerSoftware\amPowerSoftware\AlbertWPF\obj\Release\AlbertWPF.csproj.CoreCompileInputs.cache
 C:\AMB\Git\amPowerSoftware\amPowerSoftware\AlbertWPF\obj\Release\AlbertWPF.csproj.CopyComplete
 C:\AMB\Git\amPowerSoftware\amPowerSoftware\AlbertWPF\obj\Release\AlbertWPF.dll
 C:\AMB\Git\amPowerSoftware\amPowerSoftware\AlbertWPF\obj\Release\AlbertWPF.pdb
-C:\AMB\Git\amPowerSoftware\amPowerSoftware\AlbertWPF\obj\Release\Albert.Standard.Win32.Properties.Resources.resources

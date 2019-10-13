@@ -129,6 +129,8 @@
     <Compile Include="PushButton.cs" />
     <Compile Include="QuickAnimation.cs" />
     <Compile Include="QuickList.cs" />
+    <Compile Include="Screen.cs" />
+    <Compile Include="ScreenEventArgs.cs" />
     <Compile Include="SettingsDialog.cs" />
     <Compile Include="SketchCanvas.cs" />
     <Compile Include="SlideColorPicker.cs" />

@@ -1,0 +1,22 @@
+﻿<Window x:Class="abFlowDocs.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:c="clr-namespace:Albert.Standard.Win32;assembly=AlbertWPFCore"
+        xmlns:tk="http://schemas.xceed.com/wpf/xaml/toolkit"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:abFlowDocs"
+        mc:Ignorable="d"
+        Title="MainWindow" Icon="/Assets/abmediaLogo.png"  Height="450" Width="800">
+    <Grid Background="#222222">
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition  />
+            <RowDefinition  />
+        </Grid.RowDefinitions>
+        <tk:ColorCanvas />
+        <c:PushButton Grid.Row="1" Content="Test" Width="139" Height="50" /> 
+        
+        
+    </Grid>
+</Window>

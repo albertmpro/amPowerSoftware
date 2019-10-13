@@ -1,0 +1,45 @@
+﻿<local:FlowDoc x:Class="abFlowDocs.View.TextFlow"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:c="clr-namespace:Albert.Standard.Win32;assembly=AlbertWPFCore"
+               xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:abFlowDocs.Controls"
+             mc:Ignorable="d"  x:Name="docText"
+            >
+    
+    
+    <Grid Background="{StaticResource amBackBrush }">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <!-- ToolTray-->
+        <ToolBarTray>
+            <ToolBar >
+
+                <c:PushButton ToolTip="StartView" Command="c:DesktopCommands.StartView" Source="/Assets/appbar/start.png" />
+                <c:PushButton ToolTip="New" Command="New" Source="/Assets/appbar/add.png" />
+                <c:PushButton ToolTip="Open" Command="Open" Source="/Assets/appbar/file.png" />
+                <c:PushButton ToolTip="Save" Command="Save" Source="/Assets/appbar/save.png" />
+                <c:PushButton ToolTip="SaveAs" Command="c:DesktopCommands.SaveAs" Source="/Assets/appbar/saveas.png" />
+                <Separator />
+
+                <c:OptionButton x:Name="optCode" Content="Code" Tag="Code" FontSize="12pt" ToolTip="Code Mode" Click="Txtmode_Click" IsChecked="true" Width="80" />
+                <c:OptionButton x:Name="optWriter" Content="Writer" Click="Txtmode_Click" ToolTip="Writer Mode" Tag="Writer" FontSize="12pt" Width="80" />
+                <Separator />
+
+            </ToolBar>
+
+        </ToolBarTray>
+        <Grid x:Name="gridTextBoxs" Grid.Row="1">
+
+            <local:CodeBox x:Name="txtCode"  />
+
+            <c:ATextField x:Name="txtWriter"  /> 
+
+
+        </Grid>
+
+    </Grid>
+</local:FlowDoc>

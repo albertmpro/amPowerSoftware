@@ -1,4 +1,4 @@
-﻿<c:DialogControl x:Class="amSparkDesk.View.StaticWebStarter"
+﻿<c:DocumentControl x:Class="amSparkDesk.View.StaticWebStarter"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
@@ -22,10 +22,5 @@
 		</StackPanel>     
     </Grid>
 	<!-- Bottom Bar -->
-	<c:DialogControl.BottomBar>
-		<StackPanel Orientation="Horizontal"
->
-			<c:PushButton Content="Ok" />
-			<c:PushButton Content="Cancel" />
-		</StackPanel>	</c:DialogControl.BottomBar>
-</c:DialogControl>
+
+</c:DocumentControl>

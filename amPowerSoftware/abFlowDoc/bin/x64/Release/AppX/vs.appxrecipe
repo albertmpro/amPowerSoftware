@@ -1,0 +1,607 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>LAPTOP-QL9GRQT5</Machine>
+    <WindowsUser>alxp2</WindowsUser>
+    <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
+    <TargetOsVersion>10.0</TargetOsVersion>
+    <TargetOsDescription>Windows 10.0</TargetOsDescription>
+    <SolutionConfiguration>Release|x64</SolutionConfiguration>
+    <PackageArchitecture>x64</PackageArchitecture>
+    <PackageIdentityName>994f5c1c-e696-4159-85ec-632dc430fda4</PackageIdentityName>
+    <PackageIdentityPublisher>CN=alxp2</PackageIdentityPublisher>
+    <IntermediateOutputPath>C:\AMB\Git\amPowerSoftware\amPowerSoftware\abFlowDoc\obj\x64\Release\</IntermediateOutputPath>
+    <RemoteDeploymentType>
+    </RemoteDeploymentType>
+    <PackageRegistrationPath>
+    </PackageRegistrationPath>
+    <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
+    <DeployOptionalPackages>false</DeployOptionalPackages>
+    <WindowsSdkPath>
+    </WindowsSdkPath>
+    <LayoutDir>C:\AMB\Git\amPowerSoftware\amPowerSoftware\abFlowDoc\bin\x64\Release\AppX</LayoutDir>
+    <RegisteredManifestChecksum>5AEB9F0CBBFC0EFBC6299370ED06385455B72A3396C13867E6404E453A64F6B4</RegisteredManifestChecksum>
+    <RegisteredPackageMoniker>994f5c1c-e696-4159-85ec-632dc430fda4_1.0.0.0_x64__94jyxjaky19ar</RegisteredPackageMoniker>
+    <RegisteredUserModeAppID>994f5c1c-e696-4159-85ec-632dc430fda4_94jyxjaky19ar!App</RegisteredUserModeAppID>
+    <RegisteredPackageID>994f5c1c-e696-4159-85ec-632dc430fda4</RegisteredPackageID>
+    <RegisteredPackagePublisher>CN=alxp2</RegisteredPackagePublisher>
+    <RegisteredVersion>1.0.0.0</RegisteredVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\abFlowDoc\bin\x64\Release\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-10-13T05:54:52.345</Modified>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\abFlowDoc\Images\LargeTile.scale-100.png">
+      <PackagePath>Images\LargeTile.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-09-28T02:03:26.036</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\abFlowDoc\Images\LargeTile.scale-125.png">
+      <PackagePath>Images\LargeTile.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-09-28T02:03:26.092</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\abFlowDoc\Images\LargeTile.scale-150.png">
+      <PackagePath>Images\LargeTile.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-09-28T02:03:26.157</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\abFlowDoc\Images\LargeTile.scale-200.png">
+      <PackagePath>Images\LargeTile.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-09-28T02:03:26.250</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\abFlowDoc\Images\LargeTile.scale-400.png">
+      <PackagePath>Images\LargeTile.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-09-28T02:03:26.520</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\abFlowDoc\Images\SmallTile.scale-100.png">
+      <PackagePath>Images\SmallTile.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-09-28T02:03:25.315</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\abFlowDoc\Images\SmallTile.scale-125.png">
+      <PackagePath>Images\SmallTile.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-09-28T02:03:25.348</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\abFlowDoc\Images\SmallTile.scale-150.png">
+      <PackagePath>Images\SmallTile.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-09-28T02:03:25.376</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\abFlowDoc\Images\SmallTile.scale-200.png">
+      <PackagePath>Images\SmallTile.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-09-28T02:03:25.404</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\abFlowDoc\Images\SmallTile.scale-400.png">
+      <PackagePath>Images\SmallTile.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-09-28T02:03:25.448</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\abFlowDoc\Images\SplashScreen.scale-100.png">
+      <PackagePath>Images\SplashScreen.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-09-28T02:03:27.222</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\abFlowDoc\Images\SplashScreen.scale-125.png">
+      <PackagePath>Images\SplashScreen.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-09-28T02:03:27.289</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\abFlowDoc\Images\SplashScreen.scale-150.png">
+      <PackagePath>Images\SplashScreen.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-09-28T02:03:27.373</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\abFlowDoc\Images\SplashScreen.scale-200.png">
+      <PackagePath>Images\SplashScreen.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-09-28T02:03:27.498</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\abFlowDoc\Images\LockScreenLogo.scale-200.png">
+      <PackagePath>Images\LockScreenLogo.scale-200.png</PackagePath>
+      <Modified>2019-09-24T01:43:26.681</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\abFlowDoc\Images\SplashScreen.scale-400.png">
+      <PackagePath>Images\SplashScreen.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-09-28T02:03:27.917</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\abFlowDoc\Images\Square150x150Logo.scale-100.png">
+      <PackagePath>Images\Square150x150Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-09-28T02:03:25.510</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\abFlowDoc\Images\Square150x150Logo.scale-125.png">
+      <PackagePath>Images\Square150x150Logo.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-09-28T02:03:25.546</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\abFlowDoc\Images\Square150x150Logo.scale-150.png">
+      <PackagePath>Images\Square150x150Logo.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-09-28T02:03:25.579</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\abFlowDoc\Images\Square150x150Logo.scale-200.png">
+      <PackagePath>Images\Square150x150Logo.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-09-28T02:03:25.621</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\abFlowDoc\Images\Square150x150Logo.scale-400.png">
+      <PackagePath>Images\Square150x150Logo.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-09-28T02:03:25.711</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\abFlowDoc\Images\Square44x44Logo.altform-lightunplated_targetsize-16.png">
+      <PackagePath>Images\Square44x44Logo.altform-lightunplated_targetsize-16.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-09-28T02:03:27.064</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\abFlowDoc\Images\Square44x44Logo.altform-lightunplated_targetsize-24.png">
+      <PackagePath>Images\Square44x44Logo.altform-lightunplated_targetsize-24.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-09-28T02:03:27.088</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\abFlowDoc\Images\Square44x44Logo.altform-lightunplated_targetsize-256.png">
+      <PackagePath>Images\Square44x44Logo.altform-lightunplated_targetsize-256.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-09-28T02:03:27.168</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\abFlowDoc\Images\Square44x44Logo.altform-lightunplated_targetsize-32.png">
+      <PackagePath>Images\Square44x44Logo.altform-lightunplated_targetsize-32.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-09-28T02:03:27.111</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\abFlowDoc\Images\Square44x44Logo.altform-lightunplated_targetsize-48.png">
+      <PackagePath>Images\Square44x44Logo.altform-lightunplated_targetsize-48.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-09-28T02:03:27.132</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\abFlowDoc\Images\Square44x44Logo.altform-unplated_targetsize-16.png">
+      <PackagePath>Images\Square44x44Logo.altform-unplated_targetsize-16.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-09-28T02:03:26.845</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\abFlowDoc\Images\Square44x44Logo.altform-unplated_targetsize-256.png">
+      <PackagePath>Images\Square44x44Logo.altform-unplated_targetsize-256.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-09-28T02:03:26.958</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\abFlowDoc\Images\Square44x44Logo.altform-unplated_targetsize-32.png">
+      <PackagePath>Images\Square44x44Logo.altform-unplated_targetsize-32.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-09-28T02:03:26.888</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\abFlowDoc\Images\Square44x44Logo.altform-unplated_targetsize-48.png">
+      <PackagePath>Images\Square44x44Logo.altform-unplated_targetsize-48.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-09-28T02:03:26.913</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\abFlowDoc\Images\Square44x44Logo.scale-100.png">
+      <PackagePath>Images\Square44x44Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-09-28T02:03:26.540</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\abFlowDoc\Images\Square44x44Logo.scale-125.png">
+      <PackagePath>Images\Square44x44Logo.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-09-28T02:03:26.562</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\abFlowDoc\Images\Square44x44Logo.scale-150.png">
+      <PackagePath>Images\Square44x44Logo.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-09-28T02:03:26.587</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\abFlowDoc\Images\Square44x44Logo.scale-200.png">
+      <PackagePath>Images\Square44x44Logo.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-09-28T02:03:26.613</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\abFlowDoc\Images\Square44x44Logo.scale-400.png">
+      <PackagePath>Images\Square44x44Logo.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-09-28T02:03:26.643</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\abFlowDoc\Images\Square44x44Logo.targetsize-16.png">
+      <PackagePath>Images\Square44x44Logo.targetsize-16.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-09-28T02:03:26.664</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\abFlowDoc\Images\Square44x44Logo.targetsize-24.png">
+      <PackagePath>Images\Square44x44Logo.targetsize-24.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-09-28T02:03:26.689</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\abFlowDoc\Images\Square44x44Logo.targetsize-24_altform-unplated.png">
+      <PackagePath>Images\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-09-28T02:03:26.866</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\abFlowDoc\Images\Square44x44Logo.targetsize-256.png">
+      <PackagePath>Images\Square44x44Logo.targetsize-256.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-09-28T02:03:26.806</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\abFlowDoc\Images\Square44x44Logo.targetsize-32.png">
+      <PackagePath>Images\Square44x44Logo.targetsize-32.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-09-28T02:03:26.709</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\abFlowDoc\Images\Square44x44Logo.targetsize-48.png">
+      <PackagePath>Images\Square44x44Logo.targetsize-48.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-09-28T02:03:26.731</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\abFlowDoc\Images\StoreLogo.scale-100.png">
+      <PackagePath>Images\StoreLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-09-28T02:03:27.939</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\abFlowDoc\Images\StoreLogo.scale-125.png">
+      <PackagePath>Images\StoreLogo.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-09-28T02:03:27.962</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\abFlowDoc\Images\StoreLogo.scale-150.png">
+      <PackagePath>Images\StoreLogo.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-09-28T02:03:27.984</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\abFlowDoc\Images\StoreLogo.scale-200.png">
+      <PackagePath>Images\StoreLogo.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-09-28T02:03:28.008</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\abFlowDoc\Images\StoreLogo.scale-400.png">
+      <PackagePath>Images\StoreLogo.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-09-28T02:03:28.040</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\abFlowDoc\Images\Wide310x150Logo.scale-100.png">
+      <PackagePath>Images\Wide310x150Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-09-28T02:03:25.741</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\abFlowDoc\Images\Wide310x150Logo.scale-125.png">
+      <PackagePath>Images\Wide310x150Logo.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-09-28T02:03:25.776</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\abFlowDoc\Images\Wide310x150Logo.scale-150.png">
+      <PackagePath>Images\Wide310x150Logo.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-09-28T02:03:25.815</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\abFlowDoc\Images\Wide310x150Logo.scale-200.png">
+      <PackagePath>Images\Wide310x150Logo.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-09-28T02:03:25.869</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\abFlowDoc\Images\Wide310x150Logo.scale-400.png">
+      <PackagePath>Images\Wide310x150Logo.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-09-28T02:03:25.991</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\abFlowDoc\bin\x64\Release\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+      <Modified>2019-09-28T02:12:30.780</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\abCommand\obj\Release\netcoreapp3.0\Msix\abCommand.deps.json">
+      <PackagePath>abCommand\abCommand.deps.json</PackagePath>
+      <Modified>2019-10-13T00:35:14.564</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\abCommand\obj\Release\netcoreapp3.0\abCommand.exe">
+      <PackagePath>abCommand\abCommand.exe</PackagePath>
+      <Modified>2019-10-13T05:54:49.859</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\abCommand\bin\Release\netcoreapp3.0\abCommand.runtimeconfig.json">
+      <PackagePath>abCommand\abCommand.runtimeconfig.json</PackagePath>
+      <Modified>2019-10-13T00:31:30.732</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\abCommand\bin\Release\netcoreapp3.0\abCommand.dll">
+      <PackagePath>abCommand\abCommand.dll</PackagePath>
+      <Modified>2019-10-13T05:54:49.842</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\alxp2\.nuget\packages\avalonedit\5.0.4\lib\Net40\ICSharpCode.AvalonEdit.dll">
+      <PackagePath>abFlowDocs\ICSharpCode.AvalonEdit.dll</PackagePath>
+      <Modified>2017-10-15T01:52:30.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\alxp2\.nuget\packages\extended.wpf.toolkit\3.5.0\lib\net40\Xceed.Wpf.AvalonDock.Themes.Aero.dll">
+      <PackagePath>abFlowDocs\Xceed.Wpf.AvalonDock.Themes.Aero.dll</PackagePath>
+      <Modified>2019-02-07T21:05:18.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\alxp2\.nuget\packages\extended.wpf.toolkit\3.5.0\lib\net40\Xceed.Wpf.AvalonDock.Themes.Metro.dll">
+      <PackagePath>abFlowDocs\Xceed.Wpf.AvalonDock.Themes.Metro.dll</PackagePath>
+      <Modified>2019-02-07T21:05:18.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\alxp2\.nuget\packages\extended.wpf.toolkit\3.5.0\lib\net40\Xceed.Wpf.AvalonDock.Themes.VS2010.dll">
+      <PackagePath>abFlowDocs\Xceed.Wpf.AvalonDock.Themes.VS2010.dll</PackagePath>
+      <Modified>2019-02-07T21:05:18.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\alxp2\.nuget\packages\extended.wpf.toolkit\3.5.0\lib\net40\Xceed.Wpf.AvalonDock.dll">
+      <PackagePath>abFlowDocs\Xceed.Wpf.AvalonDock.dll</PackagePath>
+      <Modified>2019-02-07T21:05:14.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\alxp2\.nuget\packages\extended.wpf.toolkit\3.5.0\lib\net40\Xceed.Wpf.Toolkit.dll">
+      <PackagePath>abFlowDocs\Xceed.Wpf.Toolkit.dll</PackagePath>
+      <Modified>2019-02-07T21:05:12.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\alxp2\.nuget\packages\extended.wpf.toolkit\3.5.0\lib\net40\de\Xceed.Wpf.AvalonDock.resources.dll">
+      <PackagePath>abFlowDocs\de\Xceed.Wpf.AvalonDock.resources.dll</PackagePath>
+      <Modified>2019-02-07T21:05:16.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\alxp2\.nuget\packages\extended.wpf.toolkit\3.5.0\lib\net40\es\Xceed.Wpf.AvalonDock.resources.dll">
+      <PackagePath>abFlowDocs\es\Xceed.Wpf.AvalonDock.resources.dll</PackagePath>
+      <Modified>2019-02-07T21:05:16.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\alxp2\.nuget\packages\extended.wpf.toolkit\3.5.0\lib\net40\fr\Xceed.Wpf.AvalonDock.resources.dll">
+      <PackagePath>abFlowDocs\fr\Xceed.Wpf.AvalonDock.resources.dll</PackagePath>
+      <Modified>2019-02-07T21:05:14.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\alxp2\.nuget\packages\extended.wpf.toolkit\3.5.0\lib\net40\hu\Xceed.Wpf.AvalonDock.resources.dll">
+      <PackagePath>abFlowDocs\hu\Xceed.Wpf.AvalonDock.resources.dll</PackagePath>
+      <Modified>2019-02-07T21:05:14.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\alxp2\.nuget\packages\extended.wpf.toolkit\3.5.0\lib\net40\it\Xceed.Wpf.AvalonDock.resources.dll">
+      <PackagePath>abFlowDocs\it\Xceed.Wpf.AvalonDock.resources.dll</PackagePath>
+      <Modified>2019-02-07T21:05:14.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\alxp2\.nuget\packages\extended.wpf.toolkit\3.5.0\lib\net40\pt-BR\Xceed.Wpf.AvalonDock.resources.dll">
+      <PackagePath>abFlowDocs\pt-BR\Xceed.Wpf.AvalonDock.resources.dll</PackagePath>
+      <Modified>2019-02-07T21:05:16.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\alxp2\.nuget\packages\extended.wpf.toolkit\3.5.0\lib\net40\ro\Xceed.Wpf.AvalonDock.resources.dll">
+      <PackagePath>abFlowDocs\ro\Xceed.Wpf.AvalonDock.resources.dll</PackagePath>
+      <Modified>2019-02-07T21:05:16.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\alxp2\.nuget\packages\extended.wpf.toolkit\3.5.0\lib\net40\ru\Xceed.Wpf.AvalonDock.resources.dll">
+      <PackagePath>abFlowDocs\ru\Xceed.Wpf.AvalonDock.resources.dll</PackagePath>
+      <Modified>2019-02-07T21:05:16.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\alxp2\.nuget\packages\extended.wpf.toolkit\3.5.0\lib\net40\sv\Xceed.Wpf.AvalonDock.resources.dll">
+      <PackagePath>abFlowDocs\sv\Xceed.Wpf.AvalonDock.resources.dll</PackagePath>
+      <Modified>2019-02-07T21:05:16.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\alxp2\.nuget\packages\extended.wpf.toolkit\3.5.0\lib\net40\zh-Hans\Xceed.Wpf.AvalonDock.resources.dll">
+      <PackagePath>abFlowDocs\zh-Hans\Xceed.Wpf.AvalonDock.resources.dll</PackagePath>
+      <Modified>2019-02-07T21:05:16.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\abCommand\bin\Release\netcoreapp3.0\abCommand.dll">
+      <PackagePath>abFlowDocs\abCommand.dll</PackagePath>
+      <Modified>2019-10-13T05:54:49.842</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\Albert\bin\Release\netstandard2.0\Albert.dll">
+      <PackagePath>abFlowDocs\Albert.dll</PackagePath>
+      <Modified>2019-10-13T05:54:49.679</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\AlbertWPFCore\bin\Release\netcoreapp3.0\AlbertWPFCore.dll">
+      <PackagePath>abFlowDocs\AlbertWPFCore.dll</PackagePath>
+      <Modified>2019-10-13T05:54:50.989</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\abFlowDocs\obj\Release\netcoreapp3.0\Msix\abFlowDocs.deps.json">
+      <PackagePath>abFlowDocs\abFlowDocs.deps.json</PackagePath>
+      <Modified>2019-10-13T00:35:17.105</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\abCommand\obj\Release\netcoreapp3.0\abCommand.exe">
+      <PackagePath>abFlowDocs\abCommand.exe</PackagePath>
+      <Modified>2019-10-13T05:54:49.859</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\abFlowDocs\obj\Release\netcoreapp3.0\abFlowDocs.exe">
+      <PackagePath>abFlowDocs\abFlowDocs.exe</PackagePath>
+      <Modified>2019-10-13T05:54:47.501</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\abFlowDocs\Assets\abFlowDoc.png">
+      <PackagePath>abFlowDocs\Assets\abFlowDoc.png</PackagePath>
+      <Modified>2019-09-28T01:32:33.502</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\abFlowDocs\Assets\appbar\about.png">
+      <PackagePath>abFlowDocs\Assets\appbar\about.png</PackagePath>
+      <Modified>2019-07-04T12:19:44.317</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\abFlowDocs\Assets\appbar\add.png">
+      <PackagePath>abFlowDocs\Assets\appbar\add.png</PackagePath>
+      <Modified>2019-07-04T12:19:44.369</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\abFlowDocs\Assets\appbar\aHubWide.png">
+      <PackagePath>abFlowDocs\Assets\appbar\aHubWide.png</PackagePath>
+      <Modified>2019-07-04T12:19:44.379</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\abFlowDocs\Assets\appbar\Area.png">
+      <PackagePath>abFlowDocs\Assets\appbar\Area.png</PackagePath>
+      <Modified>2019-07-04T12:19:44.389</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\abFlowDocs\Assets\appbar\areaRoad.png">
+      <PackagePath>abFlowDocs\Assets\appbar\areaRoad.png</PackagePath>
+      <Modified>2019-07-04T12:19:44.399</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\abFlowDocs\Assets\appbar\back.png">
+      <PackagePath>abFlowDocs\Assets\appbar\back.png</PackagePath>
+      <Modified>2019-07-04T12:19:44.409</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\abFlowDocs\Assets\appbar\Bold.png">
+      <PackagePath>abFlowDocs\Assets\appbar\Bold.png</PackagePath>
+      <Modified>2019-08-02T03:28:31.190</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\abFlowDocs\Assets\appbar\Browser.png">
+      <PackagePath>abFlowDocs\Assets\appbar\Browser.png</PackagePath>
+      <Modified>2019-07-04T12:19:44.417</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\abFlowDocs\Assets\appbar\bullets.png">
+      <PackagePath>abFlowDocs\Assets\appbar\bullets.png</PackagePath>
+      <Modified>2019-08-02T03:28:31.723</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\abFlowDocs\Assets\appbar\camera.png">
+      <PackagePath>abFlowDocs\Assets\appbar\camera.png</PackagePath>
+      <Modified>2019-07-04T12:19:44.423</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\abFlowDocs\Assets\appbar\cancel.png">
+      <PackagePath>abFlowDocs\Assets\appbar\cancel.png</PackagePath>
+      <Modified>2019-07-04T12:19:44.448</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\abFlowDocs\Assets\appbar\centeralign.png">
+      <PackagePath>abFlowDocs\Assets\appbar\centeralign.png</PackagePath>
+      <Modified>2019-08-02T20:32:23.414</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\abFlowDocs\Assets\appbar\circle.png">
+      <PackagePath>abFlowDocs\Assets\appbar\circle.png</PackagePath>
+      <Modified>2019-07-04T12:19:44.453</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\abFlowDocs\Assets\appbar\clear.png">
+      <PackagePath>abFlowDocs\Assets\appbar\clear.png</PackagePath>
+      <Modified>2019-07-04T12:19:44.458</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\abFlowDocs\Assets\appbar\clock.png">
+      <PackagePath>abFlowDocs\Assets\appbar\clock.png</PackagePath>
+      <Modified>2019-07-04T12:19:44.463</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\abFlowDocs\Assets\appbar\colorLabIcon.png">
+      <PackagePath>abFlowDocs\Assets\appbar\colorLabIcon.png</PackagePath>
+      <Modified>2019-07-04T12:19:44.467</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\abFlowDocs\Assets\appbar\edit.png">
+      <PackagePath>abFlowDocs\Assets\appbar\edit.png</PackagePath>
+      <Modified>2019-07-04T12:19:44.489</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\abFlowDocs\Assets\appbar\erase.png">
+      <PackagePath>abFlowDocs\Assets\appbar\erase.png</PackagePath>
+      <Modified>2019-07-04T12:19:44.518</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\abFlowDocs\Assets\appbar\exporticon.png">
+      <PackagePath>abFlowDocs\Assets\appbar\exporticon.png</PackagePath>
+      <Modified>2019-08-18T02:26:10.408</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\abFlowDocs\Assets\appbar\file.png">
+      <PackagePath>abFlowDocs\Assets\appbar\file.png</PackagePath>
+      <Modified>2019-07-04T12:19:44.537</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\abFlowDocs\Assets\appbar\forward.png">
+      <PackagePath>abFlowDocs\Assets\appbar\forward.png</PackagePath>
+      <Modified>2019-07-04T12:19:44.567</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\abFlowDocs\Assets\appbar\icons.png">
+      <PackagePath>abFlowDocs\Assets\appbar\icons.png</PackagePath>
+      <Modified>2019-07-04T12:19:44.573</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\abFlowDocs\Assets\appbar\Italic.png">
+      <PackagePath>abFlowDocs\Assets\appbar\Italic.png</PackagePath>
+      <Modified>2019-08-02T03:28:31.744</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\abFlowDocs\Assets\appbar\leftalign.png">
+      <PackagePath>abFlowDocs\Assets\appbar\leftalign.png</PackagePath>
+      <Modified>2019-08-02T20:32:24.140</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\abFlowDocs\Assets\appbar\line.png">
+      <PackagePath>abFlowDocs\Assets\appbar\line.png</PackagePath>
+      <Modified>2019-07-04T12:19:44.591</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\abFlowDocs\Assets\appbar\numberlist.png">
+      <PackagePath>abFlowDocs\Assets\appbar\numberlist.png</PackagePath>
+      <Modified>2019-08-02T11:07:43.313</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\abFlowDocs\Assets\appbar\ok.png">
+      <PackagePath>abFlowDocs\Assets\appbar\ok.png</PackagePath>
+      <Modified>2019-07-04T12:19:44.596</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\abFlowDocs\Assets\appbar\paint.png">
+      <PackagePath>abFlowDocs\Assets\appbar\paint.png</PackagePath>
+      <Modified>2019-07-04T12:19:44.612</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\abFlowDocs\Assets\appbar\rectangle.png">
+      <PackagePath>abFlowDocs\Assets\appbar\rectangle.png</PackagePath>
+      <Modified>2019-07-04T12:19:44.627</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\abFlowDocs\Assets\appbar\refresh.png">
+      <PackagePath>abFlowDocs\Assets\appbar\refresh.png</PackagePath>
+      <Modified>2019-07-04T12:19:44.639</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\abFlowDocs\Assets\appbar\remove.png">
+      <PackagePath>abFlowDocs\Assets\appbar\remove.png</PackagePath>
+      <Modified>2019-07-04T12:19:44.658</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\abFlowDocs\Assets\appbar\rightalign.png">
+      <PackagePath>abFlowDocs\Assets\appbar\rightalign.png</PackagePath>
+      <Modified>2019-08-02T20:32:24.146</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\abFlowDocs\Assets\appbar\road.png">
+      <PackagePath>abFlowDocs\Assets\appbar\road.png</PackagePath>
+      <Modified>2019-07-04T12:19:44.673</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\abFlowDocs\Assets\appbar\save.png">
+      <PackagePath>abFlowDocs\Assets\appbar\save.png</PackagePath>
+      <Modified>2019-07-04T12:19:44.689</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\abFlowDocs\Assets\appbar\saveas.png">
+      <PackagePath>abFlowDocs\Assets\appbar\saveas.png</PackagePath>
+      <Modified>2019-08-14T19:20:58.714</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\abFlowDocs\Assets\appbar\search.png">
+      <PackagePath>abFlowDocs\Assets\appbar\search.png</PackagePath>
+      <Modified>2019-07-04T12:19:44.713</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\abFlowDocs\Assets\appbar\settings.png">
+      <PackagePath>abFlowDocs\Assets\appbar\settings.png</PackagePath>
+      <Modified>2019-07-04T12:19:44.764</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\abFlowDocs\Assets\appbar\share.png">
+      <PackagePath>abFlowDocs\Assets\appbar\share.png</PackagePath>
+      <Modified>2019-07-04T12:19:44.786</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\abFlowDocs\Assets\appbar\showNavBar.png">
+      <PackagePath>abFlowDocs\Assets\appbar\showNavBar.png</PackagePath>
+      <Modified>2019-07-04T12:19:44.799</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\abFlowDocs\Assets\appbar\star.png">
+      <PackagePath>abFlowDocs\Assets\appbar\star.png</PackagePath>
+      <Modified>2019-07-04T12:19:44.803</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\abFlowDocs\Assets\appbar\start.png">
+      <PackagePath>abFlowDocs\Assets\appbar\start.png</PackagePath>
+      <Modified>2019-07-04T12:19:44.814</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\abFlowDocs\Assets\appbar\status.png">
+      <PackagePath>abFlowDocs\Assets\appbar\status.png</PackagePath>
+      <Modified>2019-07-04T12:19:44.834</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\abFlowDocs\Assets\appbar\trace.png">
+      <PackagePath>abFlowDocs\Assets\appbar\trace.png</PackagePath>
+      <Modified>2019-07-04T12:19:44.864</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\abFlowDocs\Assets\appbar\triangle.png">
+      <PackagePath>abFlowDocs\Assets\appbar\triangle.png</PackagePath>
+      <Modified>2019-07-04T12:19:44.880</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\abFlowDocs\Assets\appbar\underline.png">
+      <PackagePath>abFlowDocs\Assets\appbar\underline.png</PackagePath>
+      <Modified>2019-08-02T11:07:43.320</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\abFlowDocs\Assets\marker.png">
+      <PackagePath>abFlowDocs\Assets\marker.png</PackagePath>
+      <Modified>2019-10-09T18:10:47.541</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\abFlowDocs\Assets\pen.png">
+      <PackagePath>abFlowDocs\Assets\pen.png</PackagePath>
+      <Modified>2019-10-09T18:05:25.375</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\abFlowDocs\Assets\pencil.png">
+      <PackagePath>abFlowDocs\Assets\pencil.png</PackagePath>
+      <Modified>2019-10-09T18:08:41.463</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\abFlowDocs\bin\Release\netcoreapp3.0\abFlowDocs.runtimeconfig.json">
+      <PackagePath>abFlowDocs\abFlowDocs.runtimeconfig.json</PackagePath>
+      <Modified>2019-10-13T00:35:05.593</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\AMB\Git\amPowerSoftware\amPowerSoftware\abFlowDocs\bin\Release\netcoreapp3.0\abFlowDocs.dll">
+      <PackagePath>abFlowDocs\abFlowDocs.dll</PackagePath>
+      <Modified>2019-10-13T05:54:47.486</Modified>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+</Project>

@@ -26,9 +26,11 @@ namespace Albert.Standard
 		/// <param name="_height"></param>
 		public DrawPaper(double _width, double _height)
 		{
-			Name = "Default";
+			
 			Width = _width;
 			Height = _height;
+			//Create the Name
+			Name = $"Size({Width}px x {Height}px)";
 
 		}
 		public DrawPaper(string _name,double _width, double _height)

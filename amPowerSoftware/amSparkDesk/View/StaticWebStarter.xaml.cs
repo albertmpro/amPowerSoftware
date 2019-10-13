@@ -19,7 +19,7 @@ namespace amSparkDesk.View
     /// <summary>
     /// Interaction logic for StaticWebStarter.xaml
     /// </summary>
-    public partial class StaticWebStarter : DialogControl
+    public partial class StaticWebStarter : DocumentControl
     {
         public StaticWebStarter()
         {

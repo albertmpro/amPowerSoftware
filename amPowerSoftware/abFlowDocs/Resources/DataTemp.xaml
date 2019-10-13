@@ -1,0 +1,107 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+            
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                   xmlns:local="clr-namespace:abFlowDoczBase.Controls">
+
+    <!--#List Controls -->
+    <Style TargetType="ListBox">
+        <Setter Property="Height" Value="210" />
+        <Setter Property="Background" Value="{StaticResource amBackBrush}" />
+        <Setter Property="Foreground" Value="{StaticResource amForeBrush}" />
+
+ 
+    </Style>
+    <!--#endregion-->
+	<!--#region Item Controls -->
+	<Style TargetType="ListItem">
+		<Setter Property="Background" Value="{StaticResource amBackBrush}" />
+		<Setter Property="Background" Value="{StaticResource amForeBrush}" />
+	</Style>
+
+
+	<Style TargetType="ComboBoxItem">
+		<Setter Property="BorderThickness" Value="0" />
+		<Setter Property="Background" Value="{StaticResource amBackBrush}" />
+		<Setter Property="Foreground" Value="{StaticResource amForeBrush}" />
+	</Style>
+	<!--#endregion -->
+	
+	<!--#region Data Templates-->
+    <DataTemplate x:Key="artBoards">
+        <Grid>
+            <Border Margin="8" ToolTip="{Binding Name}" BorderBrush="White" Background="{StaticResource amBackBrush}" > 
+                <TextBlock FontSize="14pt">
+                    <Run Text="Width: " />
+                    <Run Text="{Binding Width}" />
+                    <Run Text="px" />
+                    <LineBreak />
+                    <Run Text="Height: " />
+                    <Run Text="{Binding Height}" />
+                    <Run Text="px" />
+                </TextBlock>
+            </Border>
+        </Grid>
+        
+    </DataTemplate>
+    
+    <DataTemplate x:Key="brushColor">
+        <Grid>
+            <Rectangle Margin="3" Width="25" Height="25" >
+                <Rectangle.Fill>
+                    <SolidColorBrush Color="{Binding BrushColor}" />
+                </Rectangle.Fill>
+            </Rectangle>
+        </Grid>
+    </DataTemplate>
+    
+    <DataTemplate x:Key="brushSize" >
+        <Grid>
+            <Ellipse Margin="14" Stroke="Black" StrokeThickness="1.3" Width="{Binding BrushSize}" Height="{Binding BrushSize}" >
+                <Ellipse.Fill>
+                    <SolidColorBrush Color="White" />
+                </Ellipse.Fill>
+            </Ellipse>
+        </Grid>
+    </DataTemplate>
+    
+    <ItemsPanelTemplate x:Key="wrap">
+        <WrapPanel />
+    </ItemsPanelTemplate>
+    <ItemsPanelTemplate x:Key="horz">
+        <StackPanel Orientation="Horizontal" />
+    </ItemsPanelTemplate>
+	
+	<DataTemplate x:Key="artboardtheme">
+		<Border Margin="3" ToolTip="{Binding Name}" BorderThickness="5"  CornerRadius="8">
+			<Border.Background>
+                <SolidColorBrush Color="{Binding BackgroundColor }" />
+            </Border.Background>
+            <Border.BorderBrush>
+                <SolidColorBrush Color="{Binding BrushColor }" />
+            </Border.BorderBrush>
+            <Grid Margin="5">
+              
+				<TextBlock FontSize="14pt">
+					<TextBlock.Foreground>
+						<SolidColorBrush Color="{Binding BrushColor}" />
+					</TextBlock.Foreground>
+					<Run FontWeight="Bold" Text="{Binding Name}" />
+					<LineBreak />
+					<Run Text="Foreground:" />
+					<Run Text="{Binding BrushColor}" />
+					<LineBreak />
+					<Run Text="Background:" />
+					<Run Text="{Binding BackgroundColor}" />
+					<LineBreak />
+
+				</TextBlock>
+			</Grid>
+
+		</Border>
+	</DataTemplate>
+	
+	<!--#endregion -->
+
+
+
+</ResourceDictionary>

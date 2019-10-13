@@ -296,6 +296,13 @@
   <ItemGroup>
     <Resource Include="Assets\amdev2.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\amflowdcz.png" />
+    <Resource Include="Assets\amflowdocs2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\appbar\saveas.png" />
+  </ItemGroup>
   <Import Project="..\amUWP\amUWP.projitems" Label="Shared" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

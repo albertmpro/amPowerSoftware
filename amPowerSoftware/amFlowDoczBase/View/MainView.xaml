@@ -1,0 +1,26 @@
+﻿<ct:FlowShell x:Class="amFlowDoczBase.View.MainView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:c="clr-namespace:Albert.Standard.Win32;assembly=AlbertWPF"
+		xmlns:ct="clr-namespace:amFlowDoczBase.Controls"
+		xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:amFlowDoczBase.View"
+        mc:Ignorable="d" WindowState="Maximized" Icon="/Assets/amflowdocz.png"
+        Title="amFlowDocz" Height="600" Width="960">
+
+	<Grid Background="{StaticResource amBackBrush}">
+		<Grid.RowDefinitions>
+			<RowDefinition Height="auto" />
+			<RowDefinition />
+			<RowDefinition Height="auto" />
+		</Grid.RowDefinitions>
+
+        <Frame NavigationUIVisibility="Hidden" Grid.Row="1" x:Name="frame" />
+
+        <StatusBar Grid.Row="2">
+			<TextBlock  Text="Status:" />
+            <TextBlock x:Name="tbStatus" />
+        </StatusBar>
+	</Grid>
+</ct:FlowShell>

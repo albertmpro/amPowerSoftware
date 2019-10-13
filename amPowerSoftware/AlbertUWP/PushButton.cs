@@ -52,11 +52,30 @@ namespace Albert.Standard.Runtime
 
 		public static readonly DependencyProperty CornerRadiusProperty =
 	DependencyProperty.Register("CornerRadius", typeof(CornerRadius), typeof(PushButton), null);
-		#endregion
 
-		#region Public Properties
+        public static readonly DependencyProperty SourceProperty =
+    DependencyProperty.Register("Source", typeof(ImageSource), typeof(PushButton), null);
 
-		public string NavString
+        public static readonly DependencyProperty StretchProperty =
+    DependencyProperty.Register("Stretch", typeof(Stretch), typeof(PushButton), null);
+
+        #endregion
+
+        #region Public Properties
+
+        public ImageSource Source
+        {
+            get { return (ImageSource)GetValue(SourceProperty); }
+            set { SetValue(SourceProperty, value); }
+        }
+
+        public Stretch Stretch
+        {
+            get { return (Stretch)GetValue(StretchProperty); }
+            set { SetValue(StretchProperty, value); }
+        }
+
+        public string NavString
 		{
 			get { return (string)GetValue(NavStringProperty); }
 			set { SetValue(NavStringProperty, value); }

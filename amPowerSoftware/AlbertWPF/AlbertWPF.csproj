@@ -51,12 +51,17 @@
   <ItemGroup>
     <Compile Include="ADock.cs" />
     <Compile Include="ATextField.cs" />
+    <Compile Include="DocumentDialog.cs" />
+    <Compile Include="MediaCv.cs" />
     <Compile Include="ColorBase.cs" />
-    <Compile Include="DialogControl.cs" />
+    <Compile Include="DrawEventArgs.cs" />
     <Compile Include="DrawTheme.cs" />
+    <Compile Include="IAddCommand.cs" />
     <Compile Include="ProjectViewModel.cs" />
     <Compile Include="PushButton.cs" />
     <Compile Include="QuickAnimation.cs" />
+    <Compile Include="RichTextBlock.cs" />
+    <Compile Include="ShowEventArgs.cs" />
     <Compile Include="SketchCanvas.cs" />
     <Compile Include="TextField.cs" />
     <Compile Include="ThemeControl.cs" />
@@ -79,7 +84,6 @@
     <Compile Include="DesktopCommands.cs" />
     <Compile Include="DocumentControl.cs" />
     <Compile Include="DocumentTabItem.cs" />
-    <Compile Include="FolderBrowser.cs" />
     <Compile Include="HtmlTemp.cs" />
     <Compile Include="IFileManager.cs" />
     <Compile Include="IOFile.cs" />

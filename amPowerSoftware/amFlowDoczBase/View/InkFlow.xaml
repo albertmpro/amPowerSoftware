@@ -1,0 +1,253 @@
+﻿<local:ThemeScreen x:Class="amFlowDoczBase.View.InkFlow"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:tk="http://schemas.xceed.com/wpf/xaml/toolkit"
+				  xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+                   xmlns:ab="clr-namespace:Albert.Standard;assembly=Albert"
+             xmlns:c="clr-namespace:Albert.Standard.Win32;assembly=AlbertWPF"
+				  xmlns:local="clr-namespace:amFlowDoczBase.Controls"
+             mc:Ignorable="d" DataContext="{StaticResource drawViewModel}" x:Name="inkFlow"
+             d:DesignHeight="450" d:DesignWidth="960">
+    <local:ThemeScreen.TopDialogBar>
+        <c:DocumentDialog x:Name="dialog"  Visibility="Collapsed">
+          
+                <Grid>
+                <c:ZoomBox x:Name="gridNew" Visibility="Collapsed" >
+                    <Grid   DataContext="{StaticResource drawViewModel}" >
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="auto" />
+                            <RowDefinition />
+                            <RowDefinition Height="auto" />
+                            <RowDefinition />
+                            <RowDefinition Height="auto"  />
+
+                        </Grid.RowDefinitions>
+                        <TextBlock FontSize="23pt" Grid.Row="0" Text="Sizes:" />
+                        <ListBox x:Name="lstSizes" Tag="Sizes" SelectionChanged="lst_SelectionChanged" Grid.Row="1" ItemTemplate="{StaticResource docSize}" ItemsPanel="{StaticResource horz}"  ItemsSource="{Binding Sizes }"  />
+                        <TextBlock FontSize="23pt" Grid.Row="2"  Text="Themes:" />
+                        <ListBox x:Name="lstTheme" Tag="Theme" SelectionChanged="lst_SelectionChanged" Grid.Row="3" ItemTemplate="{StaticResource theme}" ItemsPanel="{StaticResource horz}"  ItemsSource="{Binding Themes }"  />
+                        <StackPanel Margin="0,20" Grid.Row="4" Orientation="Horizontal">
+                            <TextBlock VerticalAlignment="Center" FontSize="35pt">
+                                <Run>Width: </Run>
+                                <Run x:Name="runWidth"/>
+                                 <Run>Height: </Run>
+                                <Run x:Name="runHeight"/>
+                            </TextBlock>
+                            <Rectangle x:Name="rectSelefct" StrokeThickness="4.3" Margin="14,0" Width="150" Height="150" />
+                        </StackPanel>
+
+                    </Grid>
+                </c:ZoomBox>
+                <Grid  x:Name="gridExport" Width="400" Visibility="Collapsed">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="auto" />
+                            <RowDefinition />
+                        </Grid.RowDefinitions>
+                        <StackPanel HorizontalAlignment="Left">
+                            <c:CheckButton x:Name="chkBack" Width="250" Height="55"  Content="Transparent Background" />
+
+                        </StackPanel>
+                    </Grid>
+                </Grid>
+            
+        </c:DocumentDialog>
+    </local:ThemeScreen.TopDialogBar>
+
+
+    <Grid Background="{StaticResource amBackBrush}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+
+
+        <!-- Top Panel-->
+        <ToolBar Grid.Row="0" >
+            <c:PushButton ToolTip="StartView" Command="c:DesktopCommands.StartView" Source="/Assets/appbar/start.png" />
+            <c:PushButton ToolTip="New" Command="New" Source="/Assets/appbar/add.png" />
+            <c:PushButton ToolTip="Open" Command="Open" Source="/Assets/appbar/file.png" />
+            <c:PushButton ToolTip="Save" Command="Save" Source="/Assets/appbar/save.png" />
+            
+            <c:PushButton ToolTip="SaveAs" Command="c:DesktopCommands.SaveAs" Source="/Assets/appbar/saveas.png" />
+            <Separator />
+            <c:PushButton ToolTip="Expor to Image" Command="c:DesktopCommands.Export" Source="/Assets/appbar/exporticon.png" />
+            <Separator />
+            <ComboBox ToolTip="InkFlowState" x:Name="cmbMode" Width="120" SelectionChanged="CmbMode_SelectionChanged">
+                <ComboBoxItem Content="Ink" />
+                <ComboBoxItem Content="Ref" />
+                <ComboBoxItem Content="Theme" />
+            </ComboBox>
+        </ToolBar>
+
+
+        <StackPanel Grid.Row="1" Height="45" Orientation="Horizontal">
+
+            <tk:DropDownButton ToolTip="Redifine INc Canvas Sizes" Content="Box" >
+                <tk:DropDownButton.DropDownContent>
+                    <Grid>
+                        <ComboBox ToolTip="Preset Sizes" SelectionChanged="CmbSizes_SelectionChanged" x:Name="cmbSizes" ItemTemplate="{StaticResource simplePaper}">
+                            <ab:DrawPaper Width="1920" Height="1080" />
+                            <ab:DrawPaper Width="1080" Height="1920" />
+                            <ab:DrawPaper Width="1080" Height="1080" />
+                            <ab:DrawPaper Width="1365" Height="768" />
+                            <ab:DrawPaper Width="1024" Height="1024" />
+                            <ab:DrawPaper Width="504" Height="504" />
+                            <ab:DrawPaper Width="300" Height="300" />
+                            <ab:DrawPaper Width="100" Height="100" />
+                        </ComboBox>
+                        </Grid>
+                </tk:DropDownButton.DropDownContent>
+            </tk:DropDownButton>
+            <tk:DropDownButton ToolTip="Selection Options" Content="Selection">
+                <tk:DropDownButton.DropDownContent>
+                    <Grid>
+                        <WrapPanel>
+                            <c:OptionButton ToolTip="Draw Tool" Tag="Draw" Click="selection_Click" Source="/Assets/appbar/paint.png" />
+                            <c:OptionButton ToolTip="Erase Tool" Click="selection_Click" Tag="Erase" Source="/Assets/appbar/erase.png" />
+                            <c:OptionButton ToolTip="Erase by Stroke" Click="selection_Click" Tag="EraseStroke" Source="/Assets/appbar/line.png" />
+                            <c:OptionButton ToolTip="Select Ink" Click="selection_Click" Tag="Select" Source="/Assets/appbar/trace.png" />
+                        </WrapPanel>
+                    </Grid>
+                </tk:DropDownButton.DropDownContent>
+                
+            </tk:DropDownButton>
+            <tk:DropDownButton ToolTip="Brush Options" Content="Brushes">
+                <tk:DropDownButton.DropDownContent>
+                    <c:ZoomBox>
+                        <Grid Background="{StaticResource amBackBrush}" Width="350" >
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="auto" />
+                                <RowDefinition Height="auto" />
+                                <RowDefinition Height="auto" />
+                                <RowDefinition Height="auto" />
+                            </Grid.RowDefinitions>
+                          
+                            <TextBlock Grid.Row="0"  TextAlignment="Right" Style="{StaticResource tbNormal}" Text="Size:"   />
+                            <Slider x:Name="slSize" Maximum="80" ToolTip="Brush Size" ValueChanged="SlSize_ValueChanged" Grid.Row="1" Grid.Column="1" />
+                            <Border x:Name="borderSize" Width="15" Height="15" Grid.Row="2" HorizontalAlignment="Center" CornerRadius="15" Background="White" >
+
+                            </Border>
+                            <WrapPanel Grid.Row="3">
+                                <c:PushButton ToolTip="Brush Size 3px" Click="brush_Click" Tag="b3" Width="90" Height="90">
+                                    <Ellipse Width="3" Height="3" Fill="White" />
+                                </c:PushButton>
+                                <c:PushButton ToolTip="BrushSize 7px" Click="brush_Click"  Tag="b7" Width="90" Height="90">
+                                <Ellipse Width="7" Height="7" Fill="White" />
+                                </c:PushButton>
+                                <c:PushButton ToolTip="Brush Size 10px" Click="brush_Click"  Tag="b10" Width="90" Height="90">
+                                    <Ellipse Width="10" Height="10" Fill="White" />
+                                </c:PushButton>
+                                <c:PushButton ToolTip="Brush Size 15px" Click="brush_Click"  Tag="b15" Width="90" Height="90">
+                                    <Ellipse Width="15" Height="15" Fill="White" />
+                                </c:PushButton>
+
+                                <c:PushButton ToolTip="Brush Size 20px" Click="brush_Click"  Tag="b20" Width="90" Height="90">
+                                    <Ellipse Width="20" Height="20" Fill="White" />
+                                </c:PushButton>
+
+                                <c:PushButton ToolTip="Brush Size 35px" Click="brush_Click"  Tag="b35" Width="90" Height="90">
+                                    <Ellipse Width="35" Height="35" Fill="White" />
+                                </c:PushButton>
+
+
+                                <c:PushButton ToolTip="Brush Size 50px" Click="brush_Click"  Tag="b50" Width="90" Height="90">
+                                    <Ellipse Width="50" Height="50" Fill="White" />
+                                </c:PushButton>
+
+                                <c:PushButton ToolTip="Brush Size 55px" Click="brush_Click"  Tag="b55" Width="90" Height="90">
+                                    <Ellipse Width="55" Height="55" Fill="White" />
+                                </c:PushButton>
+                                <c:PushButton ToolTip="Brush Size 60px" Click="brush_Click"  Tag="b60" Width="90" Height="90">
+                                    <Ellipse Width="60" Height="60" Fill="White" />
+                                </c:PushButton>
+                                <c:PushButton ToolTip="Brush Size 65px" Click="brush_Click"  Tag="b65" Width="90" Height="90">
+                                    <Ellipse Width="65" Height="65" Fill="White" />
+                                 
+                                </c:PushButton>
+
+                            </WrapPanel>
+
+
+
+                        </Grid>
+                    </c:ZoomBox>
+                </tk:DropDownButton.DropDownContent>
+
+            </tk:DropDownButton>
+            <tk:DropDownButton ToolTip="Color Options" Content="Colors">
+                <tk:DropDownButton.DropDownContent>
+         
+                        <Grid Background="{StaticResource amBackBrush}">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition />
+                                <ColumnDefinition Width="auto" />
+                            </Grid.ColumnDefinitions>
+                            <tk:ColorCanvas x:Name="colorPicker" SelectedColorChanged="ColorPicker_SelectedColorChanged" />
+                            <StackPanel VerticalAlignment="Center"  Grid.Column="1" >
+                                <c:OptionButton x:Name="optBrush" Background="White" ToolTip="Brush Color" Style="{StaticResource optTheme}" BorderThickness="3" Click="color_Checked"   Width="120" />
+                                <c:OptionButton x:Name="optBackground" ToolTip="Background Color" Style="{StaticResource optTheme}" Background="Black" BorderThickness="3"  Click="color_Checked" Width="120"  />
+                            </StackPanel>
+                        </Grid>
+                   
+                </tk:DropDownButton.DropDownContent>
+            </tk:DropDownButton>
+        </StackPanel>
+
+        <!-- Main Content  -->
+     
+            <Grid Grid.Row="2" x:Name="gridMain">
+                <c:ZoomBox x:Name="zoomTheme">
+                    
+              
+                <Grid x:Name="gridTheme">
+                    <Grid.ColumnDefinitions>
+                    <ColumnDefinition />
+                    <ColumnDefinition Width="auto" />
+                </Grid.ColumnDefinitions>
+                    <!-- Theme Picker -->
+                <tk:ColorCanvas x:Name="themePicker" SelectedColorChanged="ThemePicker_SelectedColorChanged" ToolTip="Theme Color Picker" />
+                    <!-- StackPanel THeme-->
+                    <StackPanel Grid.Column="1">
+                        <c:OptionButton ToolTip="Color 1"  Click="theme_Click" x:Name="optColor1" Style="{StaticResource optTheme }" >
+                        <c:OptionButton.Background>
+                            <SolidColorBrush Color="{Binding ElementName=inkFlow,Path=ColorOne}" />
+                        </c:OptionButton.Background>
+                    </c:OptionButton>
+
+                        <c:OptionButton ToolTip="Color 2"  Click="theme_Click" x:Name="optColor2"  Style="{StaticResource optTheme}">
+                        <c:OptionButton.Background>
+                            <SolidColorBrush Color="{Binding ElementName=inkFlow,Path=ColorTwo}" />
+                        </c:OptionButton.Background>
+                    </c:OptionButton>
+                        <c:OptionButton ToolTip="Color 3"  Click="theme_Click" x:Name="optColor3" Style="{StaticResource optTheme}" >
+                        <c:OptionButton.Background>
+                            <SolidColorBrush Color="{Binding ElementName=inkFlow,Path=ColorThree}" />
+                        </c:OptionButton.Background>
+                    </c:OptionButton>
+
+                        <c:OptionButton ToolTip="Color 4"  Click="theme_Click" x:Name="optColor4" Style="{StaticResource optTheme}" >
+                        <c:OptionButton.Background>
+                            <SolidColorBrush Color="{Binding ElementName=inkFlow,Path=ColorFour}" />
+                        </c:OptionButton.Background>
+                    </c:OptionButton>
+
+
+                        <c:OptionButton Click="theme_Click" ToolTip="Color 5" x:Name="optColor5"  Width="90" Style="{StaticResource optTheme}" >
+                        <c:OptionButton.Background>
+                            <SolidColorBrush Color="{Binding ElementName=inkFlow,Path=ColorFive}" />
+                        </c:OptionButton.Background>
+                    </c:OptionButton>
+
+                
+
+                </StackPanel>
+
+            </Grid>
+
+            </c:ZoomBox>
+        </Grid>
+      
+    </Grid>
+</local:ThemeScreen>

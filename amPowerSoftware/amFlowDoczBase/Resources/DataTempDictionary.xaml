@@ -1,0 +1,104 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        
+                    
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                   xmlns:local="clr-namespace:amFlowDoczBase.Controls">
+
+    <!--#List Controls -->
+    <Style TargetType="ListBox">
+        <Setter Property="Height" Value="210" />
+        <Setter Property="Background" Value="{StaticResource amBackBrush}" />
+        <Setter Property="Foreground" Value="{StaticResource amForeBrush}" />
+
+ 
+    </Style>
+    <!--#endregion-->
+	<!--#region Item Controls -->
+	<Style TargetType="ListItem">
+		<Setter Property="Background" Value="{StaticResource amBackBrush}" />
+		<Setter Property="Background" Value="{StaticResource amForeBrush}" />
+	</Style>
+
+
+	<Style TargetType="ComboBoxItem">
+		<Setter Property="BorderThickness" Value="0" />
+		<Setter Property="Background" Value="{StaticResource amBackBrush}" />
+		<Setter Property="Foreground" Value="{StaticResource amForeBrush}" />
+	</Style>
+	<!--#endregion -->
+	
+	<!--#region Data Templates-->
+    <DataTemplate x:Key="simplePaper">
+        <TextBlock FontSize="26pt">
+           <Run Text="{Binding Width}" />
+            <Run Text="px" />
+            <Run Text=" x " />
+               <Run Text="{Binding Height}" />
+            <Run Text="px" />
+        </TextBlock>
+    </DataTemplate>
+    
+    <ItemsPanelTemplate x:Key="wrap">
+        <WrapPanel Orientation="Horizontal" />
+    </ItemsPanelTemplate>
+    <ItemsPanelTemplate x:Key="horz">
+        <StackPanel Orientation="Horizontal" />
+    </ItemsPanelTemplate>
+	<DataTemplate x:Key="docSize">
+		<Border Margin="3" Background="{StaticResource amBackBrush}" CornerRadius="8">
+			<Grid Margin="5">
+				<TextBlock  FontSize="22pt">
+					<TextBlock.Foreground>
+						<SolidColorBrush Color="White" />
+					</TextBlock.Foreground>
+					<Run FontWeight="Bold" Text="{Binding Name}" />
+					<LineBreak />
+					<Run Text="Width:" />
+					<Run Text="{Binding Width}" />
+                      <Run Text="px" />
+					<LineBreak />
+					<Run Text="Height:" />
+					<Run Text="{Binding Height}" />
+                    <Run Text="px" />
+					<LineBreak />
+
+				</TextBlock>
+			</Grid>
+			
+		</Border>
+	</DataTemplate>
+
+	<DataTemplate x:Key="theme">
+		<Border Margin="3" BorderThickness="5"  CornerRadius="8">
+			<Border.Background>
+                <SolidColorBrush Color="{Binding BackgroundColor }" />
+            </Border.Background>
+            <Border.BorderBrush>
+                <SolidColorBrush Color="{Binding ForegroundColor }" />
+            </Border.BorderBrush>
+            <Grid Margin="5">
+              
+				<TextBlock FontSize="28pt">
+					<TextBlock.Foreground>
+						<SolidColorBrush Color="{Binding ForegroundColor}" />
+					</TextBlock.Foreground>
+					<Run FontWeight="Bold" Text="{Binding Name}" />
+					<LineBreak />
+					<Run Text="Foreground:" />
+					<Run Text="{Binding ForegroundColor}" />
+					<LineBreak />
+					<Run Text="Background:" />
+					<Run Text="{Binding BackgroundColor}" />
+					<LineBreak />
+
+				</TextBlock>
+			</Grid>
+
+		</Border>
+	</DataTemplate>
+	
+	<!--#endregion -->
+
+
+
+</ResourceDictionary>

@@ -6,8 +6,7 @@ using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Media;
-using Microsoft.Win32;
-
+using static Albert.Standard.Win32.MediaCv;
 namespace Albert.Standard.Win32
 {
 
@@ -15,10 +14,23 @@ namespace Albert.Standard.Win32
 	public class DocumentTabItem: TabItem 
 	{
 		//Field's
-		PushButton btn = new PushButton(); 
+		PushButton btn = new PushButton();
 
-		//Depdendcey 
-		public static readonly DependencyProperty IsClosedEnabledProperty = DependencyProperty.Register("IsClosedEnabled",
+        //Depdendcey 
+
+
+        public static readonly DependencyProperty BackgroundSelectedProperty =
+    DependencyProperty.Register("BackgroundSelected", typeof(Brush), typeof(DocumentTabItem),new PropertyMetadata(HexBrush("#FF1D76C5")));
+
+
+        public static readonly DependencyProperty ForegroundSelectedProperty =
+    DependencyProperty.Register("ForegroundSelected", typeof(Brush), typeof(DocumentTabItem), new PropertyMetadata(HexBrush("#ffffff")));
+
+        public static readonly DependencyProperty BorderBrushSelectedProperty =
+    DependencyProperty.Register("BorderBrushSelected", typeof(Brush), typeof(DocumentTabItem), new PropertyMetadata(HexBrush("#222222")));
+
+
+        public static readonly DependencyProperty IsClosedEnabledProperty = DependencyProperty.Register("IsClosedEnabled",
 			typeof(bool),typeof(DocumentTabItem), new PropertyMetadata(true));
 
 		public static readonly DependencyProperty IsPageEnabledProperty = DependencyProperty.Register("IsPageEnabled",
@@ -37,9 +49,19 @@ namespace Albert.Standard.Win32
 		public DocumentTabItem()
 		{
 			DefaultStyleKey = typeof(DocumentTabItem);
+			IsClosedEnabled = false;
 
+			
 		}
-
+		public DocumentTabItem(string _header,object _content, TabControl _tab)
+		{
+			DefaultStyleKey = typeof(DocumentTabItem);
+			Header = _header;
+			IsClosedEnabled = true;
+			Content = _content;
+			MainTab = _tab;
+			SetTab();
+		}
 		public DocumentTabItem(string _Header,bool _isClosedEnabled, object _content,TabControl _mainTabControl)
 		{
 			DefaultStyleKey = typeof(DocumentTabItem);
@@ -92,9 +114,25 @@ namespace Albert.Standard.Win32
 			
 		}
 
-		//Public Properties 
+        //Public Properties 
 
-		public CornerRadius CornerRadius
+        public Brush BackgroundSelected
+        {
+            get { return (Brush)GetValue(BackgroundSelectedProperty); }
+            set { SetValue(BackgroundSelectedProperty, value); }
+        }
+        public Brush ForegroundSelected
+        {
+            get { return (Brush)GetValue(ForegroundSelectedProperty); }
+            set { SetValue(ForegroundSelectedProperty, value); }
+        }
+        public Brush BorderBrushSelected
+        {
+            get { return (Brush)GetValue(BorderBrushSelectedProperty); }
+            set { SetValue(BorderBrushSelectedProperty, value); }
+        }
+
+        public CornerRadius CornerRadius
 		{
 			get { return (CornerRadius)GetValue(CornerRadiusProperty); }
 			set { SetValue(CornerRadiusProperty, value); }

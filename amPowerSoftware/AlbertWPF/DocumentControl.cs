@@ -1,55 +1,161 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Input;
+using System.ComponentModel;
 namespace Albert.Standard.Win32
 {
 	/// <summary>
-	/// A special ContentControl designed to deal with handling documents. 
+	/// A special ContentControl designed to deal with handling tab documents. 
 	/// </summary>
-	public class DocumentControl : ContentControl
+	public class DocumentControl : ContentControl, IAddCommand
 	{
-		public DocumentControl()
+        #region Depedency Properties
+        public static DependencyProperty TopDialogBarProperty = DependencyProperty.Register("TopDialogBar", typeof(object),typeof(DocumentControl),null);
+        public static DependencyProperty BottomDialogBarProperty = DependencyProperty.Register("BottomDialogBar", typeof(object), typeof(DocumentControl), null);
+        public static DependencyProperty TopDialogVisibilityProperty = DependencyProperty.Register("TopDialogVisibility", typeof(Visibility), typeof(DocumentControl), new PropertyMetadata(Visibility.Visible));
+        public static DependencyProperty BottomDialogVisibilityProperty = DependencyProperty.Register("BottomDialogVisibility", typeof(Visibility), typeof(DocumentControl), new PropertyMetadata(Visibility.Visible));
+        
+        #endregion
+        public DocumentControl()
 		{
-			//Do nothing 
-		}
+            //ReDraw the Control 
+            DefaultStyleKey = typeof(DocumentControl);
+	}
 
-		protected DocumentControl(TabControl _mainTab,string _title,Action _init)
-		{
-			_init();
-			if (_mainTab != null)
-			{
-				TabItem = new DocumentTabItem(_title, true, this, _mainTab);
-			}
-		}
-		protected DocumentControl(TabControl _mainTab, string _title, bool _isCloseEnabled,Action _init)
-		{
-			_init();
-			if (_mainTab != null)
-			{
-				TabItem = new DocumentTabItem(_title, _isCloseEnabled, this, _mainTab);
-			}
-		}
-		/// <summary>
-		/// Quick way to add a Coomamand to the control
-		/// </summary>
-		/// <param name="_command"></param>
-		/// <param name="_method"></param>
-		public void AddCommand(ICommand _command,ExecutedRoutedEventHandler _method)
+        #region Method's for Creating Tab's Quickly
+
+        public void SetupTab(string _header,bool _isClosedEnabled,TabControl _tab)
+        {
+            //Create a new TabItem 
+            TabItem = new DocumentTabItem(_header, _isClosedEnabled , this, _tab);
+
+        }
+
+
+        public void SetupTab(string _header,TabControl _tab,Action _closeMethod)
+        {
+            //Create a new TabItem 
+            TabItem = new DocumentTabItem(_header, this, _tab);
+
+            //Close Method 
+            TabItem.Closed += (sender, e) =>
+            {
+                _closeMethod.Invoke();
+            };
+
+            //Focus on the Tab 
+            TabItem.Focus();
+            this.Focus();
+
+        }
+
+        #endregion
+
+
+        #region Method from IAddCommand 
+
+        /// <summary>
+        /// Quick way to add a Coomamand to the control
+        /// </summary>
+        /// <param name="_command"></param>
+        /// <param name="_method"></param>
+        public void AddCommand(ICommand _command, ExecutedRoutedEventHandler _method)
 		{
 			CommandBindings.Add(new CommandBinding(_command, _method));
 		}
 
+        #endregion 
 
-
+        #region Hide and Show Functions 
+        /// <summary>
+        /// Event Happens when Show the documen t
+        /// </summary>
+        public event Action<ShowEventArgs> OnShow;
 		/// <summary>
-		/// Gets or sets a Page that ueses the DocumentControl
+		/// Event happens when you hide the document
 		/// </summary>
-		public Page Page { get; set; }
+		public event Action<ShowEventArgs> OnHide;
+
+        /// <summary>
+        /// A quick method to show the control
+        /// </summary>
+        public void Show()
+		{
+			//Setup your ShowEventArgs
+			var args = new ShowEventArgs();
+			args.Visibility = Visibility;
+			args.Opacity = Opacity;
+			//OnShow
+			switch(OnShow)
+			{
+				case null:
+					Visibility = Visibility.Visible;
+					break;
+				default:
+					OnShow.Invoke(args);
+					Visibility = Visibility.Visible;
+					break;
+			}
+		}
+		/// <summary>
+		/// Quick way to hide the control
+		/// </summary>
+		public void Hide()
+		{
+			//Setup your ShowEventArgs
+			var args = new ShowEventArgs();
+			args.Visibility = Visibility;
+			args.Opacity = Opacity;
+			
+			//OnHide 
+			switch (OnHide)
+			{
+				case null:
+					Visibility = Visibility.Collapsed;
+					break;
+				default:
+					Visibility = Visibility.Collapsed;
+					//Do the OnHide Method 
+					OnHide.Invoke(args);
+					break;
+			}
+		}
+
+        #endregion
+
+        #region Main Public Properties
+        
+        public object TopDialogBar
+        {
+            get { return (object)GetValue(TopDialogBarProperty); }
+            set { SetValue(TopDialogBarProperty, value); }
+        }
+
+        public object BottomDialogBar
+        {
+            get { return (object)GetValue(BottomDialogBarProperty); }
+            set { SetValue(BottomDialogBarProperty, value); }
+        }
+
+        public object TopDialogVisibility
+        {
+            get { return (Visibility)GetValue(TopDialogVisibilityProperty); }
+            set { SetValue(TopDialogVisibilityProperty, value); }
+        }
+
+
+        public Visibility BottomDialogVisibility
+        {
+            get { return (Visibility)GetValue(BottomDialogVisibilityProperty); }
+            set { SetValue(BottomDialogVisibilityProperty, value); }
+        }
+
+        /// <summary>
+        /// Gets or sets a Page that ueses the DocumentControl
+        /// </sBoxummary>
+        public Page Page { get; set; }
 
 		/// <summary>
 		/// Gets or sets the TabItem that uses the DocumentControl 
@@ -68,6 +174,8 @@ namespace Albert.Standard.Win32
 
 		public static int Count { get; set; } = 1;
 
+        #endregion
 
-	}
+
+    }
 }
